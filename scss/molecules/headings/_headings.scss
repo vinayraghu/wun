@@ -16,7 +16,7 @@
 <h4>Fourth level heading</h4>
 
 <p class="h1 has-subheading">First level heading</p>
-<p class="subheading">First level subheading</p>
+<p class="subheading">First level <a href="#">subheading</a></p>
 
 <p class="meta">May 01, 2014 | Filed under Designers, Categories</p>
 
@@ -27,7 +27,7 @@
 
 ```
 <p class="h1 has-subheading">First level heading</p>
-<p class="subheading">First level subheading</p>
+<p class="subheading">First level <a href="#">subheading</a></p>
 
 ```
 
@@ -82,10 +82,10 @@ h4, .h4 {
 }
 
 .subheading {
-  color: nth($grey, 1);
+  color: nth($grey-dark, 1);
   @include no-margin(top bottom)
 }
 
 .meta {
-  color: nth($grey, 3);
+  color: nth($grey-dark, 2);
 }
