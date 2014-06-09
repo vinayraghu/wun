@@ -1,1 +1,71 @@
 @import "extends";
+
+/*doc
+#Updates
+
+Updates / Alert notifications are used to display a number on the top right of any container
+
+```
+<div class="update-container">
+  <i class="fa fa-envelope-o"></i>
+  <div class="update update-small update-alert"><span>5</span></div>
+</div>
+
+<div class="update-container">
+  <i class="fa fa-envelope-o fa-2x"></i>
+  <div class="update update-medium update-success"><span>5</span></div>
+</div>
+
+<div class="update-container">
+  <i class="fa fa-envelope-o fa-3x"></i>
+  <div class="update update-large update-warning"><span>5</span></div>
+</div>
+
+```
+*/
+
+.update-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.update {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  &.update-small {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  &.update-medium {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    line-height: 1.7;
+  }
+  &.update-large {
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  &.update-success {
+    @include paint(background, $brand-success);
+  }
+  &.update-alert {
+    @include paint(background, $brand-alert);
+  }
+  &.update-info {
+    @include paint(background, $brand-info);
+  }
+  &.update-warning {
+    @include paint(background, $brand-warning);
+  }
+}
