@@ -1,3 +1,12 @@
+html {
+  font-size: $base-font-size;
+}
+
 body {
   -webkit-backface-visibility: hidden;
+  background-color: $white;
+  font-family: $open-sans;
+  font-weight: $base-font-weight;
+  line-height: 1.45;
+  color: $black;
 }

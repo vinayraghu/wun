@@ -1,1 +1,91 @@
 @import "extends";
+
+/*doc
+
+#Headings
+----------
+
+ - Headings are based on 1.414 ratio.
+ - Headings can be used with `<h1>` tags as well as `.h1` class
+ - We use 4 variations of font sizes
+
+```
+<h1>First level heading</h1>
+<h2>Second level heading</h2>
+<h3>Third level heading</h3>
+<h4>Fourth level heading</h4>
+
+<p class="h1 has-subheading">First level heading</p>
+<p class="subheading">First level subheading</p>
+
+<p class="meta">May 01, 2014 | Filed under Designers, Categories</p>
+
+```
+
+##Subheading
+--------------
+
+```
+<p class="h1 has-subheading">First level heading</p>
+<p class="subheading">First level subheading</p>
+
+```
+
+##Meta
+--------------
+
+```
+  <p class="meta">May 01, 2014 | Filed under Designers, Categories</p>
+
+```
+
+
+*/
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  margin-top: 0;
+  font-size: nth($heading-sizes, 1);
+  font-weight: $heading-font-weight;
+  + .subheading {
+    font-size: nth($heading-sizes, 2);
+  }
+}
+
+h2, .h2 {
+  font-size: nth($heading-sizes, 2);
+  font-weight: $heading-font-weight;
+  + .subheading {
+    font-size: nth($heading-sizes, 3);
+  }
+}
+
+h3, .h3 {
+  font-size: nth($heading-sizes, 3);
+  font-weight: $heading-font-weight;
+  + .subheading {
+    font-size: nth($heading-sizes, 4);
+  }
+}
+
+h4, .h4 {
+  font-size: nth($heading-sizes, 4);
+  font-weight: $heading-font-weight;
+}
+
+.has-subheading {
+  @include no-margin(top bottom);
+}
+
+.subheading {
+  color: nth($grey, 1);
+  @include no-margin(top bottom)
+}
+
+.meta {
+  color: nth($grey, 3);
+}

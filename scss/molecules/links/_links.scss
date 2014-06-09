@@ -1,1 +1,7 @@
 @import "extends";
+
+a {
+  color: nth($grey-dark, 1);
+  @include no-dec();
+}
+
