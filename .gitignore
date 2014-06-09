@@ -5,3 +5,7 @@ bower_components
 *.dll
 .sass-cache
 *.scssc
+
+css/style.css
+*.css.map
+public/*

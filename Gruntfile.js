@@ -37,7 +37,10 @@ module.exports = function(grunt) {
       styleguide: {
         options: {
           assets: ['css/style.css'],
-          highlight: 'monokai'
+          highlight: 'monokai',
+          excludeMissing: true,
+          commentStart: /\/\*doc/,
+          commentEnd: /\*\//
         },
         files: [{
           expand: true,
@@ -68,22 +71,16 @@ module.exports = function(grunt) {
     watch: {
       styleguide: {
         files: ['scss/**/*.scss'],
-        tasks: ['sass', 'autoprefixer', 'csscomb', 'sassdown', 'watch'],
+        tasks: ['sass', 'autoprefixer', 'csscomb', 'sassdown'],
         options: {
          livereload: 1337,
         }
-      },
-      foundation: {
-        files: ['bower_components/foundation/scss/**/*.scss'],
-        tasks: ['sass', 'watch'],
       }
-
     }
-
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('sassdown');
+  grunt.loadNpmTasks('sassdown-v');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
