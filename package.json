@@ -1,0 +1,16 @@
+{
+  "name": "r2s",
+  "dependencies": {
+    "grunt-contrib-concat": "^0.4.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.4.0",
+    "sassdown-v": "^0.2.6",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-autoprefixer": "^0.7.3",
+    "grunt-csscomb": "^2.0.1"
+  }
+}
