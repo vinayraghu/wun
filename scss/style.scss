@@ -1,5 +1,6 @@
 // Import atoms
 
+@import "atoms/reset";
 @import "atoms/grids";
 @import "atoms/helpers/utilities";
 
@@ -42,6 +43,7 @@
 
 // Import Templates
 
+@import "templates/body/body";
 @import "templates/header/header";
 @import "templates/footer/footer";
 @import "templates/navbar/navbar";
