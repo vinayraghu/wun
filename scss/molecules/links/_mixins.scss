@@ -1,1 +1,8 @@
 @import "variables";
+
+@mixin no-dec () {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}

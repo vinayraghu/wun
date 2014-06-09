@@ -1,1 +1,11 @@
-
+// Used for negating margins
+@mixin no-margin($direction: false) {
+  @if($direction == false) {
+    margin: 0;
+  }
+  @else {
+    @each $d in $direction {
+      margin-#{$d}: 0;
+    }
+  }
+}
