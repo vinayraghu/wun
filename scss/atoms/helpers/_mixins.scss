@@ -9,3 +9,8 @@
     }
   }
 }
+
+// Color variations to any property
+@mixin paint($prop, $color) {
+  #{$prop}: $color;
+}

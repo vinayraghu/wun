@@ -1,6 +1,7 @@
 $white: #fff;
 $black: #000;
-$grey: #666, #888, #aaa, #ddd, #eee;
+
+$black-2: #2A2D34;
 
 //http://flatuicolors.com/
 
@@ -8,58 +9,59 @@ $grey: #666, #888, #aaa, #ddd, #eee;
 $turquoise: #1abc9c;
 $emerald: #2ecc71;
 
-$green-dark: $turquoise, $emerald;
-
 //Green light
 $green-sea: #16a085;
 $nephritis: #27ae60;
-
-$green-light: $green-sea, $nephritis;
 
 //Blue
 $peter-river: #3498db;
 $belize-hole: #2980b9;
 
-$blue: $peter-river, $belize-hole;
-
 //Purple
 $amethyst: #2980b9;
 $wisteria: #8e44ad;
-
-$purple: $amethyst, $wisteria;
 
 //Dark grey
 $wet-asphalt: #34495e;
 $midnight-blue: #2c3e50;
 
-$grey-dark: $wet-asphalt, $midnight-blue;
-
 //Yellow
 $sun-flower: #f1c40f;
 $orange: #f39c12;
-
-$yellow: $sun-flower, $orange;
 
 //Orange
 $carrot: #e67e22;
 $pumpkin: #d35400;
 
-$orange: $carrot, $pumpkin;
-
 //Red
 $alizarin: #e74c3c;
 $pomogranate: #c0392b;
-
-$red: $alizarin, $pomogranate;
 
 // Silver
 $clouds: #ecf0f1;
 $silverine: #bdc3c7;
 
-$silver: $clouds, $silverine;
-
 // Light grey
 $concrete: #95a5a6;
 $asbestos: #7f8c8d;
 
+// Color variables
+$green-dark: $turquoise, $emerald;
+$green-light: $green-sea, $nephritis;
+$blue: $peter-river, $belize-hole;
+$purple: $amethyst, $wisteria;
+$grey-dark: $wet-asphalt, $midnight-blue;
 $grey-light: $concrete, $asbestos;
+$yellow: $sun-flower, $orange;
+$orange: $carrot, $pumpkin;
+$red: $alizarin, $pomogranate;
+$silver: $clouds, $silverine;
+
+// Brand colors
+
+$brand-primary: nth($grey-dark, 2);
+$brand-secondary: nth($grey-light, 2);
+$brand-info: nth($blue, 1);
+$brand-alert: nth($red, 1);
+$brand-warning: nth($orange, 1);
+$brand-success: nth($green-dark, 1);

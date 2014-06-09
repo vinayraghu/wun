@@ -1,7 +1,80 @@
 @import "extends";
 
+/*doc
+#Links
+------------
+```
+<p class="text-primary">Lorem Ipsum dolor sit amet</p>
+<p class="text-primary inverse">Lorem Ipsum dolor sit amet</p>
+<p class="text-secondary">Lorem Ipsum dolor sit amet</p>
+<p class="text-secondary inverse">Lorem Ipsum dolor sit amet</p>
+<p class="text-alert">Lorem Ipsum dolor sit amet</p>
+<p class="text-alert inverse">Lorem Ipsum dolor sit amet</p>
+<p class="text-success">Lorem Ipsum dolor sit amet</p>
+<p class="text-success inverse">Lorem Ipsum dolor sit amet</p>
+<p class="text-info">Lorem Ipsum dolor sit amet</p>
+<p class="text-info inverse">Lorem Ipsum dolor sit amet</p>
+<p class="text-warning">Lorem Ipsum dolor sit amet</p>
+<p class="text-warning inverse">Lorem Ipsum dolor sit amet</p>
+
+```
+
+*/
+
 a {
-  color: nth($grey-dark, 1);
+  color: $link-color;
   @include no-dec();
+}
+
+////////////////////////////
+//Text color variations
+////////////////////////////
+
+.text-primary {
+  @include paint(color, $brand-primary);
+  &.inverse {
+    @include paint(background, $brand-primary);
+    color: $white;
+  }
+}
+
+.text-secondary {
+  @include paint(color, $brand-secondary);
+  &.inverse {
+    @include paint(background, $brand-secondary);
+    color: $white;
+  }
+}
+
+.text-alert {
+  @include paint(color, $brand-alert);
+  &.inverse {
+    @include paint(background, $brand-alert);
+    color: $white;
+  }
+}
+
+.text-success {
+  @include paint(color, $brand-success);
+  &.inverse {
+    @include paint(background, $brand-success);
+    color: $white;
+  }
+}
+
+.text-info {
+  @include paint(color, $brand-info);
+  &.inverse {
+    @include paint(background, $brand-info);
+    color: $white;
+  }
+}
+
+.text-warning {
+  @include paint(color, $brand-warning);
+  &.inverse {
+    @include paint(background, $brand-warning);
+    color: $white;
+  }
 }
 
