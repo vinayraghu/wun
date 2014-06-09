@@ -1,1 +1,50 @@
+/*doc
 
+#Side Navigation
+---------------
+
+ - This is the primary side navigation we use on the website for majority of the admin UI actions.
+ - Any major category with three or more screens can be abstracted into a primary nav item. Each item will contain an Font awesome icon and a corresponding title.
+ - We have the option to collapse this nav
+ - Nav will auto-collapse on smaller screens
+
+```
+  <ul class="sidenav">
+    <li class="active"><i class="fa fa-tachometer"></i>Dashboard</li>
+    <li><i class="fa fa-pencil-square-o"></i>Message Editor</li>
+    <li><i class="fa fa-thumbs-o-up"></i>Marketing View</li>
+    <li><i class="fa fa-users"></i>Affiliates</li>
+  </ul>
+```
+
+*/
+
+.sidenav {
+  padding: 0;
+  //width: 100px;
+  list-style: none;
+  background: $black-2;
+  i {
+    display: block;
+    font-size: 4em;
+  }
+  > li {
+    border-left: 4px solid transparent;
+    display: block;
+    padding: 1.5em 0;
+    cursor: pointer;
+    color: nth($silver, 1);
+    text-transform: capitalize;
+    font-weight: bold;
+
+    text-align: center;
+    &:hover {
+      background: lighten($black-2, 10%);
+      border-left: 4px solid nth($red, 1);
+    }
+    &.active {
+      background: lighten($black-2, 5%);
+      border-left: 4px solid nth($red, 1);
+    }
+  }
+}
