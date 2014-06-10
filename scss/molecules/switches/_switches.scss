@@ -1,1 +1,68 @@
 @import "extends";
+/*doc
+#Switches
+---------------
+For on off states
+
+```
+<input class='tgl tgl-flat' id='cb4' type='checkbox'>
+<label class='tgl-btn' for='cb4'></label>
+```
+
+*/
+
+.tgl{
+  display: none;
+  &::selection{
+    background: none;
+  }
+  + .tgl-btn{
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    &:after, &:before{
+      position: relative;
+      display: block;
+      content: "";
+      width: 50%;
+      height: 100%;
+    }
+    &:after{
+      left: 0;
+    }
+    &:before{
+      display: none;
+    }
+  }
+  &:checked{
+    + .tgl-btn{
+      &:after{
+        left: 50%;
+      }
+    }
+  }
+}
+.tgl-flat{
+  + .tgl-btn{
+    padding: 2px;
+    transition: all .2s ease;
+    background: #fff;
+    border: 4px solid #e74c3c;
+    &:after{
+      transition: all .2s ease;
+      background: #e74c3c;
+    }
+  }
+  &:checked{
+    + .tgl-btn{
+      border: 4px solid #1abc9c;
+      &:after{
+        left: 50%;
+        background: #1abc9c;
+      }
+    }
+  }
+}
