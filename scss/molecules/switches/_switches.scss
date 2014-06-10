@@ -50,18 +50,18 @@ For on off states
     padding: 2px;
     @include transition-effect();
     background: #fff;
-    border: 4px solid #e74c3c;
+    border: $switch-border solid nth($green-dark, 1);
     &:after{
       @include transition-effect();
-      background: #e74c3c;
+      background: nth($green-dark, 1);
     }
   }
   &:checked{
     + .tgl-btn{
-      border: 4px solid #1abc9c;
+      border: $switch-border solid nth($red, 1);
       &:after{
         left: 50%;
-        background: #1abc9c;
+        background: nth($red, 1);
       }
     }
   }
