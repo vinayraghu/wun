@@ -14,3 +14,12 @@
 @mixin paint($prop, $color) {
   #{$prop}: $color;
 }
+
+// Remove underline on links
+
+@mixin no-dec () {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}

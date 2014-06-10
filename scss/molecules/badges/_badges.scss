@@ -1,1 +1,63 @@
 @import "extends";
+
+/*doc
+#Badges
+----------------
+
+We have 5 variations of badges
+Add .badge-rounded to achieve a border radius
+
+```
+  <span class="badge badge-primary">10</span>
+  <span class="badge badge-secondary">New</span>
+  <span class="badge badge-alert">Pending approval</span>
+  <span class="badge badge-info">Info</span>
+  <span class="badge badge-success">Approved</span>
+  <span class="badge badge-warning">Warning</span>
+  <span class="badge badge-rounded badge-warning">18</span>
+  <span class="badge badge-radius badge-success"><a href="#">With link</a></span>
+````
+
+*/
+
+@mixin badge() {
+  font-size: .9em;
+  padding: .3em .5em;
+  a {
+    @include no-dec();
+    color: currentColor;
+  }
+  color: $white;
+  font-weight: bold;
+}
+
+.badge {
+  @include badge();
+}
+
+.badge-primary {
+  @include paint(background, lighten($brand-primary, 5%));
+}
+.badge-secondary {
+  @include paint(background, lighten($brand-secondary, 5%));
+}
+.badge-alert {
+  @include paint(background, lighten($brand-alert, 5%));
+}
+.badge-success {
+  @include paint(background, lighten($brand-success, 5%));
+}
+.badge-info {
+  @include paint(background, lighten($brand-info, 5%));
+}
+.badge-warning {
+  @include paint(background, lighten($brand-warning, 5%));
+}
+
+.badge-rounded {
+  border-radius: 50%;
+}
+
+.badge-radius {
+  border-radius: $global-radius;
+}
