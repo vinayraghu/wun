@@ -1,1 +1,68 @@
 @import "extends";
+
+/*doc
+#Progress
+---------------
+```
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-info" style="width: 40%"></div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-alert" style="width: 40%"></div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+  <div class="progress-bar progress-bar-alert" style="width: 20%"></div>
+  <div class="progress-bar progress-bar-warning" style="width: 15%"></div>
+</div>
+
+
+```
+*/
+
+.progress {
+  width: 100%;
+  height: $progress-height;
+  background: $progress-bg;
+  border-radius: $global-radius-2x;
+  margin-bottom: 1em;
+}
+
+.progress-bar {
+  float: left;
+  height: 100%;
+  line-height: $progress-height;
+  &:first-child {
+    border-bottom-left-radius: $global-radius-2x;
+    border-top-left-radius: $global-radius-2x;
+  }
+  &:last-child {
+    border-bottom-right-radius: $global-radius-2x;
+    border-top-right-radius: $global-radius-2x;
+  }
+}
+
+.progress-bar-primary {
+  @include paint(background, $brand-primary);
+}
+.progress-bar-secondary {
+  @include paint(background, $brand-secondary);
+}
+.progress-bar-success {
+  @include paint(background, $brand-success);
+}
+.progress-bar-info {
+  @include paint(background, $brand-info);
+}
+.progress-bar-warning {
+  @include paint(background, $brand-warning);
+}
+.progress-bar-alert {
+  @include paint(background, $brand-alert);
+}
