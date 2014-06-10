@@ -4,7 +4,7 @@
 ---------------
 
  - This is the primary side navigation we use on the website for majority of the admin UI actions.
- - Any major category with three or more screens can be abstracted into a primary nav item. Each item will contain an Font awesome icon and a corresponding title.
+ - Any major category with three or more screens can be abstracted into a primary nav item. Each item will contain a Font awesome icon and a corresponding title.
  - We have the option to collapse this nav
  - Nav will auto-collapse on smaller screens
 
@@ -14,6 +14,7 @@
     <li><i class="fa fa-pencil-square-o"></i>Message Editor</li>
     <li><i class="fa fa-thumbs-o-up"></i>Marketing View</li>
     <li><i class="fa fa-users"></i>Affiliates</li>
+    <li><i class="fa fa-power-off"></i>Sign out</li>
   </ul>
 ```
 
