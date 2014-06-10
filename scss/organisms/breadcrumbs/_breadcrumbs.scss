@@ -1,1 +1,52 @@
+/*doc
+#Breadcrumbs
+---------------
 
+```
+<ul class="breadcrumbs">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Designers</a></li>
+  <li class="disabled"><a href="#">Anne Sylvain</a></li>
+  <li class="active"><a href="#">Collections</a></li>
+</ul>
+```
+*/
+.breadcrumbs {
+  display: block;
+  border-radius: $global-radius;
+  padding: 1em;
+  list-style: none;
+  background: nth($grey-dark, 1);
+  > li {
+    display: inline-block;
+    font-size: 1.2em;
+    color: $white;
+    > a {
+      color: $white;
+    }
+    &:after {
+      content: "\f105";
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: 1em;
+      margin: 0 1em;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    &.disabled {
+      color: nth($grey-light, 1);
+      cursor: not-allowed;
+      > a {
+        color: nth($grey-light, 1);
+        cursor: not-allowed;
+      }
+    }
+    &.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+}
