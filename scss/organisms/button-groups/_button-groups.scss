@@ -1,1 +1,197 @@
+/*doc
+#Button Groups
+------------------
+
+##Checkbox button group
+
+```
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary">
+    <input type="checkbox"> Option 1
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox"> Option 2
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox"> Option 3
+  </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-secondary">
+    <input type="checkbox"> Option 1
+  </label>
+  <label class="btn btn-secondary">
+    <input type="checkbox"> Option 2
+  </label>
+  <label class="btn btn-secondary">
+    <input type="checkbox"> Option 3
+  </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-alert">
+    <input type="checkbox"> Option 1
+  </label>
+  <label class="btn btn-alert">
+    <input type="checkbox"> Option 2
+  </label>
+  <label class="btn btn-alert">
+    <input type="checkbox"> Option 3
+  </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-info">
+    <input type="checkbox"> Option 1
+  </label>
+  <label class="btn btn-info">
+    <input type="checkbox"> Option 2
+  </label>
+  <label class="btn btn-info">
+    <input type="checkbox"> Option 3
+  </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-success">
+    <input type="checkbox"> Option 1
+  </label>
+  <label class="btn btn-success">
+    <input type="checkbox"> Option 2
+  </label>
+  <label class="btn btn-success">
+    <input type="checkbox"> Option 3
+  </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-warning">
+    <input type="checkbox"> Option 1
+  </label>
+  <label class="btn btn-warning">
+    <input type="checkbox"> Option 2
+  </label>
+  <label class="btn btn-warning">
+    <input type="checkbox"> Option 3
+  </label>
+</div>
+
+```
+*/
+
+/*doc
+
+##Radio button group
+```
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-success active">
+    <input type="radio" name="options" id="option1"> Option 1
+  </label>
+  <label class="btn btn-success">
+    <input type="radio" name="options" id="option2"> Option 2
+  </label>
+  <label class="btn btn-success">
+    <input type="radio" name="options" id="option3"> Option 3
+  </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary active">
+    <input type="radio" name="options" id="option1"> Option 1
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option2"> Option 2
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option3"> Option 3
+  </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-alert active">
+    <input type="radio" name="options" id="option1"> Option 1
+  </label>
+  <label class="btn btn-alert">
+    <input type="radio" name="options" id="option2"> Option 2
+  </label>
+  <label class="btn btn-alert">
+    <input type="radio" name="options" id="option3"> Option 3
+  </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-info active">
+    <input type="radio" name="options" id="option1"> Option 1
+  </label>
+  <label class="btn btn-info">
+    <input type="radio" name="options" id="option2"> Option 2
+  </label>
+  <label class="btn btn-info">
+    <input type="radio" name="options" id="option3"> Option 3
+  </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-warning active">
+    <input type="radio" name="options" id="option1"> Option 1
+  </label>
+  <label class="btn btn-warning">
+    <input type="radio" name="options" id="option2"> Option 2
+  </label>
+  <label class="btn btn-warning">
+    <input type="radio" name="options" id="option3"> Option 3
+  </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1"> Option 1
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2"> Option 2
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3"> Option 3
+  </label>
+</div>
+```
+*/
+
+.btn-group {
+  list-style: none;
+  margin-bottom: 1em;
+  > .btn {
+    @include transition-effect($timing: 0.1s);
+
+    display: inline-block;
+    border: 1px solid;
+    margin: -0.4em; //Make them line up nicely
+
+    // Make sure double clicking doesn't add issues
+    &::selection {
+      background: transparent;
+    }
+
+    // Hide checkboxes and radio buttons
+    input[type="checkbox"], input[type="radio"] {
+      display: none;
+    }
+
+    //Add border radius to edge elements
+    &:first-child {
+      border-top-left-radius: $global-radius-2x;
+      border-bottom-left-radius: $global-radius-2x;
+    }
+    &:last-child {
+      border-top-right-radius: $global-radius-2x;
+      border-bottom-right-radius: $global-radius-2x;
+    }
+
+    //Active indicators
+    &.btn-primary.active {
+      box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+    }
+    &.active {
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3) inset;
+    }
+  }
+  //disbale button hover effects for clarity
+  .btn-primary {&:hover {background: $brand-primary}}
+  .btn-secondary {&:hover {background: $brand-secondary}}
+  .btn-alert {&:hover {background: $brand-alert}}
+  .btn-success {&:hover {background: $brand-success}}
+  .btn-warning {&:hover {background: $brand-warning}}
+  .btn-info {&:hover {background: $brand-info}}
+}
 
