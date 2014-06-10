@@ -19,8 +19,8 @@ For on off states
   + .tgl-btn{
     outline: 0;
     display: block;
-    width: 4em;
-    height: 2em;
+    width: $switch-width;
+    height: $switch-width / 2;
     position: relative;
     cursor: pointer;
     &:after, &:before{
