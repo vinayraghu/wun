@@ -1,1 +1,16 @@
 @import "variables";
+
+@mixin form-elements() {
+    @include transition-effect();
+
+    width: 100%;
+    padding: $global-padding/2 $global-padding/2;
+
+    border: $form-border;
+    outline: none;
+    background: $form-background;
+
+    &:focus {
+      border: $form-border-focus;
+    }
+}

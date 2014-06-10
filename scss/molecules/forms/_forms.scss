@@ -1,1 +1,89 @@
 @import "extends";
+
+/*doc
+
+#Forms
+------------------
+
+```
+    <div class="form-group">
+        <label for="text1">Text input</label>
+        <input type="text" id="text1">
+        <p class="help-text">A block of help text that breaks onto a new line and may extend beyond one line. A block of help text that breaks onto a new line and may extend beyond one line. A block of help text that breaks onto a new line and may extend beyond one line.</p>
+    </div>
+
+    <div class="form-group has-feedback has-error">
+        <label for="text2">Text input</label>
+        <input type="text" id="text2">
+        <p class="help-text">A block of help text that breaks onto a new line and may extend beyond one line. </p>
+    </div>
+
+    <div class="form-group has-feedback has-success">
+        <label for="text3">Text input</label>
+        <input type="text" id="text3">
+        <div class="glyphicon form-control-feedback"><i class="fa fa-check"></i></div>
+        <p class="help-text">A block of help text that breaks onto a new line and may extend beyond one line. </p>
+    </div>
+```
+*/
+
+input:not([type]), input[type="color"], input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+   @include form-elements();
+}
+
+html input[disabled], textarea[disabled] { //override normalize default
+  background: nth($grey-light, 2);
+  cursor: not-allowed;
+  color: nth($grey-dark, 2);
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: $global-margin;
+  position: relative;
+}
+
+.has-error {
+  color: $brand-alert;
+  input:not([type]), input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+    border-color: $brand-alert;
+  }
+}
+
+.has-success {
+  color: $brand-success;
+  input:not([type]), input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+    border-color: $brand-success;
+  }
+}
+
+.has-info {
+  color: $brand-info;
+  input:not([type]), input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+    border-color: $brand-info;
+  }
+}
+
+.has-warning {
+  color: $brand-warning;
+  input:not([type]), input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+    border-color: $brand-warning;
+  }
+}
+
+.form-control-feedback {
+  display: none;
+}
+
+.help-text {
+  display: none;
+  margin-top: 0;
+  .has-feedback & {
+    display: block;
+  }
+}
+
