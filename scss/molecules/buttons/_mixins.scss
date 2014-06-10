@@ -1,1 +1,32 @@
 @import "variables";
+
+@mixin btn() {
+  @include no-dec;
+  @include transition-effect();
+
+  display: inline-block;
+  border: none;
+
+  padding: 1em 1.5em;
+
+  vertical-align: top;
+
+  cursor: pointer;
+
+  font-size: 0.9em;
+  line-height: 16px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: white;
+}
+
+@mixin btn-sizes($button-size-variations, $size) {
+  $map: map-get($button-size-variations, $size);
+  .btn-#{$size} {
+      @each $property, $value in $map {
+        #{$property}: $value;
+      }
+    }
+  }

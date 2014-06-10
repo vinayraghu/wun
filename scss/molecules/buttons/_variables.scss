@@ -1,3 +1,22 @@
 @import "../../atoms/globals.scss";
 
 // Widget specific settings
+//////////////////
+//Button Size variations
+//////////////////
+
+$button-size-variations: (
+  "small": (
+          font-size: 0.8em,
+          line-height: 5px
+            ),
+  "medium": (
+          font-size: 1em,
+            ),
+  "large": (
+          font-size: 1.2em,
+            ),
+  "expand": (
+          width: 100%,
+            )
+)

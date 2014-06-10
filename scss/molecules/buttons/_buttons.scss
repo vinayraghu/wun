@@ -1,1 +1,8 @@
 @import "extends";
+
+.inline-buttons {
+  > .btn {
+    margin: 1em 1em 1em 0;
+    float: left;
+  }
+}

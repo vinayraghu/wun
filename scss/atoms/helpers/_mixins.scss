@@ -23,3 +23,13 @@
     text-decoration: none;
   }
 }
+
+// Standard animations for all components
+
+$animation-properties: all;
+$animation-timing: 0.3s;
+$animation-easing: ease-in-out;
+
+@mixin transition-effect($property: $animation-properties, $timing: $animation-timing, $easing: $animation-easing) {
+  transition: $property $timing $easing;
+}
