@@ -51,6 +51,10 @@ h1, h2, h3, h4 {
   @include no-margin(top);
 }
 
+.no-bottom {
+  @include no-margin(bottom);
+}
+
 h1, .h1 {
   margin-top: 0;
   font-size: nth($heading-sizes, 1);
