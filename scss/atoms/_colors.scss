@@ -8,6 +8,8 @@ $black-2: #2A2D34;
 // Green dark
 $turquoise: #1abc9c;
 $emerald: #2ecc71;
+$algae-green: #84E6AE;
+
 
 //Green light
 $green-sea: #16a085;
@@ -16,6 +18,7 @@ $nephritis: #27ae60;
 //Blue
 $peter-river: #3498db;
 $belize-hole: #2980b9;
+$viking: #7EB7DC;
 
 //Purple
 $amethyst: #2980b9;
@@ -28,6 +31,7 @@ $midnight-blue: #2c3e50;
 //Yellow
 $sun-flower: #f1c40f;
 $orange: #f39c12;
+$rajah: #F9C87A;
 
 //Orange
 $carrot: #e67e22;
@@ -36,6 +40,8 @@ $pumpkin: #d35400;
 //Red
 $alizarin: #e74c3c;
 $pomogranate: #c0392b;
+$burning-sand: #E08980;
+
 
 // Silver
 $clouds: #ecf0f1;
@@ -44,17 +50,18 @@ $silverine: #bdc3c7;
 // Light grey
 $concrete: #95a5a6;
 $asbestos: #7f8c8d;
+$submarine: #BBC5C6;
 
 // Color variables
-$green-dark: $turquoise, $emerald;
+$green-dark: $turquoise, $emerald, $algae-green;
 $green-light: $green-sea, $nephritis;
-$blue: $peter-river, $belize-hole;
+$blue: $peter-river, $belize-hole, $viking;
 $purple: $amethyst, $wisteria;
 $grey-dark: $wet-asphalt, $midnight-blue;
-$grey-light: $concrete, $asbestos;
-$yellow: $sun-flower, $orange;
+$grey-light: $concrete, $asbestos, $submarine;
+$yellow: $sun-flower, $orange, $rajah;
 $orange: $carrot, $pumpkin;
-$red: $alizarin, $pomogranate;
+$red: $alizarin, $pomogranate, $burning-sand;
 $silver: $clouds, $silverine;
 
 // Brand colors
