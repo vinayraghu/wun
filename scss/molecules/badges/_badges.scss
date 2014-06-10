@@ -20,19 +20,15 @@ Add .badge-rounded to achieve a border radius
 
 */
 
-@mixin badge() {
-  font-size: .9em;
+.badge {
   padding: .3em .5em;
   a {
     @include no-dec();
     color: currentColor;
   }
   color: $white;
+  font-size: .9em;
   font-weight: bold;
-}
-
-.badge {
-  @include badge();
 }
 
 .badge-primary {
