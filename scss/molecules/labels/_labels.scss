@@ -1,1 +1,75 @@
 @import "extends";
+
+/*doc
+#Labels
+------------------
+Labels are the same component as badges, except they have a close button to the right and are dismissable
+
+```
+<div class="label label-primary label-dismissable">
+  <span>Designers</span>
+  <span class="close">&times;</span>
+</div>
+<div class="label label-secondary">
+  <span>Collections</span>
+</div>
+<div class="label label-info label-dismissable">
+  <span>Messages</span>
+  <span class="close">&times;</span>
+</div>
+<div class="label label-alert label-dismissable">
+  <span>Alerts</span>
+  <span class="close">&times;</span>
+</div>
+<div class="label label-success label-dismissable">
+  <span>Approved</span>
+  <span class="close">&times;</span>
+</div>
+<div class="label label-warning">
+  <span>Pending authorization</span>
+</div>
+
+
+*/
+
+.label {
+  padding: .3em .5em;
+  a {
+    @include no-dec();
+    color: $white;
+  }
+  color: $white;
+  font-size: .9em;
+  font-weight: bold;
+
+  position: relative;
+  display: inline-block;
+  .close {
+    padding-left: 5px;
+    padding-right: 5px;
+    top: 2px;
+  }
+}
+
+.label-dismissable {
+  padding-right: 20px;
+}
+
+.label-primary {
+  @include paint(background, lighten($brand-primary, 5%));
+}
+.label-secondary {
+  @include paint(background, lighten($brand-secondary, 5%));
+}
+.label-info {
+  @include paint(background, lighten($brand-info, 5%));
+}
+.label-alert {
+  @include paint(background, lighten($brand-alert, 5%));
+}
+.label-warning {
+  @include paint(background, lighten($brand-warning, 5%));
+}
+.label-success {
+  @include paint(background, lighten($brand-success, 5%));
+}
