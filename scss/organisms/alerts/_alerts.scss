@@ -6,39 +6,39 @@
 Alert can be used to display information. It may or may not be dismissable.
 
 ```
-<div class="alert alert-primary">
-  <p class="no-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, similique.</p>
-  <div class="close large">&times;</div>
+<div class="alert alert-primary alert-dismissable">
+  <p class="no-top">Lorem ipsum dolor sit amet, a<a href="#">consectetur adipisicing elit</a>. Cumque, similique.</p>
+  <button class="close large" data-dismiss="alert">&times;</button>
 </div>
 
-<div class="alert alert-secondary">
+<div class="alert alert-secondary alert-dismissable">
   <h4 class="no-top"><i class="fa fa-exclamation-triangle"></i> I don't think it means what you think it means</h4>
   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, molestiae. </p>
-  <div class="close large">&times;</div>
+  <button class="close large" data-dismiss="alert">&times;</button>
 </div>
 
-<div class="alert alert-warning">
+<div class="alert alert-warning alert-dismissable">
   <h4 class="no-top"><i class="fa fa-exclamation-triangle"></i> I don't think it means what you think it means</h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, dolore.</p>
-  <div class="close large">&times;</div>
+  <button class="close large" data-dismiss="alert">&times;</button>
 </div>
 
-<div class="alert alert-success">
+<div class="alert alert-success alert-dismissable">
   <h4 class="no-top"><i class="fa fa-exclamation-triangle"></i> I don't think it means what you think it means</h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, dolore.</p>
-  <div class="close large">&times;</div>
+  <button class="close large" data-dismiss="alert">&times;</button>
 </div>
 
-<div class="alert alert-alert">
+<div class="alert alert-alert alert-dismissable">
   <h4 class="no-top"><i class="fa fa-exclamation-triangle"></i> I don't think it means what you think it means</h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, dolore.</p>
-  <div class="close large">&times;</div>
+  <button class="close large" data-dismiss="alert">&times;</button>
 </div>
 
-<div class="alert alert-info">
+<div class="alert alert-info alert-dismissable">
   <h4 class="no-top"><i class="fa fa-exclamation-triangle"></i> I don't think it means what you think it means</h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, dolore.</p>
-  <div class="close large">&times;</div>
+  <button class="close large" data-dismiss="alert">&times;</button>
 </div>
 ```
 
@@ -53,6 +53,9 @@ Alert can be used to display information. It may or may not be dismissable.
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
+  background: transparent;
+  border: 0;
+
   &.large {
     font-size: 2em;
     font-weight: bold;
@@ -67,6 +70,11 @@ Alert can be used to display information. It may or may not be dismissable.
   padding: 1em;
   border-radius: $global-radius;
   margin-bottom: 1em;
+  a {
+    font-weight: bold;
+    color: currentColor;
+    text-decoration: underline;
+  }
 }
 
 .alert-primary {
