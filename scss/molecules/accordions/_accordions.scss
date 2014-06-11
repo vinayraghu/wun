@@ -162,7 +162,42 @@ For auto heights, append the class auto. This will not be animated
     </div>
   </div>
 </section>
+```
+*/
 
+/*doc
+###Using it as a radio button
+```
+<section class="accordions">
+  <div class="accordion">
+    <input type="radio" id="accordion-1020" name="tada" />
+    <label class="accordion-warning" for="accordion-1020">Small height</label>
+    <div class="accordion-content small">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+  <div class="accordion">
+    <input type="radio" id="accordion-1030" name="tada" />
+    <label class="accordion-warning" for="accordion-1030">Medium height </label>
+    <div class="accordion-content medium">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+  <div class="accordion">
+    <input type="radio" id="accordion-1040" name="tada" />
+    <label class="accordion-warning" for="accordion-1040">Large height</label>
+    <div class="accordion-content large">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+  <div class="accordion">
+    <input type="radio" id="accordion-1050" name="tada" />
+    <label class="accordion-warning" for="accordion-1050">Auto height, no animation</label>
+    <div class="accordion-content auto">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+</section>
 ```
 */
 
@@ -178,22 +213,27 @@ For auto heights, append the class auto. This will not be animated
     background: none;
   }
   input {
-    &[type="checkbox"] {
+    &[type="checkbox"], &[type="radio"] {
       display: none;
     }
-    &[type="checkbox"]:checked ~ .accordion-content {
+    &[type="checkbox"]:checked ~ .accordion-content,
+    &[type="radio"]:checked ~ .accordion-content {
       height: auto;
     }
-    &[type="checkbox"]:checked ~ .accordion-content.small {
+    &[type="checkbox"]:checked ~ .accordion-content.small,
+    &[type="radio"]:checked ~ .accordion-content.small {
       height: 100px;
     }
-    &[type="checkbox"]:checked ~ .accordion-content.medium {
+    &[type="checkbox"]:checked ~ .accordion-content.medium,
+    &[type="radio"]:checked ~ .accordion-content.medium {
       height: 200px;
     }
-    &[type="checkbox"]:checked ~ .accordion-content.large {
+    &[type="checkbox"]:checked ~ .accordion-content.large,
+    &[type="radio"]:checked ~ .accordion-content.large {
       height: 350px;
     }
-    &[type="checkbox"]:checked ~ .accordion-content.auto {
+    &[type="checkbox"]:checked ~ .accordion-content.auto,
+    &[type="radio"]:checked ~ .accordion-content.auto {
       height: auto;
     }
 
@@ -232,7 +272,8 @@ For auto heights, append the class auto. This will not be animated
     color: $white;
   }
   input {
-    &[type="checkbox"]:not(:checked) ~ label {
+    &[type="checkbox"]:not(:checked) ~ label,
+    &[type="radio"]:not(:checked) ~ label {
       &:after {
         transform: rotate(0deg);
         @include transition-effect;
@@ -243,7 +284,8 @@ For auto heights, append the class auto. This will not be animated
         font-weight: bold;
       }
     }
-    &[type="checkbox"]:checked ~ label {
+    &[type="checkbox"]:checked ~ label,
+    &[type="radio"]:checked ~ label {
       &:after{
         transform: rotate(90deg);
         @include transition-effect;
