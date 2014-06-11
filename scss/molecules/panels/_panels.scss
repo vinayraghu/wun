@@ -134,7 +134,7 @@ Add themes according to requirement
 }
 
 
-.panel-heading {
+.panel-heading, .panel-heading a {
   margin: 0;
   padding: $global-padding / 2;
   color: $white;
