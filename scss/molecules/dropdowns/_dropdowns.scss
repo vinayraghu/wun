@@ -59,7 +59,34 @@ Add a dropdown to any element
 ## Align Right
 ```
 <div class="row">
-  <div class="dropdown float-right">
+  <div class="dropdown pull-right">
+    <a data-toggle="dropdown" href="#" class="btn btn-primary">More <b class="caret"></b></a>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li>
+        <a href="#"><i class="fa fa-tachometer"></i> Dashboard</a>
+      </li>
+      <li>
+            <a href="#"><i class="fa fa-cog"></i> Settings</a>
+      </li>
+      <li>
+            <a href="#">Link one</a>
+      </li>
+      <li class="divider"></li>
+      <li>
+            <a href="#">Link one</a>
+      </li>
+    </ul>
+  </div>
+</div>
+```
+
+*/
+
+/*doc
+## Button
+```
+<div class="row">
+  <div class="dropdown">
     <a data-toggle="dropdown" href="#" class="btn btn-primary">More <b class="caret"></b></a>
     <ul class="dropdown-menu dropdown-menu-right">
       <li>
