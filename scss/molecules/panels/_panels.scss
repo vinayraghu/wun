@@ -1,1 +1,149 @@
 @import "extends";
+
+/*doc
+#Panels
+------------------
+
+```
+<div class="panel panel-primary">
+  <div class="panel-header">
+    <h3 class="panel-heading">Sales Charts</h3>
+  </div>
+  <div class="panel-body">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
+  </div>
+  <div class="panel-footer">
+  </div>
+</div>
+```
+*/
+
+/*doc
+
+Add themes according to requirement
+
+```
+<div class="panel panel-secondary">
+  <div class="panel-header">
+    <h3 class="panel-heading">Sales Charts</h3>
+  </div>
+  <div class="panel-body">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
+  </div>
+  <div class="panel-footer">
+  </div>
+</div>
+
+
+<div class="panel panel-alert">
+  <div class="panel-header">
+    <h3 class="panel-heading">Sales Charts</h3>
+  </div>
+  <div class="panel-body">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
+  </div>
+  <div class="panel-footer">
+  </div>
+</div>
+
+
+<div class="panel panel-warning">
+  <div class="panel-header">
+    <h3 class="panel-heading">Sales Charts</h3>
+  </div>
+  <div class="panel-body">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
+  </div>
+  <div class="panel-footer">
+  </div>
+</div>
+
+
+<div class="panel panel-success">
+  <div class="panel-header">
+    <h3 class="panel-heading">Sales Charts</h3>
+  </div>
+  <div class="panel-body">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
+  </div>
+  <div class="panel-footer">
+  </div>
+</div>
+
+
+<div class="panel panel-info">
+  <div class="panel-header">
+    <h3 class="panel-heading">Sales Charts</h3>
+  </div>
+  <div class="panel-body">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
+  </div>
+  <div class="panel-footer">
+  </div>
+</div>
+
+```
+
+*/
+
+.panel {
+  border: 1px solid;
+  margin-bottom: 1em;
+  position: relative;
+  border-radius: $global-radius;
+}
+
+.panel-primary {
+  @include paint(border-color, $brand-primary);
+  .panel-header {
+    @include paint(background, $brand-primary);
+  }
+}
+.panel-secondary {
+  @include paint(border-color, $brand-secondary);
+  .panel-header {
+    @include paint(background, $brand-secondary);
+  }
+}
+.panel-info {
+  @include paint(border-color, $brand-info);
+  .panel-header {
+    @include paint(background, $brand-info);
+  }
+}
+.panel-warning {
+  @include paint(border-color, $brand-warning);
+  .panel-header {
+    @include paint(background, $brand-warning);
+  }
+}
+.panel-success {
+  @include paint(border-color, $brand-success);
+  .panel-header {
+    @include paint(background, $brand-success);
+  }
+}
+.panel-alert {
+  @include paint(border-color, $brand-alert);
+  .panel-header {
+    @include paint(background, $brand-alert);
+  }
+}
+
+
+.panel-heading {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  padding: $global-padding / 2;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.panel-body {
+  padding: $global-padding;
+}
+
+.panel-footer {
+  padding: $global-padding / 2;
+}
