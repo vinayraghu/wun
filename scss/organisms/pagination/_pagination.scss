@@ -1,7 +1,7 @@
 /*doc
 
-Pagination
-====
+#Pagination
+---------------------
 
 ```
   <ul class="pagination">
@@ -23,6 +23,10 @@ Pagination
   }
   > li {
     display: inline;
+    &.active > a {
+      background: nth($grey-dark, 1);
+      color: $white;
+    }
     &.disabled > a {
       cursor: not-allowed;
     }
@@ -38,8 +42,8 @@ Pagination
       line-height: 1.42857143;
       text-decoration: none;
       &:hover {
-        background: nth($blue, 2);
-        color: white;
+        background: nth($grey-dark, 2);
+        color: $white;
       }
     }
   }
