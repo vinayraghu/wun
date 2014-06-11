@@ -33,3 +33,14 @@ $animation-easing: ease-in-out;
 @mixin transition-effect($property: $animation-properties, $timing: $animation-timing, $easing: $animation-easing) {
   transition: $property $timing $easing;
 }
+
+
+@mixin clearfix {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
