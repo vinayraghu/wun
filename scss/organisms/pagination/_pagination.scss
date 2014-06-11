@@ -1,1 +1,51 @@
+/*doc
+
+Pagination
+====
+
+```
+  <ul class="pagination">
+    <li class="disabled"><a href="#">«</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">»</a></li>
+  </ul>
+```
+
+*/
+
+.pagination {
+  ul {
+    list-style: none;
+  }
+  > li {
+    display: inline;
+    &.disabled > a {
+      cursor: not-allowed;
+    }
+    > a {
+      position: relative;
+      float: left;
+      margin-right: .5em;
+      border: 1px solid #e4e4e4;
+      border-radius: 2px;
+      background-color: transparent;
+      color: #7b7b7b;
+      padding: .6em .9em;
+      line-height: 1.42857143;
+      text-decoration: none;
+      &:hover {
+        background: nth($blue, 2);
+        color: white;
+      }
+    }
+  }
+}
+
+.disabled {
+
+}
 
