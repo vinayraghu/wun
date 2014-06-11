@@ -1,1 +1,258 @@
 @import "extends";
+
+/*doc
+
+#Accordion or collapse
+---------------
+We use a CSS3 checkbox hack to achieve accordions.
+
+IDs for accordions must always be unique
+
+```
+<section class="accordions">
+  <div class="accordion">
+    <input type="checkbox" id="accordion-4" />
+    <label class="accordion-primary" for="accordion-4">Inceptos</label>
+    <div class="accordion-content small">
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Maecenas sed diam.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion-5" />
+    <label class="accordion-primary" for="accordion-5">Magna</label>
+    <div class="accordion-content small">
+      <p>Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion-7" />
+    <label class="accordion-primary" for="accordion-7">Dicta</label>
+    <div class="accordion-content small">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion-8" />
+    <label class="accordion-primary" for="accordion-8">Dicta</label>
+    <div class="accordion-content small">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion-9" />
+    <label class="accordion-primary" for="accordion-9">Dicta</label>
+    <div class="accordion-content small">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion-10" />
+    <label class="accordion-primary" for="accordion-10">Dicta</label>
+    <div class="accordion-content small">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+</section>
+```
+
+*/
+
+/*doc
+###State variations
+Add state classes to achieve different states
+```
+<section class="accordions">
+  <div class="accordion">
+    <input type="checkbox" id="accordion-14" />
+    <label class="accordion-secondary" for="accordion-14">Inceptos</label>
+    <div class="accordion-content small">
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Maecenas sed diam.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion-15" />
+    <label class="accordion-primary" for="accordion-15">Magna</label>
+    <div class="accordion-content small">
+      <p>Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion-17" />
+    <label class="accordion-info" for="accordion-17">Dicta</label>
+    <div class="accordion-content small">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion-18" />
+    <label class="accordion-alert" for="accordion-18">Dicta</label>
+    <div class="accordion-content small">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion-19" />
+    <label class="accordion-warning" for="accordion-19">Dicta</label>
+    <div class="accordion-content small">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion-21" />
+    <label class="accordion-success" for="accordion-21">Dicta</label>
+    <div class="accordion-content small">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+</section>
+```
+*/
+
+/*doc
+
+###Height Variations
+
+
+In order to achieve animations, the height needs to be fixed, so we use `.small`, `.medium`, `.large` and `.auto` for adding heights.
+For auto heights, append the class auto. This will not be animated
+```
+<section class="accordions">
+  <div class="accordion">
+    <input type="checkbox" id="accordion-102" />
+    <label class="accordion-success" for="accordion-102">Small height</label>
+    <div class="accordion-content small">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+</section>
+<section class="accordions">
+  <div class="accordion">
+    <input type="checkbox" id="accordion-103" />
+    <label class="accordion-success" for="accordion-103">Medium height </label>
+    <div class="accordion-content medium">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+</section>
+<section class="accordions">
+  <div class="accordion">
+    <input type="checkbox" id="accordion-104" />
+    <label class="accordion-success" for="accordion-104">Large height</label>
+    <div class="accordion-content large">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+</section>
+<section class="accordions">
+  <div class="accordion">
+    <input type="checkbox" id="accordion-105" />
+    <label class="accordion-success" for="accordion-105">Auto height, no animation</label>
+    <div class="accordion-content auto">
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies.</p>
+    </div>
+  </div>
+</section>
+
+```
+*/
+
+.accordion-primary {@include paint(background, $brand-primary);}
+.accordion-secondary {@include paint(background, $brand-secondary);}
+.accordion-info {@include paint(background, $brand-info);}
+.accordion-warning {@include paint(background, $brand-warning);}
+.accordion-success {@include paint(background, $brand-success);}
+.accordion-alert {@include paint(background, $brand-alert);}
+
+.accordion {
+  &::selection {
+    background: none;
+  }
+  input {
+    &[type="checkbox"] {
+      display: none;
+    }
+    &[type="checkbox"]:checked ~ .accordion-content {
+      height: auto;
+    }
+    &[type="checkbox"]:checked ~ .accordion-content.small {
+      height: 100px;
+    }
+    &[type="checkbox"]:checked ~ .accordion-content.medium {
+      height: 200px;
+    }
+    &[type="checkbox"]:checked ~ .accordion-content.large {
+      height: 350px;
+    }
+    &[type="checkbox"]:checked ~ .accordion-content.auto {
+      height: auto;
+    }
+
+  }
+  label {
+    display: block;
+    &::selection {
+      background: none;
+    }
+  }
+  .accordion-content {
+    border: 1px solid #ddd;
+    height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    @include transition-effect();
+  }
+}
+
+
+.accordion {
+  label {
+    border-bottom: 1px solid #dddddd;
+
+    @include transition-effect;
+
+    margin-top: -1px;
+    margin-bottom: -1px;
+
+    padding-right: 1em;
+    padding-left: 1em;
+
+    line-height: 40px;
+    cursor: pointer;
+
+    color: $white;
+  }
+  input {
+    &[type="checkbox"]:not(:checked) ~ label {
+      &:after {
+        transform: rotate(0deg);
+        @include transition-effect;
+        font-family: "FontAwesome";
+        content: "\f105";
+        float: right;
+        font-size: 2em;
+        font-weight: bold;
+      }
+    }
+    &[type="checkbox"]:checked ~ label {
+      &:after{
+        transform: rotate(90deg);
+        @include transition-effect;
+        font-family: "FontAwesome";
+        content: "\f105";
+        float: right;
+        font-size: 2em;
+        font-weight: bold;
+      }
+    }
+  }
+}
