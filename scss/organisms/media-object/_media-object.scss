@@ -5,50 +5,60 @@
 Create notifications, comments and other elements
 
 ```
-<div class="media">
-  <a class="pull-left" href="#">
-    <img class="media-object img-circle" src="http://placehold.it/64x64" alt="...">
-  </a>
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
-    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</span>
-    <div class="media">
-      <a class="pull-left" href="#">
-        <img class="media-object img-circle" src="http://placehold.it/64x64" alt="...">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading">Media heading</h4>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</span>
-      </div>
-    </div>
-    <div class="media">
-      <a class="pull-left" href="#">
-        <img class="media-object img-circle" src="http://placehold.it/64x64" alt="...">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading">Media heading</h4>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="media">
+<div class="messages">
+  <div class="media">
     <a class="pull-left" href="#">
-      <img class="media-object img-circle" src="http://placehold.it/64x64" alt="...">
+      <img class="media-object img-circle" src="http://placehold.it/45x45" alt="...">
     </a>
     <div class="media-body">
       <h4 class="media-heading">Media heading</h4>
       <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</span>
+      <div class="media">
+        <a class="pull-left" href="#">
+          <img class="media-object img-circle" src="http://placehold.it/45x45" alt="...">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">Media heading</h4>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</span>
+        </div>
+      </div>
+      <div class="media">
+        <a class="pull-left" href="#">
+          <img class="media-object img-circle" src="http://placehold.it/45x45" alt="...">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">Media heading</h4>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</span>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<div class="media">
-    <a class="pull-left" href="#">
-      <img class="media-object img-circle" src="http://placehold.it/64x64" alt="...">
-    </a>
-    <div class="media-body">
-      <h4 class="media-heading">Media heading</h4>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</span>
+  <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object img-circle" src="http://placehold.it/45x45" alt="...">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</span>
+    </div>
+  </div>
+  <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object img-circle" src="http://placehold.it/45x45" alt="...">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</span>
+    </div>
   </div>
 </div>
 ```
 */
+
+.media-object {
+  margin-right: 1em;
+}
+
+.media-heading {
+  font-weight: 300;
+}
