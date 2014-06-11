@@ -1,1 +1,89 @@
+/*doc
 
+#List Groups
+
+###Default with plain text
+```
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+</ul>
+```
+
+*/
+
+/*doc
+###With links
+```
+<ul class="list-group list-group-info">
+  <a class="list-group-item" href="#">Lorem</a>
+  <a class="list-group-item list-group-item-info" href="#">Ipsum</a>
+  <a class="list-group-item" href="#">Dolor</a>
+  <a class="list-group-item" href="#">Sit</a>
+  <a class="list-group-item" href="#">Amet</a>
+</ul>
+```
+*/
+
+/*doc
+###With content
+```
+<ul class="list-group list-group-primary">
+  <a class="list-group-item" href="#">
+    <h4>Cras justo odio</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem </p>
+  </a>
+  <a class="list-group-item active" href="#">
+    <h4>Cras justo odio</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem </p>
+  </a>
+  <a class="list-group-item" href="#">
+    <h4>Cras justo odio</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem </p>
+  </a>
+  <a class="list-group-item" href="#">
+    <h4>Cras justo odio</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem </p>
+  </a>
+</ul>
+```
+*/
+
+
+
+$list-group-border: 1px solid $black;
+$list-hover-bg: nth($silver, 2);
+
+.list-group {
+  padding: 0;
+}
+
+.list-group-item {
+  @include no-dec();
+  display: block;
+  padding: $global-padding;
+
+  border: $list-group-border;
+  border-bottom: 0;
+  &:first-child {
+    border-top: $list-group-border;
+  }
+  &:last-child {
+    border-bottom: $list-group-border;
+  }
+}
+
+.list-group-primary {@include paint(background, $brand-primary);}
+.list-group-secondary {@include paint(background, $brand-secondary);}
+.list-group-alert {@include paint(background, $brand-alert);}
+.list-group-info {@include paint(background, $brand-info);}
+.list-group-success {@include paint(background, $brand-success);}
+.list-group-warning {@include paint(background, $brand-warning);}
+
+a.list-group-item {
+  color: $white; /* 7 */
+  > h4, > p {
+    margin: 0;
+  }
+}
