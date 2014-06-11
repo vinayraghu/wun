@@ -1,1 +1,130 @@
 @import "extends";
+
+/*doc
+
+#Media
+
+##Images and videos
+
+Images and videos are responsive by default
+Images can have three attributes `img-polaroid`, `img-radius`, `img-rounded`
+```
+<img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/csswizardry/128.jpg">
+
+```
+
+*/
+
+/*doc
+###Radius
+```
+<img class="img-responsive img-radius" src="https://s3.amazonaws.com/uifaces/faces/twitter/csswizardry/128.jpg">
+```
+*/
+
+/*doc
+### Thumbnail
+```
+<img class="img-responsive img-thumbnail" src="https://s3.amazonaws.com/uifaces/faces/twitter/csswizardry/128.jpg">
+```
+*/
+
+/*doc
+###Circle
+```
+<img class="img-responsive img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/csswizardry/128.jpg">
+```
+*/
+
+
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-responsive {
+  display: block;
+}
+
+.img-radius {
+  border-radius: $global-radius-2x;
+}
+.img-thumbnail {
+
+  @include transition-effect();
+
+  display: inline-block;
+  padding: 4px;
+  line-height: 1.42857143;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: $global-radius-2x;
+}
+.img-circle {
+  border-radius: 50%;
+}
+
+/*doc
+
+#Intrinsic Ratios
+
+### 16x9 Image
+```
+  <div class="intrinsic">
+      <div class="intrinsic-wrapper ratio-16x9">
+          <div class="intrinsic-wrapper-element">
+            <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/heroImages/a3_1328x556_1.jpg">
+          </div>
+      </div>
+  </div>
+```
+*/
+
+/*doc
+
+#Intrinsic Ratios
+
+###4x3 Image
+
+```
+<div class="intrinsic">
+    <div class="intrinsic-wrapper ratio-4x3">
+        <div class="intrinsic-wrapper-element">
+          <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/designer/54/32/products/497/109/Tokyo_Front_320x480_1.jpg">
+        </div>
+    </div>
+</div>
+```
+*/
+
+
+.intrinsic {
+  display: block;
+}
+
+.intrinsic-wrapper {
+  height: 0;
+  position: relative;
+}
+
+.intrinsic-wrapper-element {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@mixin generateRatios($width, $height, $prefix: "ratio-") {
+
+  $class-name: $prefix + $width + "x" + $height;
+
+  .#{$class-name} {
+    padding-bottom: percentage( $height / $width);
+  }
+}
+
+@include generateRatios(16,9);
+@include generateRatios(4,3);
