@@ -1,3 +1,13 @@
 @import "../../atoms/globals.scss";
 
 // Widget specific settings
+
+$table-padding: 0.7em;
+$table-border: nth($silver, 1);
+
+$table-hover-color: nth($silver, 2);
+
+$table-striped-color: #f5f5f5;
+
+$table-border-color: nth($silver, 1);
+$table-padding: 0.5em;

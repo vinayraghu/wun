@@ -1,1 +1,188 @@
 @import "extends";
+
+/*doc
+
+Tables
+======
+
+We have four variations of tables `table`, `table-bordered`, `table-striped` and `table-hover`
+
+###Default table
+```
+<table class="table">
+  <caption>Table Caption</caption>
+  <thead>
+    <tr>
+      <th>thead th</th>
+      <th>thead th</th>
+      <th>thead th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>tfoot th</th>
+      <th>tfoot th</th>
+      <th>tfoot th</th>
+    </tr>
+  </tfoot>
+</table>
+```
+*/
+
+/*doc
+
+###Bordered Table
+```
+<table class="table table-bordered">
+  <caption>Table Caption</caption>
+  <thead>
+    <tr>
+      <th>thead th</th>
+      <th>thead th</th>
+      <th>thead th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>tfoot th</th>
+      <th>tfoot th</th>
+      <th>tfoot th</th>
+    </tr>
+  </tfoot>
+</table>
+```
+*/
+
+/*doc
+
+###Striped
+```
+<table class="table table-striped">
+  <caption>Table Caption</caption>
+  <thead>
+    <tr>
+      <th>thead th</th>
+      <th>thead th</th>
+      <th>thead th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>tfoot th</th>
+      <th>tfoot th</th>
+      <th>tfoot th</th>
+    </tr>
+  </tfoot>
+</table>
+```
+*/
+
+/*doc
+
+###Hover
+```
+<table class="table table-hover">
+  <caption>Table Caption</caption>
+  <thead>
+    <tr>
+      <th>thead th</th>
+      <th>thead th</th>
+      <th>thead th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>tfoot th</th>
+      <th>tfoot th</th>
+      <th>tfoot th</th>
+    </tr>
+  </tfoot>
+</table>
+```
+
+*/
+
+
+.table {
+  @include table($feature: "default");
+}
+
+.table-bordered {
+  @include table($feature: "bordered");
+}
+
+.table-striped {
+  @include table($feature: "striped");
+}
+
+.table-hover {
+  @include table($feature: "hover");
+}

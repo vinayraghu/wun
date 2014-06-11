@@ -1,1 +1,77 @@
 @import "variables";
+@mixin table ($hover: false, $feature: false) {
+  width: 100%;
+  margin-bottom: 1em;
+
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  @if($feature == "bordered") {
+    border: 1px solid $table-border;
+  }
+  background: transparent;
+
+  thead {
+    border-bottom: 2px solid $table-border;
+    @if ($feature != "bordered") {
+      border-width: 0 0 2px 0;
+    }
+  }
+
+  @if($feature == "striped") {
+    tbody tr {
+      &:nth-child(odd) {
+        background: $table-striped-color;
+      }
+    }
+  }
+
+  @if($feature == "hover") {
+    tbody tr {
+      &:hover {
+        background: $table-hover-color;
+      }
+    }
+  }
+
+  th {
+    padding: $table-padding;
+
+    @if ($feature != "bordered") {
+      border-width: 0 0 2px 0;
+    }
+    @else {
+      border: 1px solid $table-border;
+    }
+
+    font-weight: bold;
+    text-align: left;
+  }
+
+  td {
+    padding: $table-padding;
+    @if($feature == "bordered") {
+      border: 1px solid $table-border;
+    }
+    @else {
+      border: 1px solid $table-border;
+      border-width: 0 0 1px 0;
+    }
+  }
+
+  tfoot {
+    @if ($feature != "bordered") {
+      border: 1px solid $table-border;
+      border-width: 0 0 2px 0;
+    }
+    @else {
+      border: 1px solid $table-border;
+    }
+  }
+
+  @if ($hover) {
+    tr:hover {
+      background: $table-hover-color;
+    }
+  }
+}
