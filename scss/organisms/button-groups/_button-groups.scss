@@ -148,6 +148,27 @@
 ```
 */
 
+/*doc
+###With icons
+
+```
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1"> <i class="fa fa-align-left fa-2x"></i>
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2"> <i class="fa fa-align-center fa-2x"></i>
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3"> <i class="fa fa-align-right fa-2x"></i>
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3"> <i class="fa fa-align-justify fa-2x"></i>
+  </label>
+</div>
+```
+*/
+
 .btn-group {
   list-style: none;
   margin-bottom: 1em;
