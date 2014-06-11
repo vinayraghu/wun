@@ -4,10 +4,13 @@
 #Panels
 ------------------
 
+ * There are two variants for `.panel-heading`. Add class `panel-heading--default` or `panel-heading--large`
+ * Panel footer is optional. Ideally, used when header does not exist
+
 ```
 <div class="panel panel-primary">
   <div class="panel-header">
-    <h3 class="panel-heading">Sales Charts</h3>
+    <h3 class="panel-heading panel-heading--default">Sales Charts</h3>
   </div>
   <div class="panel-body">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
@@ -25,7 +28,7 @@ Add themes according to requirement
 ```
 <div class="panel panel-secondary">
   <div class="panel-header">
-    <h3 class="panel-heading">Sales Charts</h3>
+    <h3 class="panel-heading panel-heading--large">Sales Charts</h3>
   </div>
   <div class="panel-body">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
@@ -37,7 +40,7 @@ Add themes according to requirement
 
 <div class="panel panel-alert">
   <div class="panel-header">
-    <h3 class="panel-heading">Sales Charts</h3>
+    <h3 class="panel-heading panel-heading--default">Sales Charts</h3>
   </div>
   <div class="panel-body">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
@@ -49,7 +52,7 @@ Add themes according to requirement
 
 <div class="panel panel-warning">
   <div class="panel-header">
-    <h3 class="panel-heading">Sales Charts</h3>
+    <h3 class="panel-heading panel-heading--default">Sales Charts</h3>
   </div>
   <div class="panel-body">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
@@ -61,7 +64,7 @@ Add themes according to requirement
 
 <div class="panel panel-success">
   <div class="panel-header">
-    <h3 class="panel-heading">Sales Charts</h3>
+    <h3 class="panel-heading panel-heading--default">Sales Charts</h3>
   </div>
   <div class="panel-body">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
@@ -73,7 +76,7 @@ Add themes according to requirement
 
 <div class="panel panel-info">
   <div class="panel-header">
-    <h3 class="panel-heading">Sales Charts</h3>
+    <h3 class="panel-heading panel-heading--default">Sales Charts</h3>
   </div>
   <div class="panel-body">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias excepturi ut vitae rerum repellendus aut. Eum, maxime nesciunt quas nam quod dolorem ipsam impedit saepe expedita. A nam quis magnam labore voluptas consequuntur saepe illo maiores! Totam, repellendus quae iure expedita quia perferendis unde ullam sint. Explicabo, deleniti dignissimos alias molestiae temporibus fuga eaque eum ab voluptatibus maiores! Possimus, itaque minima commodi quia officiis alias et recusandae illo expedita? Ad, dolorem, eveniet inventore nisi suscipit minus nostrum ducimus quo culpa maxime praesentium in adipisci necessitatibus officia assumenda molestiae dolorum?
@@ -132,12 +135,19 @@ Add themes according to requirement
 
 
 .panel-heading {
-  font-size: 18px;
-  font-weight: 300;
   margin: 0;
   padding: $global-padding / 2;
   color: $white;
   text-transform: uppercase;
+}
+
+.panel-heading--default {
+  font-size: 13px;
+  font-weight: 700;
+}
+.panel-heading--large {
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .panel-body {
