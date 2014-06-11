@@ -1,1 +1,113 @@
 @import "extends";
+/*doc
+
+#Wells
+
+For highlighting content
+
+```
+<div class="well">
+  Look I am in a well
+</div>
+
+<div class="well well-lg">
+  Look I am in a well
+</div>
+
+<div class="well well-sm">
+  Look I am in a well
+</div>
+
+```
+
+*/
+
+$well-bg: nth($silver, 1);
+$well-border: nth($grey-light, 1);
+
+// Base class
+.well {
+  min-height: 20px;
+  padding: 1em;
+  margin-bottom: 20px;
+  background-color: $well-bg;
+  // border: 1px solid $well-border;
+  border-radius: $global-radius;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  blockquote {
+    border-color: #ddd;
+    border-color: rgba(0,0,0,.15);
+  }
+}
+
+// Sizes
+.well-lg {
+  padding: 1.5em;
+  border-radius: $global-radius-2x;
+}
+.well-sm {
+  padding: .5em;
+  border-radius: $global-radius;
+}
+
+
+.well-primary {
+  @include paint(background, $brand-primary);
+  color: white;
+}
+.well-secondary {
+  @include paint(background, $brand-secondary);
+  color: white;
+}
+.well-alert {
+  @include paint(background, $brand-alert);
+  color: white;
+}
+.well-info {
+  @include paint(background, $brand-info);
+  color: white;
+}
+.well-success {
+  @include paint(background, $brand-success);
+  color: white;
+}
+.well-warning {
+  @include paint(background, $brand-warning);
+  color: white;
+}
+
+/*doc
+
+#Themes
+
+Add state classes to achieve states
+
+```
+<div class="well well-primary">
+  Look I am in a well
+</div>
+
+<div class="well well-sm well-secondary">
+  Look I am in a well
+</div>
+
+<div class="well well-lg well-info">
+  Look I am in a well
+</div>
+
+<div class="well well-sm well-alert">
+  Look I am in a well
+</div>
+
+<div class="well well-sm well-info">
+  Look I am in a well
+</div>
+
+<div class="well well-sm well-success">
+  Look I am in a well
+</div>
+
+
+```
+
+*/
