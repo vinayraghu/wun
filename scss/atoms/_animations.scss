@@ -12,6 +12,17 @@ We use the entire library of animate.css via sass. In addition, we have definiti
 ```
 
 */
+
+/*doc
+#AJAX Loading Bar
+
+Using the class `.ajax-call` and some scripting, we can achieve the AJAX loading progress bar.
+```
+<a href="http://api.dribbble.com/players/jackietrananh/shots?callback=?" class="ajax-call">Click here</a>
+<div id="loadingbar-frame"></div>
+```
+
+*/
 // Spinner Animation
 .spinner {
   margin: 100px auto 0;

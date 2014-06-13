@@ -1,0 +1,18 @@
+/*doc
+#Growl notifications
+
+ * Growl comes with options to place it on `top-left`, `top-right`, `bottom-left`, `bottom-right`
+ * Growl also has 3 variations in sizes `large`, `medium`, `small`
+```
+<p><a class="primary" href="#">Primary</a></p>
+<p><a class="error" href="#">Error!</a></p>
+<p><a class="notice" href="#">Notice!</a></p>
+<p><a class="warning" href="#">Warning!</a></p>
+```
+*/
+
+Override growl
+.growl-default {@include paint(background, $brand-primary !important)} // Primary
+.growl-error {@include paint(background, $brand-alert !important)} //Alert
+.growl-warning {@include paint(background, $brand-warning !important)}
+.growl-notice {@include paint(background, $brand-success !important)} // Success
