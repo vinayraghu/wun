@@ -1,0 +1,69 @@
+/*doc
+#Datepicker
+---------------
+
+Plugin http://bootstrap-datepicker.readthedocs.org/en/release/index.html
+
+```
+<input data-provide="datepicker">
+```
+*/
+
+/*doc
+###Inline
+---------------
+```
+<div data-provide="datepicker-inline"></div>
+```
+*/
+
+$datepicker-theme: $brand-primary;
+
+.datepicker {
+  font-family: $open-sans !important;
+  font-size: 13px !important;
+  font-weight: 300;
+}
+
+.datepicker table tr td.active.active {
+  @include paint(background, $datepicker-theme !important);
+}
+
+.datepicker table tr td, .datepicker table tr th {
+  border-radius: 0 !important;
+}
+
+.datepicker.dropdown-menu {
+  border-radius: 0;
+}
+
+.datepicker thead tr:first-child, .theme-clean .datepicker thead th.next, .theme-clean .datepicker thead th.prev {
+  @include paint(background, $datepicker-theme);
+}
+
+.datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover {
+  @include paint(background, lighten($datepicker-theme, 5%));
+}
+
+.datepicker thead tr {
+  @include paint(background, darken($datepicker-theme, 10%));
+  color: $white;
+}
+
+.datepicker.dropdown-menu {
+  padding: 0;
+}
+
+.datepicker table tr td span.active:active, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td span.active, .open .dropdown-toggle.datepicker table tr td span.active:hover, .open .dropdown-toggle.datepicker table tr td span.active.disabled, .open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+  border-radius: 0;
+  @include paint(background, $datepicker-theme);
+}
+
+.datepicker table tr td span:hover {
+  border-radius: 0;
+  @include paint(background, $datepicker-theme);
+}
+
+.datepicker table tr td span.old, .datepicker table tr td span.new {
+  color: #ccc;
+}

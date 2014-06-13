@@ -13,7 +13,10 @@
     "nouislider": "~6.2.0",
     "bootstrap-tabdrop": "~1.0.0",
     "jquery-knob": "~1.2.8",
-    "jquery.easy-pie-chart": "~2.1.4"
+    "jquery.easy-pie-chart": "~2.1.4",
+    "stroll": "*",
+    "bootstrap-timepicker": "~0.2.6",
+    "bootstrap-datepicker": "~1.3.0"
   },
   "devDependencies": {
     "jquery.sparkline": "~2.1.2"
