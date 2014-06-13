@@ -1,0 +1,44 @@
+/*doc
+#Autocomplete
+
+Plugin http://www.devbridge.com/sourcery/components/jquery-autocomplete/
+
+ * This is an example of a local lookup. Type any month's name (eg: `Jan`)
+ * For further details on remote lookup, refer docs in the plugin's link
+
+```
+<input type="text" name="q" class="autocomplete" />
+```
+*/
+
+
+.autocomplete-w1 { background: #fff; position:absolute; top:0px; left:0px; margin:6px 0 0 6px; /* IE6 fix: */ _background:none; _margin:1px 0 0 0; }
+.autocomplete {
+  padding: 0 .5em !important;
+  border:1px solid #999;
+  background:#FFF;
+  cursor:text;
+  text-align:left;
+  max-height:31px;
+  overflow:auto;
+  font-size: 13px;
+  margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden;
+}
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; overflow:hidden; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }
+.autocomplete-suggestions {
+  font-family: $open-sans;
+  background: $white;
+  font-size: 13px;
+  line-height: 1.3;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.autocomplete-suggestion {
+  padding: 1em .5em;
+  cursor: pointer;
+  &:hover {
+    background: nth($grey-light, 1);
+  }
+}
