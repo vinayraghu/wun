@@ -5,32 +5,32 @@
 ```
 <div class="note note-primary">
   <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Inventore, </a> ut.</p>
 </div>
 
 <div class="note note-secondary">
   <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Inventore, </a> ut.</p>
 </div>
 
 <div class="note note-info">
   <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Inventore, </a> ut.</p>
 </div>
 
 <div class="note note-success">
   <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Inventore, </a> ut.</p>
 </div>
 
 <div class="note note-alert">
   <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Inventore, </a> ut.</p>
 </div>
 
 <div class="note note-warning">
   <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Inventore, </a> ut.</p>
 </div>
 
 
@@ -44,6 +44,10 @@
   border-width: 0 0 0 4px;
   margin-bottom: 1em;
   color: $white;
+  a {
+      color: $white;
+      text-decoration: underline;
+  }
 }
 
 .note-heading {
