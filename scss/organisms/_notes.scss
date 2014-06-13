@@ -1,0 +1,78 @@
+/*doc
+#Notes
+---------------
+
+```
+<div class="note note-primary">
+  <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+</div>
+
+<div class="note note-secondary">
+  <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+</div>
+
+<div class="note note-info">
+  <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+</div>
+
+<div class="note note-success">
+  <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+</div>
+
+<div class="note note-alert">
+  <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+</div>
+
+<div class="note note-warning">
+  <h4 class="note-heading"><i class="fa fa-hdd-o"></i> Atoms Moleculus</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, ut.</p>
+</div>
+
+
+```
+
+*/
+
+.note {
+  padding: 1em;
+  border: 4px solid;
+  border-width: 0 0 0 4px;
+  margin-bottom: 1em;
+  color: $white;
+}
+
+.note-heading {
+  font-size: 18px;
+  font-weight: 300;
+  @include no-margin(top);
+}
+
+.note-primary {
+  @include paint (background, $brand-primary);
+  @include paint(border-color, darken($brand-primary, 20%));
+}
+.note-secondary {
+  @include paint (background, $brand-secondary);
+  @include paint(border-color, darken($brand-secondary, 20%));
+}
+.note-info {
+  @include paint (background, $brand-info);
+  @include paint(border-color, darken($brand-info, 20%));
+}
+.note-success {
+  @include paint (background, $brand-success);
+  @include paint(border-color, darken($brand-success, 20%));
+}
+.note-alert {
+  @include paint (background, $brand-alert);
+  @include paint(border-color, darken($brand-alert, 20%));
+}
+.note-warning {
+  @include paint (background, $brand-warning);
+  @include paint(border-color, darken($brand-warning, 20%));
+}
