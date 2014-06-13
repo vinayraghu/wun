@@ -1,1 +1,3 @@
-
+@function em-calc($num, $base: 12px) {
+  @return $num / $base * 1em;
+}

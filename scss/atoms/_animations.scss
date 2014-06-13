@@ -25,14 +25,14 @@ Using the class `.ajax-call` and some scripting, we can achieve the AJAX loading
 */
 // Spinner Animation
 .spinner {
-  margin: 100px auto 0;
-  width: 70px;
+  margin: 0;
+  display: inline-block;
   text-align: center;
 }
 
 .spinner > div {
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
   background-color: #333;
 
   border-radius: 100%;
@@ -67,4 +67,24 @@ Using the class `.ajax-call` and some scripting, we can achieve the AJAX loading
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
+}
+
+.spinner-primary > div {background: darken($brand-primary, 20%);}
+.spinner-secondary > div {background: darken($brand-secondary, 20%);}
+.spinner-info > div {background: darken($brand-info, 20%);}
+.spinner-alert > div {background: darken($brand-alert, 20%);}
+.spinner-warning > div {background: darken($brand-warning, 20%);}
+.spinner-success > div {background: darken($brand-success, 20%);}
+
+.spinner-small > div {
+  width: 5px;
+  height: 5px;
+}
+.spinner-medium > div {
+  width: 10px;
+  height: 10px;
+}
+.spinner-large > div {
+  width: 18px;
+  height: 18px;
 }

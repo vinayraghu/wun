@@ -8,14 +8,14 @@ $open-sans: "Open sans", sans-serif;
 ////////////////
 
 $base-font-size: 0.75em;
-$heading-font-size: 3.998em, 2.827em, 1.999em, 1.414em;
+$heading-font-size: em-calc(24px), em-calc(18px), em-calc(16px), em-calc(14px), em-calc(13px);
 $small-font-size: 0.707em;
 
 ////////////////
 // Font Weight variations
 ////////////////
-
 $base-font-weight: 400;
 $light-font-weight: 300;
 $emphasis-font-weight: 600;
-$heading-font-weight: 700;
+$heading-font-weight: 300;
+$bold-font-weight: 700;

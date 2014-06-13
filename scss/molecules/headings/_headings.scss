@@ -5,9 +5,8 @@
 #Headings
 ----------
 
- - Headings are based on 1.414 ratio.
- - Headings can be used with `<h1>` tags as well as `.h1` class
- - We use 4 variations of font sizes
+- Headings can be used with `<h1>` tags as well as `.h1` class
+- We use 4 variations of font sizes
 
 ```
 <h1>First level heading</h1>
@@ -43,7 +42,8 @@
 */
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
+  margin: 0;
+  margin-bottom: .5em;
   line-height: 1.2;
 }
 

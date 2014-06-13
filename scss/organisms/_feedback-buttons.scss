@@ -1,11 +1,40 @@
 /*doc
 #Feedback buttons
+ - Inspired by https://github.com/hakimel/Ladda
+ - Embed a spinner inside the button item by appending `.is-processing` class to it
+ - Spinner theme is optional. Default will have black dots
+ - Used to provide feedback for UI buttons
 
-Inspired by https://github.com/hakimel/Ladda
-Used to show feedback states when an action is clicked
 
 ```
-<button class="feedback-button" data-style="expand-right"><span class="ladda-label">Submit</span></button>
+<button class="btn btn-alert">
+  Watsapp
+  <div class="spinner spinner-alert spinner-small">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</button>
+
+<button class="btn btn-alert is-processing">
+  Watsapp
+  <div class="spinner spinner-alert spinner-small">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</button>
+
+
 ```
 
 */
+
+.btn > .spinner {
+  display: none;
+  margin-left: 1em;
+}
+
+.btn.is-processing > .spinner {
+  display: inline-block;
+}

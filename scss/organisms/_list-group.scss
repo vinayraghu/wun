@@ -52,7 +52,7 @@
 
 
 
-$list-group-border: 1px solid $black;
+$list-group-border: 1px solid nth($grey-light, 1);
 $list-hover-bg: nth($silver, 2);
 
 .list-group {

@@ -2,13 +2,40 @@
 /*doc
 #Switches
 ---------------
-For on off states
+ - For on off states
+ - Defaults to large. Optional size classes `.tgl-sm`, `.tgl-md` or `.tgl-lg`
+
 
 ```
-<input class='tgl tgl-flat' id='cb4' type='checkbox'>
+<input class='tgl tgl-flat' id='cb1' type='checkbox'>
+<label class='tgl-btn' for='cb1'></label>
+
+<input class='tgl tgl-sm tgl-flat' id='cb2' type='checkbox'>
+<label class='tgl-btn' for='cb2'></label>
+
+<input class='tgl tgl-md tgl-flat' id='cb3' type='checkbox'>
+<label class='tgl-btn' for='cb3'></label>
+
+<input class='tgl tgl-lg tgl-flat' id='cb4' type='checkbox'>
+<label class='tgl-btn' for='cb4'></label>
+
+```
+
+*/
+
+/*doc
+
+###Disabled states
+```
+<input class='tgl tgl-sm tgl-flat' id='cb2' type='checkbox' disabled>
+<label class='tgl-btn' for='cb2'></label>
+
+<input class='tgl tgl-md tgl-flat' id='cb3' type='checkbox' disabled>
+<label class='tgl-btn' for='cb3'></label>
+
+<input class='tgl tgl-lg tgl-flat' id='cb4' type='checkbox' disabled>
 <label class='tgl-btn' for='cb4'></label>
 ```
-
 */
 
 .tgl{
@@ -17,6 +44,7 @@ For on off states
     background: none;
   }
   + .tgl-btn{
+    margin-bottom: 1em; //Optional
     outline: 0;
     display: block;
     width: $switch-width;
@@ -64,5 +92,29 @@ For on off states
         background: nth($red, 1);
       }
     }
+  }
+}
+
+
+.tgl.tgl-sm + .tgl-btn {
+  width: 1em;
+  height: .5em;
+}
+
+.tgl.tgl-md + .tgl-btn {
+  width: 2em;
+  height: 1em;
+}
+
+.tgl.tgl-lg + .tgl-btn {
+  width: 4em;
+  height: 2em;
+}
+
+input[disabled] + .tgl-btn {
+  border-color: nth($silver, 2);
+  cursor: not-allowed;
+  &:after {
+    background: nth($silver, 2);
   }
 }
