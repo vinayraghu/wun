@@ -14,5 +14,8 @@
     "bootstrap-tabdrop": "~1.0.0",
     "jquery-knob": "~1.2.8",
     "jquery.easy-pie-chart": "~2.1.4"
+  },
+  "devDependencies": {
+    "jquery.sparkline": "~2.1.2"
   }
 }
