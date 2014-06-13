@@ -70,7 +70,7 @@ Alert can be used to display information. It may or may not be dismissable.
   margin-bottom: 1em;
   a {
     font-weight: bold;
-    color: currentColor;
+    color: $white;
     text-decoration: underline;
   }
 }
