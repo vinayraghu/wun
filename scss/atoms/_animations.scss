@@ -69,7 +69,7 @@ Using the class `.ajax-call` and some scripting, we can achieve the AJAX loading
   }
 }
 
-.spinner-primary > div {background: darken($brand-primary, 20%);}
+.spinner-primary > div {background: $white}
 .spinner-secondary > div {background: darken($brand-secondary, 20%);}
 .spinner-info > div {background: darken($brand-info, 20%);}
 .spinner-alert > div {background: darken($brand-alert, 20%);}

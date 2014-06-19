@@ -17,9 +17,8 @@
     "stroll": "*",
     "bootstrap-timepicker": "~0.2.6",
     "bootstrap-datepicker": "~1.3.0",
-    "jquery-file-upload": "~9.5.7"
-  },
-  "devDependencies": {
+    "jquery-file-upload": "~9.5.7",
     "jquery.sparkline": "~2.1.2"
+    "d3": "~3.4.8",
   }
 }

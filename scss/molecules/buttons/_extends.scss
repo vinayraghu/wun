@@ -6,39 +6,21 @@
 
 .btn-primary{
   @include paint(background, $brand-primary);
-  &:hover {
-    @include paint(background, lighten($brand-primary, 10%));
-  }
 }
 .btn-secondary{
   @include paint(background, $brand-secondary);
-  &:hover {
-    @include paint(background, lighten($brand-secondary, 10%));
-  }
 }
 .btn-info{
   @include paint(background, $brand-info);
-  &:hover {
-    @include paint(background, lighten($brand-info, 10%));
-  }
 }
 .btn-warning{
   @include paint(background, $brand-warning);
-  &:hover {
-    @include paint(background, lighten($brand-warning, 10%));
-  }
 }
 .btn-success{
   @include paint(background, $brand-success);
-  &:hover {
-    @include paint(background, lighten($brand-success, 10%));
-  }
 }
 .btn-alert{
   @include paint(background, $brand-alert);
-  &:hover {
-    @include paint(background, lighten($brand-alert, 10%));
-  }
 }
 
 

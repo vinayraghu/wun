@@ -62,6 +62,7 @@ $datepicker-theme: $brand-primary;
 .datepicker table tr td span:hover {
   border-radius: 0;
   @include paint(background, $datepicker-theme);
+  color: $white;
 }
 
 .datepicker table tr td span.old, .datepicker table tr td span.new {

@@ -1,6 +1,5 @@
 $white: #fff;
 $black: #000;
-
 $black-2: #2A2D34;
 
 //http://flatuicolors.com/
@@ -66,7 +65,7 @@ $silver: $clouds, $silverine;
 
 // Brand colors
 
-$brand-primary: nth($grey-dark, 2);
+$brand-primary: $black-2;
 $brand-secondary: nth($grey-light, 2);
 $brand-info: nth($blue, 1);
 $brand-alert: nth($red, 1);

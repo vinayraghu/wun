@@ -30,7 +30,6 @@
   width: 100%;
   height: $progress-height;
   background: $progress-bg;
-  border-radius: $global-radius-2x;
   margin-bottom: 1em;
 }
 
@@ -38,14 +37,6 @@
   float: left;
   height: 100%;
   line-height: $progress-height;
-  &:first-child {
-    border-bottom-left-radius: $global-radius-2x;
-    border-top-left-radius: $global-radius-2x;
-  }
-  &:last-child {
-    border-bottom-right-radius: $global-radius-2x;
-    border-top-right-radius: $global-radius-2x;
-  }
 }
 
 .progress-bar-primary {

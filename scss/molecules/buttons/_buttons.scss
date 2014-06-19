@@ -8,7 +8,7 @@
 We have 5 variations of buttons
 
   ```
-    <div class="inline-btn">
+    <div class="btn-inline">
       <a class="btn btn-primary" href="#">Button</a>
       <a class="btn btn-secondary" href="#">Button</a>
       <a class="btn btn-alert" href="#">Button</a>
@@ -59,7 +59,7 @@ Expand buttons
 ```
 */
 
-.inline-buttons {
+.btn-inline {
   > .btn {
     margin: 1em 1em 1em 0;
     float: left;
