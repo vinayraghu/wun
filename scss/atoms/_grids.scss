@@ -5,6 +5,25 @@
 @import "atoms/helpers/functions";
 @import "atoms/helpers/utilities";
 
+
+$total-columns: 16;
+
+// Grid Mixins
+@mixin respond-to ($bp) {
+  @if map-has-key($breakpoints, $bp){
+    @media (min-width: #{map-get($breakpoints, $bp)}) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Breakpoint not found"
+  }
+}
+
+@mixin col($num) {
+  width: percentage($total-columns / $num);
+}
+
 .pull-left {
   float: left;
 }
@@ -13,6 +32,32 @@
   float: right;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .row {
+  width: 100%;
   @include clearfix;
+}
+
+[class*="column"] {
+  float: left;
+  padding-right: 0.5%;
+}
+
+.header-site {
+  @extend .row;
+}
+
+.section-main {
+  @extend .row;
+}
+
+.footer-site {
+  @extend .row;
+}
+
+.content-main {
+  float: left;
 }

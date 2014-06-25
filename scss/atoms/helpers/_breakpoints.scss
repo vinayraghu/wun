@@ -1,1 +1,8 @@
-
+$breakpoints: (
+  "mobile": em-calc(320px),
+  "smartphone": em-calc(450px),
+  "phablet": em-calc(768px),
+  "tablet": em-calc(1040px),
+  "desktops": em-calc(1200px),
+  "widescreens": em-calc(1440px)
+)
