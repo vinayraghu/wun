@@ -139,7 +139,7 @@ Add a dropdown to any element
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  font-size: 14px;
+  font-size: em-calc(13px);
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
@@ -159,7 +159,7 @@ Add a dropdown to any element
 }
 .dropdown-menu > li > a {
   display: block;
-  padding: 3px 20px;
+  padding: 7px 20px;
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
@@ -225,4 +225,11 @@ Add a dropdown to any element
 .pull-right > .dropdown-menu {
   right: 0;
   left: auto;
+}
+// Styling dropdown active / open state
+.dropdown.open {
+  background: darken($black-2, 10%);
+  > a {
+    color: #b5bcbd;
+  }
 }

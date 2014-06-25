@@ -1,1 +1,52 @@
+.nav-main {
+  height: 43px; // Adjust for li items
+  padding-left: 150px;
 
+  background: $black-2;
+}
+
+//Style first level elements
+%nav-item {
+  > li {
+    margin: 0;
+    float: left;
+    > a {
+      float: left;
+      padding: 1em;
+
+      color: $brand-secondary;
+      text-transform: uppercase;
+
+      &:hover {
+        color: lighten($brand-secondary, 20%);
+      }
+    }
+  }
+}
+
+.nav-main--left {
+  @include no-margin();
+  @extend %nav-item;
+
+  @extend .horizontal-list;
+  @extend .pull-left;
+
+  padding: 0;
+}
+
+.nav-main--right {
+  @include no-margin();
+  @extend %nav-item;
+
+  @extend .horizontal-list;
+  @extend .pull-right;
+
+  padding: 0;
+}
+
+.dropdown .user-avatar {
+  padding: 0.7em 1em 0.3em;
+  .caret {
+    margin-top: -1em;
+  }
+}

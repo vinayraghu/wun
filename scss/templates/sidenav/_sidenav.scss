@@ -49,3 +49,20 @@
     }
   }
 }
+
+.sidebar-primary {
+  width: 150px;
+  padding-top: 1em;
+
+  @include full-height();
+  background: $black-2;
+}
+
+// Style accordion in the sidebar differently
+.accordions-sidebar {
+  margin-top: 1em;
+  .accordion-content {
+    border: 0;
+    padding: 0;
+  }
+}
