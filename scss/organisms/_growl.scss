@@ -11,8 +11,13 @@
 ```
 */
 
-Override growl
-.growl-default {@include paint(background, $brand-primary !important)} // Primary
-.growl-error {@include paint(background, $brand-alert !important)} //Alert
-.growl-warning {@include paint(background, $brand-warning !important)}
-.growl-notice {@include paint(background, $brand-success !important)} // Success
+// Override growl
+.growl {
+  border-radius: 0;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  &.growl-default {@include paint(background, $brand-primary !important)} // Primary
+  &.growl-error {@include paint(background, $brand-alert !important)} //Alert
+  &.growl-warning {@include paint(background, $brand-warning !important)}
+  &.growl-notice {@include paint(background, $brand-success !important)} // Success
+}
