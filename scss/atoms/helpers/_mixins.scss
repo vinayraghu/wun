@@ -44,3 +44,7 @@ $animation-easing: ease-in-out;
     clear: both;
   }
 }
+
+@mixin full-height() {
+  height: 100%;
+}
