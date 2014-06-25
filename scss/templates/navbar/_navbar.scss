@@ -1,6 +1,5 @@
 .nav-main {
   height: 43px; // Adjust for li items
-  padding-left: 150px;
 
   background: $black-2;
 }
@@ -49,4 +48,8 @@
   .caret {
     margin-top: -1em;
   }
+}
+
+.navbar-search {
+  padding-top: 1.25em !important;
 }

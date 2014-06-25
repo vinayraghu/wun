@@ -59,5 +59,12 @@ $total-columns: 16;
 }
 
 .content-main {
+  padding-left: 150px;
+}
+
+.sidebar-primary {
+  position: fixed;
+
   float: left;
+  width: 150px;
 }
