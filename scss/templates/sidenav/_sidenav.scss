@@ -53,11 +53,6 @@
 .sidebar-primary {
   @include full-height();
 
-  position: fixed;
-
-  float: left;
-  width: 150px;
-
   padding-top: 1em;
 
   background: $black-2;
