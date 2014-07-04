@@ -12,10 +12,10 @@ $global-margin: 1em;
 //
 // Note: These variables are not generated into the Customizer.
 
-$zindex-navbar:            1000 !default;
-$zindex-dropdown:          1000 !default;
-$zindex-popover:           1060 !default;
-$zindex-tooltip:           1070 !default;
-$zindex-navbar-fixed:      1030 !default;
-$zindex-modal-background:  1040 !default;
-$zindex-modal:             1050 !default;
+$zindex-navbar:            z(ui) !default;
+$zindex-dropdown:          z(ui) !default;
+$zindex-popover:           z(tooltips) !default;
+$zindex-tooltip:           z(tooltips) !default;
+$zindex-navbar-fixed:      z(fixed) !default;
+$zindex-modal-background:  z(dialog) !default;
+$zindex-modal:             z(dialogUI) !default;

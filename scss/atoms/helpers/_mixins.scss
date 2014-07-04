@@ -10,6 +10,17 @@
   }
 }
 
+@mixin margin($margin, $direction: false) {
+  @if($direction == false) {
+    margin: $margin;
+  }
+  @else {
+    @each $d in $direction {
+      margin-#{$d}: $margin;
+    }
+  }
+}
+
 // Color variations to any property
 @mixin paint($prop, $color) {
   #{$prop}: $color;
@@ -47,4 +58,10 @@ $animation-easing: ease-in-out;
 
 @mixin full-height() {
   height: 100%;
+}
+
+@mixin hide-text() {
+  text-indent: -9999px;
+  overflow: hidden;
+  white-space: nowrap;
 }

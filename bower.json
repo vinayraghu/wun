@@ -20,6 +20,7 @@
     "jquery-file-upload": "~9.5.7",
     "jquery.sparkline": "~2.1.2",
     "d3": "~3.4.8",
-    "handsontable": "~0.10.5"
+    "handsontable": "~0.10.5",
+    "x-editable": "~1.5.1"
   }
 }

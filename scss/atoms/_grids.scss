@@ -32,6 +32,14 @@ $total-columns: 16;
   float: right;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -58,13 +66,79 @@ $total-columns: 16;
   @extend .row;
 }
 
+// Sidebar and content area
+
+$sidebar-width: em-calc(150px);
+$sidebar-collapsed-width: em-calc(50px);
+
 .content-main {
-  padding-left: 150px;
+  float: right;
+  width: calc(100% - #{$sidebar-width});
+
+  &.is-expanded {
+    width: calc(100% - #{$sidebar-collapsed-width});
+  }
 }
 
 .sidebar-primary {
   position: fixed;
 
   float: left;
-  width: 150px;
+  width: $sidebar-width;
+
+  &.is-collapsed {
+    width: $sidebar-collapsed-width;
+  }
+}
+
+.section-content {
+  margin-top: 8em;
+}
+
+.content-wrap {
+  overflow: hidden;
+}
+
+.section-title {
+  position: fixed;
+  width: 100%;
+  padding: 1em;
+  box-shadow: 0 1px 4px 0 rgba(black, 0.2);
+}
+
+// Products page-break-inside:
+
+.products-title {
+  margin-right: 2em;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+.products-title-container {
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+.upload-note-container {
+  margin-bottom: 1em !important; //refactor
+}
+
+.btn-product-upload {
+  @extend .btn;
+  @extend .btn-small;
+  @extend .btn-primary;
+  margin-right: 2em;
+}
+
+.handsontable {
+  width: 100%;
+  font-family: $open-sans;
+  th, td {
+    padding: 0.6em !important;
+    font-size: 0.8em;
+    max-width: 200px;
+    min-width: 70px;
+    text-overflow: ellipsis;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+  }
 }

@@ -1,3 +1,10 @@
 @function em-calc($num, $base: 12px) {
   @return $num / $base * 1em;
 }
+
+// Sassy z-index management
+$z-index: shu, content, ui, fixed, tooltips, dialog, dialogUI, god;
+
+@function z($level) {
+  @return 1000 + index($z-index, $level) * 10;
+}

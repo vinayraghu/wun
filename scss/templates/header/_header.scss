@@ -1,13 +1,21 @@
+.section-title {
+  background: white;
+  z-index: z(fixed);
+}
+
 .logo {
   margin: 0 auto;
 
   width: 120px;
   height: 120px;
 
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-
   background: url('../images/logo.png') no-repeat;
   background-size: 100%;
+
+  @include hide-text();
+}
+
+.is-collapsed .logo {
+  width: 40px;
+  height: 40px;
 }

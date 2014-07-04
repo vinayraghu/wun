@@ -18,7 +18,7 @@
   position: absolute;
   z-index: 1030;
   display: block;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 1.4;
   visibility: visible;
   filter: alpha(opacity=0);
@@ -46,7 +46,7 @@
 }
 .tooltip-inner {
   max-width: 200px;
-  padding: 1em;
+  padding: .5em;
   color: #fff;
   text-align: center;
   text-decoration: none;

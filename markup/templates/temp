@@ -1,0 +1,53 @@
+      <header class="header-main">
+        <nav class="nav-main">
+          <ul class="nav-main--left">
+            <li><a href="#">Dashboard</a></li>
+            <li class="dropdown">
+              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Designers <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">New designer</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Manage designers</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Marketing <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Hotspot Editor</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Marketing View</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Press links</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop3" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Orders <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Orders</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Returns</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Payment History</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Affiliates</a></li>
+          </ul>
+          <ul class="nav-main--right">
+            <li>
+              <a href="#" class="navbar-search">
+                <i class="fa fa-search"></i>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop4" href="#" role="button" class="dropdown-toggle user-avatar" data-toggle="dropdown">
+                <img class="img-circle" src="http://placehold.it/25/dddddd">  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="drop4">
+                <div class="text-center">
+                  <!-- Link image and user name to user profile -->
+                  <a href="#"><img class="img-circle" src="http://placehold.it/100"></a>
+                  <p><a href="#">Vinay Raghu</a></p>
+                </div>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">My Profile</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </nav>
+      </header>

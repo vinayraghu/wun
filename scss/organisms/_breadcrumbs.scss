@@ -11,30 +11,37 @@
 </ul>
 ```
 */
+$breadcrumb-color: $brand-primary;
+
 .breadcrumbs {
   display: block;
-  border-radius: $global-radius;
-  padding: 1em;
+  margin: 0;
+  padding: 1em 0;
+
   list-style: none;
-  background: nth($grey-dark, 1);
+
   > li {
     display: inline-block;
     font-size: 1em;
-    color: $white;
+    color: $breadcrumb-color;
     > a {
-      color: $white;
+      color: $breadcrumb-color;
     }
     &:after {
-      content: "\f105";
+      content: " / ";
       display: inline-block;
-      font-family: FontAwesome;
+
       font-size: 1em;
-      margin: 0 1em;
-      font-style: normal;
-      font-weight: normal;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      margin: 0 .5em;
+    }
+    &:last-child{
+      &:after {
+        content: " ";
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
     &.disabled {
       color: nth($grey-light, 1);

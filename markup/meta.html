@@ -39,34 +39,24 @@
             <li class="active"><a href="#">SS14</a></li>
           </ul>
         </div>
-        <div class="large-4 columns end">
-          <input type="search" placeholder="Search all data">
-          <button class="btn btn-primary"><i class="fa fa-search"></i></button>
-        </div>
       </header>
       <section class="section-content">
         <div class="row products-title-container">
-          <h4 class="products-title">Product Information</h4>
+          <h4 class="products-title">Product Details</h4>
           <button class="btn-product-upload">Upload</button>
-          <a href="#"><i class="fa fa-download"></i> Download template (.xls)</a>
+          <a href="#">Download spreadsheet</a>
         </div>
         <div class="row">
           <div class="large-16 columns">
             <ul id="collections" class="nav nav-tabs">
-              <li class="active"><a href="#products" data-toggle="tab"><i class="fa fa-info-circle"></i> Product Information</a></li>
-              <li><a href="#product-images" data-toggle="tab">Meta Details</a></li>
+              <li><a href="#products" data-toggle="tab">Product Details</a></li>
+              <li class="active"><a href="#product-images" data-toggle="tab">Meta Details</a></li>
               <li><a href="#inventory" data-toggle="tab">Pricing</a></li>
             </ul>
             <div id="collections-content" class="tab-content">
               <div class="tab-pane fade active in" id="products">
-                <label for="select-all">
-                  <button class="btn btn-secondary">
-                    <input type="checkbox" title="select all" id="select-all">
-                  </button>
-                </label>
-                <div class="row">
-                  <div id="dataTable"></div>
-                </div>
+
+                <div id="dataTable"></div>
               </div>
               <div class="tab-pane fade" id="product-images">
                 <div id="metaTable"></div>
@@ -201,32 +191,6 @@
         </script>
         <script src="../vendors/handsontable/dist/jquery.handsontable.full.js"></script>
         <script>
-          var data = [
-            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-
-          ];
-          $("#dataTable").handsontable({
-            data: data,
-            colHeaders: ["S. No", "Product Category", "Product Name", "Color", "Size", "Fit"]
-          });
-        </script>
-        <script>
-        // Pricing
           var data2 = [
             ["0.00", "626.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
             ["0.00", "626.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],

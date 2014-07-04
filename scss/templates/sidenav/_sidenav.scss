@@ -11,48 +11,60 @@
 ```
   <ul class="sidenav">
     <li class="active"><i class="fa fa-tachometer"></i>Dashboard</li>
-    <li><i class="fa fa-pencil-square-o"></i>Message Editor</li>
-    <li><i class="fa fa-thumbs-o-up"></i>Marketing View</li>
-    <li><i class="fa fa-users"></i>Affiliates</li>
+    <li><i class="fa fa-users"></i>Designers</li>
+    <li><i class="fa fa-barcode"></i>Products</li>
+    <li><i class="fa fa-credit-card"></i>Orders</li>
+    <li><i class="fa fa-thumbs-o-up"></i>Marketing</li>
     <li><i class="fa fa-power-off"></i>Sign out</li>
   </ul>
 ```
 
 */
 
+$sidenav-active-border: #666;
+$sidenav-padding: .6em 0;
 .sidenav {
   padding: 0;
   //width: 100px;
   list-style: none;
   background: $black-2;
   i {
-    display: block;
-    font-size: 4em;
+    display: inline-block;
+    margin: 0 0.6em;
+
+    font-size: 1.5em;
   }
+
   > li {
+
     border-left: 4px solid transparent;
     display: block;
-    padding: 1.5em 0;
+
+    padding: $sidenav-padding;
+
     cursor: pointer;
     color: nth($silver, 1);
     text-transform: capitalize;
-    font-weight: bold;
 
-    text-align: center;
     &:hover {
       background: lighten($black-2, 10%);
-      border-left: 4px solid nth($red, 1);
+      border-left: 4px solid $sidenav-active-border;
     }
     &.active {
       background: lighten($black-2, 5%);
-      border-left: 4px solid nth($red, 1);
+      border-left: 4px solid $sidenav-active-border;
     }
+  }
+}
+
+.is-collapsed .sidenav {
+  > li span{
+    display: none;
   }
 }
 
 .sidebar-primary {
   @include full-height();
-
   padding-top: 1em;
 
   background: $black-2;
@@ -64,5 +76,20 @@
   .accordion-content {
     border: 0;
     padding: 0;
+  }
+}
+
+.sidenav-submenu {
+  list-style: none;
+  padding: 0;
+
+  background: #383838; //refactor
+  a {
+    display: block;
+    padding: 0.6em 1em;
+    color: nth($silver, 1);
+    &:hover {
+      background: lighten(#383838, 10%);  //refactor
+    }
   }
 }
