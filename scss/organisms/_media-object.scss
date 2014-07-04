@@ -40,6 +40,10 @@ Create notifications, comments and other elements
 .media {
   @include clearfix();
   margin-bottom: 1em;
+  img {
+    width: 4em;
+    height: 4em;
+  }
 }
 
 .media-object {
@@ -52,4 +56,37 @@ Create notifications, comments and other elements
 
 .media-body {
   margin-bottom: 1em;
+  p {
+    margin: 0;
+  }
+}
+
+.notifications {
+  position: relative;
+  padding: 3em 1em;
+  width: 350px;
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    width: 100%;
+    text-align: center;
+    background: $white;
+    border-bottom: 1px solid #eee;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: .5em;
+    width: 100%;
+    text-align: center;
+    background: $white;
+    border-top: 1px solid #eee;
+  }
+}
+
+.unread {
+  font-weight: bold;
 }

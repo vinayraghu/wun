@@ -19,3 +19,33 @@
   width: 40px;
   height: 40px;
 }
+
+.top-nav-icons {
+  display: inline-block;
+  > a:not(.avatar) {
+    display: block;
+
+    width: 3em;
+    height: 3em;
+
+    margin-left: .5em;
+
+    padding-top: 1em;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.1),0 2px 10px 0 rgba(0,0,0,.1);
+  }
+}
+
+.avatar {
+  display: inline-block;
+
+  width: 3em;
+  height: 3em;
+
+  margin-left: 0.4em;
+
+  vertical-align: bottom;
+
+}

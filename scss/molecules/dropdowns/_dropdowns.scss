@@ -126,7 +126,7 @@ Add a dropdown to any element
   position: relative;
 }
 .dropdown-toggle:focus {
-  outline: 0;
+  outline: none;
 }
 .dropdown-menu {
   border-radius: 0;
@@ -227,9 +227,9 @@ Add a dropdown to any element
   left: auto;
 }
 // Styling dropdown active / open state
-.dropdown.open {
-  background: darken($black-2, 10%);
-  > a {
-    color: #b5bcbd;
-  }
-}
+// .dropdown.open {
+//   background: darken($black-2, 10%);
+//   > a {
+//     color: #b5bcbd;
+//   }
+// }
