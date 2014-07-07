@@ -39,10 +39,10 @@ Create notifications, comments and other elements
 
 .media {
   @include clearfix();
-  margin-bottom: 1em;
   img {
     width: 4em;
     height: 4em;
+    border: 1px solid #ddd;
   }
 }
 
@@ -63,13 +63,13 @@ Create notifications, comments and other elements
 
 .notifications {
   position: relative;
-  padding: 3em 1em;
+  padding: 3em 0;
   width: 350px;
   header {
     position: absolute;
     top: 0;
     left: 0;
-    padding: .5em;
+    padding: .5em 1em;
     width: 100%;
     text-align: center;
     background: $white;
@@ -79,7 +79,7 @@ Create notifications, comments and other elements
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: .5em;
+    padding: .5em 1em;
     width: 100%;
     text-align: center;
     background: $white;
@@ -89,4 +89,11 @@ Create notifications, comments and other elements
 
 .unread {
   font-weight: bold;
+}
+
+.messages > li {
+  padding: 1em;
+  &:hover {
+    background: rgba($black, .1);
+  }
 }
