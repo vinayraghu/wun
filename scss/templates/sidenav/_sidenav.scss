@@ -83,6 +83,11 @@ $sidenav-padding: .6em 0;
   list-style: none;
   padding: 0;
 
+  .active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
   background: #383838; //refactor
   a {
     display: block;
