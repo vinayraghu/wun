@@ -80,6 +80,11 @@ $sidebar-collapsed-width: em-calc(50px);
   }
 }
 
+.block {
+  float: left;
+  max-width: calc(100% - #{$sidebar-width});
+}
+
 .sidebar-primary {
   position: fixed;
 
@@ -142,3 +147,12 @@ $sidebar-collapsed-width: em-calc(50px);
     white-space: nowrap !important;
   }
 }
+
+.wtHider {
+  width: 100% !important;
+}
+
+.wtSpreader {
+  width: 100% !important;
+}
+
