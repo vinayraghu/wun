@@ -1,0 +1,44 @@
+/*doc
+#Login Screen
+---------------
+
+```
+<div class="login-container">
+  <div class="form-group">
+    <label for="username">
+      Username
+      <input type="text" id="username">
+    </label>
+    <p class="help-text">Please enter a valid username</p>
+  </div>
+  <div class="form-group">
+    <label for="password">
+      Password
+      <input type="password" id="password">
+      <label for="show-password">Show <input type="checkbox" id="show-password" class="show-password"></label>
+    </label>
+    <p class="help-text">The username / password does not match. Please try again</p>
+  </div>
+    <input type="submit" value="login" class="btn btn-primary">
+    <label for="remember-me">
+    Remember me
+    <input type="checkbox" id="remember-me">
+    </label>
+    <a href="#">Forgot details</a>
+</div>
+```
+*/
+// The word "show"
+[for="show-password"] {
+  position: absolute;
+  right: 0.6em;
+  top: 2.1em;
+  display: inline-block;
+}
+
+// The checkbox
+.show-password {
+  position: absolute;
+  right: 3em;
+  top: 0.2em;
+}
