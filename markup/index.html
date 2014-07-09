@@ -30,7 +30,7 @@
     </div>
     <section class="content-main">
       <header class="section-title">
-        <div class="row">
+        <div class="row block">
           <div class="large-4 columns">
             <h3><i class="fa fa-barcode"></i> Products</h3>
           </div>
@@ -109,7 +109,7 @@
 
           </div>
         </div>
-        <div class="row">
+        <div class="row block">
           <div class="large-4 columns">
             <ul class="breadcrumbs">
               <li><a href="#">Home</a></li>
@@ -120,12 +120,30 @@
         </div>
       </header>
       <section class="section-content">
-        <div class="row products-title-container">
+        <div class="row block products-title-container">
           <h4 class="products-title">Product Information</h4>
           <button class="btn-product-upload">Upload</button>
           <a href="#"><i class="fa fa-download"></i> Download template (.xls)</a>
         </div>
-        <div class="row">
+        <div class="row block">
+          <div class="large-16 columns">
+            <div class="btn-group">
+             <a href="#" class="btn btn-secondary">
+                <i class="fa fa-square-o"></i> Select All
+             </a>
+             <a href="#" class="btn btn-secondary"><i class="fa fa-save"></i> Save</a>
+             <button class="btn btn-secondary"><i class="fa fa-trash-o"></i> Delete</button>
+            </div>
+            <div class="btn-group">
+             <a href="#" class="btn btn-secondary">
+              <i class="fa fa-filter"></i>Filter
+             </a>
+             <a href="#" class="btn btn-secondary"><i class="fa fa-save"></i> Save</a>
+             <button class="btn btn-secondary"><i class="fa fa-trash-o"></i> Delete</button>
+            </div>
+          </div>
+        </div>
+        <div class="row block">
           <div class="large-16 columns">
             <ul id="collections" class="nav nav-tabs">
               <li class="active"><a href="#products" data-toggle="tab"><i class="fa fa-info-circle"></i> Product Information</a></li>
@@ -147,7 +165,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row block">
           <div class="large-12 columns">
             <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
              Edit content
@@ -208,7 +226,7 @@
     <script src="//localhost/wun/vendors/jquery.loadingbar/jquery.loadingbar.min.js"></script>
     <script>
         $(".ajax-call").loadingbar({
-          replaceURL: false, /* You can visibly change the URL of the browser to reflect the clicked links by toggling this to true. Default is false. May not work in old browsers. */
+          replaceURL: false, /* You can visibly change the URL of the brow blockser to reflect the clicked links by toggling this to true. Default is false. May not work in old brow blocksers. */
             target: "#loadingbar-frame", /* The container's selector where you want the ajax result to appear. Default is #loadingbar-frame */
             direction: "right", /* The direction where the the loading bar will progress. Default is right. */
 
