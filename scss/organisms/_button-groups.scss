@@ -170,15 +170,23 @@
 */
 
 .btn-group {
+  display: inline-block;
+  + .btn-group {
+    margin-left: 2em;
+  }
   list-style: none;
   margin-bottom: 1em;
   > .btn {
-    @include transition-effect($timing: 0.1s);
+    line-height: 1.2;
 
     display: inline-block;
     border: 1px solid;
     margin: -0.4em; //Make them line up nicely
-
+    // Line buttons with just an icon in them correctly
+    i {
+      line-height: 1.6;
+      margin-right: 0.3em;
+    }
     // Make sure double clicking doesn't add issues
     &::selection {
       background: transparent;
@@ -208,11 +216,53 @@
     }
   }
   //disbale button hover effects for clarity
-  .btn-primary {&:hover {background: $brand-primary}}
-  .btn-secondary {&:hover {background: $brand-secondary}}
-  .btn-alert {&:hover {background: $brand-alert}}
-  .btn-success {&:hover {background: $brand-success}}
-  .btn-warning {&:hover {background: $brand-warning}}
-  .btn-info {&:hover {background: $brand-info}}
+  .btn-primary {
+    &:hover {
+      background: lighten($brand-primary, 10%);
+    }
+    &:active {
+      background: darken($brand-primary, 10%);
+    }
+  }
+  .btn-secondary {
+    &:hover {
+      background: lighten($brand-secondary, 10%);
+    }
+    &:active {
+      background: darken($brand-secondary, 10%);
+    }
+  }
+  .btn-alert {
+    &:hover {
+      background: lighten($brand-alert, 10%);
+    }
+    &:active {
+      background: darken($brand-alert, 10%);
+    }
+  }
+  .btn-success {
+    &:hover {
+      background: lighten($brand-success, 10%);
+    }
+    &:active {
+      background: darken($brand-success, 10%);
+    }
+  }
+  .btn-warning {
+    &:hover {
+      background: lighten($brand-warning, 10%);
+    }
+    &:active {
+      background: darken($brand-warning, 10%);
+    }
+  }
+  .btn-info {
+    &:hover {
+      background: lighten($brand-info, 10%);
+    }
+    &:active {
+      background: darken($brand-info, 10%);
+    }
+  }
 }
 

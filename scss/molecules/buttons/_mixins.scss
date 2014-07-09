@@ -2,7 +2,12 @@
 
 @mixin btn() {
   @include no-dec;
-  @include transition-effect($timing: 0.1s);
+  &:not(.exclude) {
+    @include transition-effect($timing: 0.1s);
+    &:active {
+      transform: scale(0.98);
+    }
+  }
 
   display: inline-block;
   border: none;
@@ -21,10 +26,6 @@
   text-transform: uppercase;
 
   color: white;
-
-  &:active {
-    transform: scale(0.98);
-  }
 }
 
 @mixin btn-sizes($button-size-variations, $size) {
