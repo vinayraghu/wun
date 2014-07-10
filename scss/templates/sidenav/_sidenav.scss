@@ -42,6 +42,7 @@ $sidenav-padding: .6em 0;
 
     padding: $sidenav-padding;
 
+    opacity: 0; // Use velocity to make visible
     cursor: pointer;
     color: nth($silver, 1);
     text-transform: capitalize;
@@ -55,6 +56,16 @@ $sidenav-padding: .6em 0;
       border-left: 4px solid $sidenav-active-border;
     }
   }
+}
+
+.button-collapse-sidebar {
+  @include transition-effect();
+  transform: rotate(0deg);
+}
+
+.is-collapsed .button-collapse-sidebar {
+  @include transition-effect();
+  transform: rotate(180deg);
 }
 
 .is-collapsed .sidenav {
@@ -85,7 +96,6 @@ $sidenav-padding: .6em 0;
 
   .active {
     font-weight: bold;
-    text-decoration: underline;
   }
 
   background: #383838; //refactor

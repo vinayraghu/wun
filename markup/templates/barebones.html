@@ -12,190 +12,29 @@
     <link href="../vendors/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
   </head>
   <body>
-    <div class="content-wrap">
-      <div class="sidebar-primary">
-        <h1 class="logo">runway2street</h1>
-        <ul class="sidenav">
-          <li><i class="fa fa-home"></i> <span>Dashboard</span> </li>
-          <li><i class="fa fa-users"></i> <span>Designers</span> </li>
-          <li class="active"><i class="fa fa-barcode"></i> <span>Products</span> </li>
-          <ul class="sidenav-submenu">
-            <li class="active"><a href="#">Products</a></li>
-            <li><a href="#">Product Images</a></li>
-            <li><a href="#">Inventory</a></li>
-          </ul>
-          <li><i class="fa fa-credit-card"></i> <span>Orders</span> </li>
-          <li><i class="fa fa-thumbs-o-up"></i> <span>Marketing</span> </li>
-          <li id="collapse-sidebar"><i class="fa fa-chevron-left button-collapse-sidebar"></i> <span> Collapse</span> </li>
-        </ul>
+    <div class="login-container">
+      <div class="form-group">
+        <label for="username">
+          Username
+          <input type="text" id="username">
+        </label>
+        <p class="help-text">Please enter a valid username</p>
       </div>
-      <section class="content-main">
-        <header class="section-title">
-          <div class="row block">
-            <div class="large-4 columns">
-              <h3><i class="fa fa-barcode"></i> Products</h3>
-            </div>
-            <div class="large-4 columns text-center">
-              <input type="text" placeholder="Search all data" class="search-all">
-              <button class="btn btn-primary">
-                <i class="fa fa-search"></i>
-              </button>
-            </div>
-            <div class="large-6 columns text-right end">
-              <div class="dropdown top-nav-icons">
-                <a data-toggle="dropdown" href="#"><i class="fa fa-bell-o"></i></a>
-                <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
-                  <div class="notifications">
-                    <header>4 Notifications (1 new) </header>
-                    <div class="messages">
-                      <li class="unread">
-                         <div class="media">
-                          <a class="pull-left" href="#">
-                            <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/designer/55/38/products/1773/193/210f0799f20a4a348c0383ccf09efa45_320x296_4.jpg" alt="...">
-                          </a>
-                          <div class="media-body text-left">
-                            <span>New designer onboarded - Xin </span>
-                            <p class="text-secondary">3 hours ago</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media">
-                          <a class="pull-left" href="#">
-                            <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/designer/71/icouserdefault-2.jpg" alt="...">
-                          </a>
-                          <div class="media-body text-left">
-                            <span>New collection SS14 uploaded by Ayaka Nishi</span>
-                            <p class="text-secondary">4 hours ago</p>
-                          </div>
-                       </div>
-                      </li>
-                      <li>
-                        <div class="media">
-                          <a class="pull-left" href="#">
-                            <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com//marketing%20banners/Owl_Flat_Blue_Rose4-194.jpg" alt="...">
-                          </a>
-                          <div class="media-body text-left">
-                            <span>New marketing view - Celebrate in style</span>
-                            <p class="text-secondary">5 hours ago</p>
-                          </div>
-                       </div>
-                      </li>
-                      <li>
-                        <div class="media">
-                          <a class="pull-left" href="#">
-                            <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com//marketing%20banners/Owl_Flat_Blue_Rose4-194.jpg" alt="...">
-                          </a>
-                          <div class="media-body text-left">
-                            <span>New marketing view - Celebrate in style</span>
-                            <p class="text-secondary">5 hours ago</p>
-                          </div>
-                       </div>
-                      </li>
-
-                    </div>
-                    <footer><a href="#">See All</a></footer>
-                  </div>
-                </ul>
-              </div>
-              <div class="dropdown avatar">
-                <a data-toggle="dropdown" href="#"><img src="http://s3.amazonaws.com/insightly.userfiles/325608/1452VJ/560dd118-e2d1-4922-9884-2e0888ccfa91.jpg" alt="" class="img-circle"></a>
-                <ul class="dropdown-menu pull-right text-left" role="menu" aria-labelledby="dLabel">
-                  <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                  <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#"><i class="fa fa-power-off"></i> Sign out</a></li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-          <div class="row block">
-            <div class="large-4 columns">
-              <ul class="breadcrumbs">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Collections</a></li>
-                <li class="active"><a href="#">SS14</a></li>
-              </ul>
-            </div>
-          </div>
-        </header>
-        <section class="section-content">
-          <div class="row block products-title-container">
-            <h4 class="products-title">Product Information</h4>
-            <button class="btn-product-upload">Upload</button>
-            <a href="#"><i class="fa fa-download"></i> Download template (.xls)</a>
-          </div>
-          <div class="row block">
-            <div class="large-16 columns">
-              <div class="btn-group">
-               <a href="#" class="btn btn-secondary exclude">
-                  <i class="fa fa-square-o"></i> Select All
-               </a>
-               <a href="#" class="btn btn-secondary exclude"><i class="fa fa-save"></i> Save</a>
-               <button class="btn btn-secondary"><i class="fa fa-trash-o"></i> Delete</button>
-              </div>
-              <div class="btn-group">
-               <a href="#" class="btn btn-secondary exclude">
-                <i class="fa fa-filter"></i>Filter
-               </a>
-               <a href="#" class="btn btn-secondary"><i class="fa fa-save"></i> Save</a>
-               <button class="btn btn-secondary"><i class="fa fa-trash-o"></i> Delete</button>
-              </div>
-            </div>
-          </div>
-          <div class="row block">
-            <div class="large-16 columns">
-              <ul id="collections" class="nav nav-tabs">
-                <li class="active"><a href="#products" data-toggle="tab"><i class="fa fa-info-circle"></i> Product Information</a></li>
-                <li><a href="#product-images" data-toggle="tab">Meta Details</a></li>
-                <li><a href="#inventory" data-toggle="tab">Pricing</a></li>
-              </ul>
-              <div id="collections-content" class="tab-content">
-                <div class="tab-pane fade active in" id="products">
-                  <div class="row">
-                    <div id="dataTable"></div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="product-images">
-                  <div id="metaTable"></div>
-                </div>
-                <div class="tab-pane fade" id="inventory">
-                  <div id="pricingTable"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row block">
-            <div class="large-12 columns">
-              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-               Edit content
-              </button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-               <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close large" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h4 class="modal-title" id="myModalLabel">Product Description</h4>
-                    </div>
-                    <div class="modal-body">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sint, ipsa pariatur enim id dolores debitis, eos obcaecati rem nobis corporis ut deleniti beatae modi similique? Suscipit quasi, unde! Nulla.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-               </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
+      <div class="form-group">
+        <label for="password">
+          Password
+          <input type="password" id="password">
+          <label for="show-password">Show <input type="checkbox" id="show-password" class="show-password"></label>
+        </label>
+        <p class="help-text">The username / password does not match. Please try again</p>
+      </div>
+        <input type="submit" value="login" class="btn btn-primary">
+        <label for="remember-me">
+        Remember me
+        <input type="checkbox" id="remember-me">
+        </label>
+        <a href="#">Forgot details</a>
     </div>
-
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.1/jquery.slimscroll.min.js"></script>
       <script>

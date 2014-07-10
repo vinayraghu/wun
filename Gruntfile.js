@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         options: {
           style: 'expanded',
           sourcemap: true,
-          lineNumbers: true,
+          lineNumbers: false,
           noCache: true
         },
         files: {

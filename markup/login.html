@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>runway2street Admin</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../vendors/jquery.loadingbar/loadingbar.css">
+    <link rel="stylesheet" href="../vendors/jquery.growl/stylesheets/jquery.growl.css">
+    <link rel="stylesheet" href="../vendors/bootstrap-datepicker/css/datepicker3.css">
+    <link rel="stylesheet" href="../vendors/handsontable/dist/jquery.handsontable.full.css">
+    <link href="../vendors/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="text-center">
+        <img src="../img/logo.png" alt="" width="120">
+      </div>
+      <div class="form-group">
+        <label for="username">
+          Username
+          <input type="text" id="username">
+        </label>
+        <p class="help-text">Please enter a valid username</p>
+      </div>
+      <div class="form-group">
+        <label for="password">
+          Password
+          <input type="password" id="password">
+          <label for="show-password">Show <input type="checkbox" id="show-password" class="show-password"></label>
+        </label>
+        <p class="help-text">The username / password does not match. Please try again</p>
+      </div>
+      <div class="login-meta">
+        <div class="login-remember">
+          <label for="remember-me">
+          <input type="checkbox" id="remember-me">
+            Remember
+          </label>
+        </div>
+        <div class="login-forgot">
+          <a href="#">Forgot details</a>
+        </div>
+      </div>
+        <input type="submit" value="login" class="btn exclude btn-primary btn-expand">
+
+
+    </div>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.1/jquery.slimscroll.min.js"></script>
+      <script>
+        $(function(){
+            $('.messages').slimScroll({
+                height: '250px'
+            });
+        });
+      </script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script>
+        $('.dropdown-toggle').dropdown()
+      </script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js"></script>
+      <script>
+          $(document).foundation();
+      </script>
+      <script src="../scripts/animations.js"></script>
+      <script>
+        $(".has-tooltip").tooltip();
+      </script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/0.0.22/jquery.velocity.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/0.0.22/velocity.ui.js"></script>
+
+      <script src="//localhost/wun/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+      <script>
+        $('.datepicker').datepicker();
+      </script>
+
+      <script src="//localhost/wun/vendors/jquery.loadingbar/jquery.loadingbar.min.js"></script>
+      <script>
+          $(".ajax-call").loadingbar({
+            replaceURL: false, /* You can visibly change the URL of the brow blockser to reflect the clicked links by toggling this to true. Default is false. May not work in old brow blocksers. */
+              target: "#loadingbar-frame", /* The container's selector where you want the ajax result to appear. Default is #loadingbar-frame */
+              direction: "right", /* The direction where the the loading bar will progress. Default is right. */
+
+              /* Default Ajax Parameters.  */
+              async: true,
+              complete: function(xhr, text) {},
+              cache: true,
+              error: function(xhr, text, e) {},
+              global: true,
+              headers: {},
+              statusCode: {},
+              success: function(data, text, xhr) {},
+              dataType: "html",
+              done: function(data) {}
+          });
+      </script>
+
+      <script src="//localhost/wun/vendors/jquery-knob/js/jquery.knob.js"></script>
+      <script>
+        $(".dial").knob();
+      </script>
+      <script src="//localhost/wun/vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+
+
+      <script>
+        $(function() {
+            $('.chart').easyPieChart();
+        });
+      </script>
+
+      <script src="//localhost/wun/vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+      <script src="//localhost/wun/vendors/jquery-autocomplete/jquery.autocomplete.min.js"></script>
+          <script>
+          var options, a;
+          jQuery(function(){
+            options = {
+              zIndex: 1000,
+              lookup: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] // example local lookup
+            };
+            a = $('.autocomplete').autocomplete(options);
+          });
+          autocomplete
+          </script>
+          <script>
+          $("#collapse-sidebar").on("click", function () {
+            $(".sidebar-primary").toggleClass("is-collapsed");
+            $(".content-main").toggleClass("is-expanded");
+          });
+          </script>
+          <script src="../vendors/handsontable/dist/jquery.handsontable.full.js"></script>
+          <script>
+            var data = [
+              ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+
+            ];
+            $("#dataTable").handsontable({
+              data: data,
+              colHeaders: ["S. No", "Product Category", "Product Name", "Color", "Size", "Fit"]
+            });
+          </script>
+          <script>
+          // Pricing
+            var data2 = [
+              ["0.00", "626.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["0.00", "626.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["0.00", "657.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["0.00", "657.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"]
+            ];
+            $("#pricingTable").handsontable({
+              data: data2,
+              colHeaders: ["Wholesale Price", "Retail Price", "Discount", "Start Date", "End Date"]
+            });
+
+          </script>
+          <script>
+          // Meta Details
+            var data3 = [
+              ["ABSS14.apron.b", "0.00", "626.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["ABSS14.apron.g", "0.00", "626.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["ABSS14.Hi Frequen.b", "0.00", "657.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["ABSS14.Hi Frequen.g", "0.00", "657.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"]
+            ];
+            $("#metaTable").handsontable({
+              data: data3,
+              colHeaders: [, "Wholesale Price", "Retail Price", "Discount", "Start Date", "End Date"]
+            });
+
+          </script>
+
+
+          <script src="../vendors/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $(".login-container").velocity("transition.expandIn", 800);
+            })
+          </script>
+  </body>
+</html>
