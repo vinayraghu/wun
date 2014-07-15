@@ -50,6 +50,10 @@
   padding-top: 6em;
 }
 
+.modal-dialog .login-container {
+  padding-top: 0; // Remove padding when the login box is inside a modal
+}
+
 .login-meta {
   float: left;
   width: 100%;

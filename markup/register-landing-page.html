@@ -15,7 +15,7 @@
       <h2 class="marketing-follow">A global luxury e-commerce platform</h2>
       <div class="register-cta">
         <a href="#" class="btn btn-large btn-secondary">Join Now</a>
-        <p class="text-center">Already a member? <a href="#">Login here</a></p>
+        <p class="text-center">Already a member? <a href="#" data-toggle="modal" data-target="#myModal">Login here</a></p>
       </div>
     </div>
     <div class="row register-marketing-stubs">
@@ -104,7 +104,7 @@
             <p class="help-text">A block of help text that breaks onto a new line and may extend beyond one line. A block of help text that breaks onto a new line and may extend beyond one line. A block of help text that breaks onto a new line and may extend beyond one line.</p>
           </div>
           <div class="form-group">
-            <label for="register-file">Upload lookbook images</label>
+            <label for="register-file">Upload lookbook / Product Images</label>
             <input type="file">
           </div>
           <div class="form-group">
@@ -134,6 +134,48 @@
         Copyright &copy; runway2street 2014. All Rights Reserved
       </p>
     </div>
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="login-container">
+            <div class="text-center">
+              <img src="../img/logo.png" alt="" width="120">
+            </div>
+            <form name></form>
+            <div class="form-group">
+              <label for="username">
+                Username
+                <input type="text" id="username">
+              </label>
+              <p class="help-text">Please enter a valid username</p>
+            </div>
+            <div class="form-group">
+              <label for="password">
+                Password
+                <input type="password" id="password">
+                <!-- <label for="show-password">Show <input type="checkbox" id="show-password" class="show-password"></label> -->
+              </label>
+              <p class="help-text">The username / password does not match. Please try again</p>
+            </div>
+            <div class="login-meta">
+              <div class="login-remember">
+                <label for="remember-me">
+                <input type="checkbox" id="remember-me">
+                  Remember
+                </label>
+              </div>
+              <div class="login-forgot">
+                <a href="#">Forgot details</a>
+              </div>
+            </div>
+              <input type="submit" value="login" class="btn exclude btn-primary btn-expand">
+          </div>
+        </div>
+      </div>
+   </div>
   </div>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
