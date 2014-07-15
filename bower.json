@@ -21,6 +21,8 @@
     "jquery.sparkline": "~2.1.2",
     "d3": "~3.4.8",
     "handsontable": "~0.10.5",
-    "x-editable": "~1.5.1"
+    "x-editable": "~1.5.1",
+    "skrollr": "~0.6.26",
+    "dropzone": "~3.10.2"
   }
 }

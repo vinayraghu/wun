@@ -1,0 +1,49 @@
+@mixin marketing-bg() {
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.9);
+}
+
+.register-logo {
+  padding: 4em 0;
+}
+
+.marketing-banner {
+  background: url('../img/grid.png') no-repeat center center rgba(0,0,0,.2);
+  padding-bottom: 4em;
+}
+
+.marketing-lead {
+  @include marketing-bg();
+  font-weight: 400;
+  padding-top: .5em;
+}
+
+.marketing-follow {
+  @include marketing-bg();
+  font-size: 2em;
+  padding: 1em 0 1em;
+}
+
+.register-cta {
+  @include marketing-bg();
+  padding-bottom: 2em;
+}
+
+.register-marketing-stubs {
+  padding: 2em 0;
+  p, label {
+    font-size: 1.2em;
+  }
+}
+
+.register-marketing-video {
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.register-filler {
+  height: 300px;
+}

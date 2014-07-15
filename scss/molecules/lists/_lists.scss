@@ -77,7 +77,17 @@
 
 .horizontal-list {
   list-style: none;
+  padding: 0;
   > li {
+    margin-bottom: .5em;
     display: inline-block;
+  }
+}
+
+.divider-list {
+  li {
+    padding-right: 1em;
+    border-right: 1px solid $brand-secondary;
+    margin-right: 1em;
   }
 }
