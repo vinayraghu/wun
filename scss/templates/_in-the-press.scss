@@ -44,8 +44,8 @@
 }
 
 .news-quote {
-  font-family: futura;
-  font-size: 1rem;
+  font-family: $open-sans;
+  font-size: 1.1em;
   max-height: 80px;
   text-overflow: ellipsis;
   overflow: hidden;
