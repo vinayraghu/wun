@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>runway2street Admin</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../vendors/jquery.loadingbar/loadingbar.css">
+    <link rel="stylesheet" href="../vendors/jquery.growl/stylesheets/jquery.growl.css">
+    <link rel="stylesheet" href="../vendors/bootstrap-datepicker/css/datepicker3.css">
+    <link rel="stylesheet" href="../vendors/handsontable/dist/jquery.handsontable.full.css">
+    <link href="../vendors/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="content-wrap">
+      <div class="sidebar-primary">
+        <h1 class="logo">runway2street</h1>
+        <ul class="sidenav">
+          <li><i class="fa fa-home"></i> <span>Dashboard</span> </li>
+          <li><i class="fa fa-users"></i> <span>Designers</span> </li>
+          <li class="active"><i class="fa fa-barcode"></i> <span>Products</span> </li>
+          <ul class="sidenav-submenu">
+            <li class="active"><a href="#">Products</a></li>
+            <li><a href="#">Product Images</a></li>
+            <li><a href="#">Inventory</a></li>
+          </ul>
+          <li><i class="fa fa-credit-card"></i> <span>Orders</span> </li>
+          <li><i class="fa fa-thumbs-o-up"></i> <span>Marketing</span> </li>
+          <li id="collapse-sidebar"><i class="fa fa-chevron-left button-collapse-sidebar"></i> <span> Collapse</span> </li>
+        </ul>
+      </div>
+      <section class="content-main">
+        <header class="section-title">
+          <div class="row block">
+            <div class="large-4 columns">
+              <h3><i class="fa fa-barcode"></i> Products</h3>
+            </div>
+            <div class="large-4 columns text-center">
+              <input type="text" placeholder="Search all data" class="search-all">
+              <button class="btn btn-primary">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+            <div class="large-6 columns text-right end">
+              <div class="dropdown top-nav-icons">
+                <a data-toggle="dropdown" href="#"><i class="fa fa-bell-o"></i></a>
+                <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+                  <div class="notifications">
+                    <header>4 Notifications (1 new) </header>
+                    <div class="messages">
+                      <li class="unread">
+                         <div class="media">
+                          <a class="pull-left" href="#">
+                            <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/designer/55/38/products/1773/193/210f0799f20a4a348c0383ccf09efa45_320x296_4.jpg" alt="...">
+                          </a>
+                          <div class="media-body text-left">
+                            <span>New designer onboarded - Xin </span>
+                            <p class="text-secondary">3 hours ago</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media">
+                          <a class="pull-left" href="#">
+                            <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/designer/71/icouserdefault-2.jpg" alt="...">
+                          </a>
+                          <div class="media-body text-left">
+                            <span>New collection SS14 uploaded by Ayaka Nishi</span>
+                            <p class="text-secondary">4 hours ago</p>
+                          </div>
+                       </div>
+                      </li>
+                      <li>
+                        <div class="media">
+                          <a class="pull-left" href="#">
+                            <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com//marketing%20banners/Owl_Flat_Blue_Rose4-194.jpg" alt="...">
+                          </a>
+                          <div class="media-body text-left">
+                            <span>New marketing view - Celebrate in style</span>
+                            <p class="text-secondary">5 hours ago</p>
+                          </div>
+                       </div>
+                      </li>
+                      <li>
+                        <div class="media">
+                          <a class="pull-left" href="#">
+                            <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com//marketing%20banners/Owl_Flat_Blue_Rose4-194.jpg" alt="...">
+                          </a>
+                          <div class="media-body text-left">
+                            <span>New marketing view - Celebrate in style</span>
+                            <p class="text-secondary">5 hours ago</p>
+                          </div>
+                       </div>
+                      </li>
+
+                    </div>
+                    <footer><a href="#">See All</a></footer>
+                  </div>
+                </ul>
+              </div>
+              <div class="dropdown avatar">
+                <a data-toggle="dropdown" href="#"><img src="http://s3.amazonaws.com/insightly.userfiles/325608/1452VJ/560dd118-e2d1-4922-9884-2e0888ccfa91.jpg" alt="" class="img-circle"></a>
+                <ul class="dropdown-menu pull-right text-left" role="menu" aria-labelledby="dLabel">
+                  <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                  <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#"><i class="fa fa-power-off"></i> Sign out</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="row block">
+            <div class="large-4 columns">
+              <ul class="breadcrumbs">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li class="active"><a href="#">Press Links</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <section class="section-content">
+          <div class="row block products-title-container">
+            <h4 class="products-title">Press Links</h4>
+          </div>
+          <div class="row block">
+
+          </div>
+          <div class="row block">
+            <div class="large-16 columns">
+              <article class="news press--add">
+                <label for="press-add-image">
+                  <img src="../img/placeholder-img.png" alt="" class="logo-publication press-placeholder-img">
+                </label>
+                  <input type="file" id="press-add-image">
+                </a>
+                <label for="press-url">Enter URL</label>
+                <input type="url" id="press-url">
+                <label for="press-desc">Add excerpt</label>
+                <textarea name="" id="press-desc" cols="30" rows="2"></textarea>
+                <input type="submit" value="Add Pres Link" class="btn btn-primary btn-expand press-add-link">
+              </article>
+              <article class="news">
+                <a href="http://www.idealmagazine.co.uk/runway2street-your-new-go-to-site-for-up-coming-fashion-designers/" target="_blank">
+                    <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/pressLinks/ideal_1.jpg" alt="" class="logo-publication">
+                </a>
+                <p class="news-quote">Runway2Street: Your new go-to site for up and coming fashion designers</p>
+              </article>
+              <article class="news">
+                <a href="http://www.seattlemet.com/news-and-profiles/articles/designed-sealed-delivered-may-2014" target="_blank">
+                    <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/pressLinks/seatle met_1.JPG" alt="" class="logo-publication">
+                </a>
+                <p class="news-quote">Designed, Sealed, Delivered</p>
+              </article><article class="news">
+                <a href="http://www.internetretailer.com/2014/02/20/runway2street-debuts-online-marketplace-fashion" target="_blank">
+                    <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/pressLinks/IR_1.JPG" alt="" class="logo-publication">
+                </a>
+                <p class="news-quote">runway2street Debuts Online Marketplace for Emerging Fashion Brands</p>
+              </article><article class="news">
+                <a href="http://www.businessbigwigs.com/2014/05/22/rathna-sharad-runway2street/" target="_blank">
+                    <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/pressLinks/shutterstock_134653565-1-copy1-e1375306585494_1.jpg" alt="" class="logo-publication">
+                </a>
+                <p class="news-quote">Interview: Rathna Sharad Brings Together Emerging Brands With runway2street</p>
+              </article><article class="news">
+                <a href="http://www.reuters.com/article/2014/02/19/wa-runway2street-idUSnBw195310a+100+BSW20140219" target="_blank">
+                    <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/pressLinks/reuters_logo_1.jpg" alt="" class="logo-publication">
+                </a>
+                <p class="news-quote">runway2street Makes its Debut, Showcasing Emerging Fashion Brands from Around th ...</p>
+              </article><article class="news">
+                <a href="http://www.fashinvest.com/designers-emerge-runway2street-launches/" target="_blank">
+                    <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/pressLinks/newest_top_log_1.jpg" alt="" class="logo-publication">
+                </a>
+                <p class="news-quote">New Designers Emerge as runway2treet Launches</p>
+              </article><article class="news">
+                <a href="http://prettylivingpr.com/saturday-spotlight-runway2street/" target="_blank">
+                    <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/pressLinks/pretty-living-logo-250x150_1.png" alt="" class="logo-publication">
+                </a>
+                <p class="news-quote">From the Runway to the Street  featuring Entrepreneur — Rathna Sharad</p>
+              </article><article class="news">
+                <a href="http://retailtouchpoints.tumblr.com/post/78541977138/runway2street-brings-online-luxury-to-the-next-level" target="_blank">
+                    <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/pressLinks/tumblr_static_rtp_blog_logo_1.png" alt="" class="logo-publication">
+                </a>
+                <p class="news-quote">runway2street Brings Online Luxury To The Next Level</p>
+              </article><article class="news">
+                <a href="http://www.geekwire.com/2014/runway2street/" target="_blank">
+                    <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/pressLinks/logo-small (1)_1.png" alt="" class="logo-publication">
+                </a>
+                <p class="news-quote">Online boutique Runway2street offers trendy international fashion items</p>
+              </article><article class="news">
+                <a href="http://www.seattlemag.com/runway2street-online-international-fashion-boutique-launches" target="_blank">
+                    <img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/pressLinks/seattlev2_logo (1)_1.png" alt="" class="logo-publication">
+                </a>
+                <p class="news-quote">Online International Fashion Boutique Launches</p>
+              </article>
+            </div>
+          </div>
+          <div class="row block">
+            <div class="large-12 columns">
+              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+               Edit content
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close large" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Product Description</h4>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sint, ipsa pariatur enim id dolores debitis, eos obcaecati rem nobis corporis ut deleniti beatae modi similique? Suscipit quasi, unde! Nulla.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.1/jquery.slimscroll.min.js"></script>
+      <script>
+        $(function(){
+            $('.messages').slimScroll({
+                height: '250px'
+            });
+        });
+      </script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script>
+        $('.dropdown-toggle').dropdown()
+      </script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js"></script>
+      <script>
+          $(document).foundation();
+      </script>
+      <script src="../scripts/animations.js"></script>
+      <script>
+        $(".has-tooltip").tooltip();
+      </script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/0.0.22/jquery.velocity.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/0.0.22/velocity.ui.js"></script>
+
+      <script src="//localhost/wun/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+      <script>
+        $('.datepicker').datepicker();
+      </script>
+
+      <script src="//localhost/wun/vendors/jquery.loadingbar/jquery.loadingbar.min.js"></script>
+      <script>
+          $(".ajax-call").loadingbar({
+            replaceURL: false, /* You can visibly change the URL of the brow blockser to reflect the clicked links by toggling this to true. Default is false. May not work in old brow blocksers. */
+              target: "#loadingbar-frame", /* The container's selector where you want the ajax result to appear. Default is #loadingbar-frame */
+              direction: "right", /* The direction where the the loading bar will progress. Default is right. */
+
+              /* Default Ajax Parameters.  */
+              async: true,
+              complete: function(xhr, text) {},
+              cache: true,
+              error: function(xhr, text, e) {},
+              global: true,
+              headers: {},
+              statusCode: {},
+              success: function(data, text, xhr) {},
+              dataType: "html",
+              done: function(data) {}
+          });
+      </script>
+
+      <script src="//localhost/wun/vendors/jquery-knob/js/jquery.knob.js"></script>
+      <script>
+        $(".dial").knob();
+      </script>
+      <script src="//localhost/wun/vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+
+
+      <script>
+        $(function() {
+            $('.chart').easyPieChart();
+        });
+      </script>
+
+      <script src="//localhost/wun/vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+      <script src="//localhost/wun/vendors/jquery-autocomplete/jquery.autocomplete.min.js"></script>
+          <script>
+          var options, a;
+          jQuery(function(){
+            options = {
+              zIndex: 1000,
+              lookup: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] // example local lookup
+            };
+            a = $('.autocomplete').autocomplete(options);
+          });
+          autocomplete
+          </script>
+          <script>
+          $("#collapse-sidebar").on("click", function () {
+            $(".sidebar-primary").toggleClass("is-collapsed");
+            $(".content-main").toggleClass("is-expanded");
+          });
+          </script>
+          <script src="../vendors/handsontable/dist/jquery.handsontable.full.js"></script>
+          <script>
+            var data = [
+              ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+              ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+              ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+
+            ];
+            $("#dataTable").handsontable({
+              data: data,
+              colHeaders: ["S. No", "Product Category", "Product Name", "Color", "Size", "Fit"]
+            });
+          </script>
+          <script>
+          // Pricing
+            var data2 = [
+              ["0.00", "626.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["0.00", "626.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["0.00", "657.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["0.00", "657.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"]
+            ];
+            $("#pricingTable").handsontable({
+              data: data2,
+              colHeaders: ["Wholesale Price", "Retail Price", "Discount", "Start Date", "End Date"]
+            });
+
+          </script>
+          <script>
+          // Meta Details
+            var data3 = [
+              ["ABSS14.apron.b", "0.00", "626.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["ABSS14.apron.g", "0.00", "626.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["ABSS14.Hi Frequen.b", "0.00", "657.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"],
+              ["ABSS14.Hi Frequen.g", "0.00", "657.00", "0.00", "09 Apr 2014", "0000-00-00 00:00:00"]
+            ];
+            $("#metaTable").handsontable({
+              data: data3,
+              colHeaders: [, "Wholesale Price", "Retail Price", "Discount", "Start Date", "End Date"]
+            });
+
+          </script>
+
+
+          <script src="../vendors/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+          <script>
+            $(document).ready(function() {
+              $('#username').editable();
+            });
+          </script>
+  </body>
+</html>

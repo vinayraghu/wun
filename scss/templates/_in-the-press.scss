@@ -1,0 +1,76 @@
+.news {
+  position: relative;
+  cursor: pointer;
+
+  width: 100%;
+  height: auto;
+
+  @media (min-width: 768px) {
+    width: 48%;
+    height: 280px;
+    overflow: hidden;
+    float: left;
+    max-width: 300px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 32%;
+    height: 280px;
+    overflow: hidden;
+    float: left;
+    max-width: 300px;
+  }
+
+  border-radius: $global-radius;
+  padding: 20px;
+  box-shadow: 0px 4px 10px 0 rgba(0,0,0,0.1),0px 2px 10px 0px rgba(0,0,0,0.1); // Polymer buttons
+  margin-right: 1%;
+  margin-bottom: 2%;
+
+
+  @include transition-effect();
+
+  &:hover {
+    box-shadow: 0px 4px 10px 0 rgba(0,0,0,0.1),0px 2px 10px 0px rgba(0,0,0,0.1); //Polymer buttons
+  }
+}
+
+.logo-publication {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.news-quote {
+  font-family: futura;
+  font-size: 1rem;
+  max-height: 80px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+  }
+  text-align: left !important;
+}
+
+.press-placeholder-img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.press-add-link {
+  margin-top: .5em;
+}
+
+.press--add {
+  background: $brand-secondary;
+}
+
+#press-add-image {
+  display: none; //Hide the file upload default
+}
