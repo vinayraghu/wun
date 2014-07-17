@@ -183,10 +183,10 @@
     border: 1px solid;
     margin: -0.4em; //Make them line up nicely
     // Line buttons with just an icon in them correctly
-    i {
-      line-height: 1.6;
-      margin-right: 0.3em;
-    }
+    // i {
+    //   line-height: 1.6;
+    //   margin-right: 0.3em;
+    // }
     // Make sure double clicking doesn't add issues
     &::selection {
       background: transparent;
