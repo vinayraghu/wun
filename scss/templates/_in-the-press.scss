@@ -28,7 +28,7 @@
   margin-bottom: 2%;
 
 
-  @include transition-effect();
+  @include transition-effect($property: (width, height));
 
   &:hover {
     box-shadow: 0px 4px 10px 0 rgba(0,0,0,0.1),0px 2px 10px 0px rgba(0,0,0,0.1); //Polymer buttons
@@ -73,4 +73,32 @@
 
 #press-add-image {
   display: none; //Hide the file upload default
+}
+
+.press--delete {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  display: block;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  text-align: center;
+  outline: none;
+  padding-top: 0.7em;
+  &:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  i {
+    font-size: 1.6em;
+  }
+}
+
+.press--delete-card {
+  &:not(.exclude) {
+    @include transition-effect($timing: 0.1s);
+    &:active {
+      transform: scale(0.9);
+    }
+  }
 }

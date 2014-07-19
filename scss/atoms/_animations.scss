@@ -88,3 +88,7 @@ Using the class `.ajax-call` and some scripting, we can achieve the AJAX loading
   width: 18px;
   height: 18px;
 }
+
+.animating {
+  transition: none; // Disable CSS transitions on items animated via velocity
+}
