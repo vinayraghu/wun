@@ -249,11 +249,29 @@
       </script>
       <script src="../vendors/velocity/jquery.velocity.min.js"></script>
       <script src="../vendors/velocity/velocity.ui.min.js"></script>
+      <script src="../vendors/jquery.growl/javascripts/jquery.growl.js"></script>
       <script>
         $(".press--delete-card").on("click", function () {
           $(this).parents(".news")
-            .velocity("transition.slideDownOut") // Animate the parent container
+            .velocity("transition.slideDownOut"); // Animate the parent container
+          $.growl({
+            title: "",
+            message: "<i class='fa fa-trash-o'></i> Press link deleted" // Use when card is deleted
+          });
         });
+
+      </script>
+      <!-- Triggering validation errors on add Press link -->
+      <script>
+        $.growl.notice({
+          title: "<i class='fa fa-check-circle-o'></i> Success",
+          message: "Press link added",
+        });
+        $.growl.error({
+          title: "<i class='fa fa-exclamation-circle'></i> Error",
+          message: "Please enter a valid URL",
+        });
+
       </script>
   </body>
 </html>
