@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../vendors/jquery.loadingbar/loadingbar.css">
     <link rel="stylesheet" href="../vendors/jquery.growl/stylesheets/jquery.growl.css">
     <link rel="stylesheet" href="../vendors/chosen/public/chosen.min.css">
+    <link rel="stylesheet" href="../vendors/medium-editor/dist/css/medium-editor.min.css"> <!-- Core -->
+    <link rel="stylesheet" href="../vendors/medium-editor/dist/css/themes/default.css"> <!-- or any other theme -->
   </head>
   <body>
     <header class="section-title">
@@ -199,34 +201,34 @@
                     <a href="#" class="btn btn-primary btn-expand">Add to bag</a>
                   </div>
                 </div>
-  <br>  <br>
-<section class="accordions">
- <div class="accordion">
-    <input type="checkbox" id="accordion-4" checked />
-    <label class="accordion-secondary" for="accordion-4">Editor's Notes</label>
-    <div class="accordion-content small">
-      <p>An articulated ring with intricately carved honey comb with a contrasting honeybee.</p>
-      <p>We're obsessed with these statement rings and they are adjustable to fit most finger sizes. One size.</p>
-      <p>All Bernard Delettrez jewelry is hand carved at his atelier in Rome. Bronze 1.0 gm and silver 9.0 gm.</p>
-    </div>
- </div>
- <div class="accordion">
-    <input type="checkbox" id="accordion-5" checked />
-    <label class="accordion-secondary" for="accordion-5">Additional Info</label>
-    <div class="accordion-content small">
-      <p><b>Material:</b> silver</p><p><b>Country of manufacture:</b> Italy</p>
-    </div>
- </div>
 
- <div class="accordion">
-    <input type="checkbox" id="accordion-7" />
-    <label class="accordion-secondary" for="accordion-7">Size and Fit</label>
-    <div class="accordion-content small">
-      <p>one size<br>Fits Italian sizes 9 to 15 (US sizes 4.5 to 7).
-        </p>
-    </div>
- </div>
-</section>
+                <section class="accordions">
+                 <div class="accordion r2s">
+                    <input type="checkbox" id="accordion-4" checked />
+                    <label class="accordion-secondary" for="accordion-4">Editor's Notes</label>
+                    <div class="accordion-content small wysiwyg-editable">
+                      <p>An articulated ring with intricately carved honey comb with a contrasting honeybee.</p>
+                      <p>We're obsessed with these statement rings and they are adjustable to fit most finger sizes. One size.</p>
+                      <p>All Bernard Delettrez jewelry is hand carved at his atelier in Rome. Bronze 1.0 gm and silver 9.0 gm.</p>
+                    </div>
+                 </div>
+                 <div class="accordion r2s">
+                    <input type="checkbox" id="accordion-5" checked />
+                    <label class="accordion-secondary" for="accordion-5">Additional Info</label>
+                    <div class="accordion-content small wysiwyg-editable">
+                      <p><b>Material:</b> silver</p><p><b>Country of manufacture:</b> Italy</p>
+                    </div>
+                 </div>
+
+                 <div class="accordion r2s">
+                    <input type="checkbox" id="accordion-7" />
+                    <label class="accordion-secondary" for="accordion-7">Size and Fit</label>
+                    <div class="accordion-content small wysiwyg-editable">
+                      <p>one size<br>Fits Italian sizes 9 to 15 (US sizes 4.5 to 7).
+                        </p>
+                    </div>
+                 </div>
+                </section>
 
               </div>
             </div>
@@ -308,6 +310,10 @@
           $(this).toggleClass("selected");
         })
       </script>
-
+      <script src="../vendors/medium-editor/dist/js/medium-editor.min.js"></script>
+      <script>
+        var elements = document.querySelectorAll('.wysiwyg-editable'),
+        editor = new MediumEditor(elements);
+      </script>
   </body>
 </html>

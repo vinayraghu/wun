@@ -245,7 +245,6 @@ For auto heights, append the class auto. This will not be animated
     }
   }
   .accordion-content {
-    border: 1px solid #ddd;
     height: 0;
     padding: 0 20px;
     overflow: hidden;
@@ -298,3 +297,24 @@ For auto heights, append the class auto. This will not be animated
     }
   }
 }
+
+.accordion.r2s {
+  border: 2px solid #eee;
+
+  label {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    margin-bottom: -1px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    line-height: 40px;
+    margin-top: -1px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #4d4d4d;
+  }
+}
+
+// accordion with wysiwyg editor
+#editor {overflow:scroll; max-height:100px}
