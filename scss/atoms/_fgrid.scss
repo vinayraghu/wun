@@ -346,3 +346,40 @@ $total-columns: 16 !default;
     }
   }
 }
+
+.hidden {
+  display: none;
+}
+
+.hide-for-small {
+  @media #{$small-only} {
+    display: none !important;
+  }
+}
+
+.show-for-medium-up {
+  display: none;
+  @media #{$medium-up} {
+    display: inherit !important;
+  }
+}
+
+.show-for-large-up {
+  display: none;
+  @media #{$large-up} {
+    display: inherit !important;
+  }
+}
+
+.show-for-large-down {
+  @media screen only and (max-width:upper-bound($large-range)) {
+    display: inherit !important;
+  }
+  @media #{$large-up} {
+    display: none !important;
+  }
+}
+
+body {
+  min-width: 420px; // Set a default base width
+}

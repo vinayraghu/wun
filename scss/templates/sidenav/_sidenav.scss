@@ -77,8 +77,7 @@ $sidenav-padding: .6em 0;
 
 .sidebar-primary {
   @include full-height();
-  padding-top: 1em;
-
+  padding-top: 75px;
   background: $black-2;
 }
 
@@ -101,7 +100,7 @@ $sidenav-padding: .6em 0;
 
   background: #383838; //refactor
   a {
-    display: block;
+    display: block !important;
     padding: 0.6em 1em;
     color: nth($silver, 1);
     &:hover {

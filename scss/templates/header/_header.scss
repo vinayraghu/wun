@@ -1,6 +1,7 @@
 .section-title {
   background: white;
   z-index: z(fixed);
+  height: 72px; // Accommodate new logo with spacing
 }
 
 .logo {
@@ -13,6 +14,26 @@
   background-size: 100%;
 
   @include hide-text();
+}
+
+.logo-small {
+  background: url("../img/logo-small.png") no-repeat;
+  position: fixed;
+  top: 0;
+  left: 14px;
+  z-index: 110;
+  width: 68px;
+  height: 68px;
+  background-size: 100%;
+  overflow: hidden;
+  text-indent: -9999px;
+  z-index: 901;
+  -webkit-transform: translateZ(100px);
+  transform: tranlateZ(100px);
+}
+
+.title-holder {
+  padding-left: 68px; // Accommodate new r2s logo
 }
 
 .is-collapsed .logo {

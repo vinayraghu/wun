@@ -23,6 +23,7 @@
   visibility: visible;
   filter: alpha(opacity=0);
   opacity: 0;
+  transform: none;
 }
 .tooltip.in {
   filter: alpha(opacity=70);
@@ -50,7 +51,7 @@
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background-color: $black;
+  background-color: $brand-primary;
   border-radius: $global-radius;
 }
 .tooltip-arrow {

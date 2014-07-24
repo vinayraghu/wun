@@ -1,0 +1,39 @@
+%no-margin {
+  margin: 0;
+}
+
+.designer-title {
+  @extend %no-margin;
+  font-family: futura;
+  font-size: em-calc(15px);
+  font-weight: bold;
+}
+
+.designer-subtitle {
+  @extend %no-margin;
+  text-transform: capitalize;
+  font-family: $helvetica;
+  font-size: em-calc(13px);
+}
+
+.shipped {
+  @extend %no-margin;
+  font-family: $helvetica;
+  font-size: em-calc(12px);
+  font-style: italic;
+  color: #666;
+}
+
+.product-price {
+  @extend %no-margin;
+  margin-top: em-calc(3px);
+  margin-bottom: em-calc(8px);
+  font-size: em-calc(18px);
+}
+
+.fixed-170 {
+  float: left;
+  width: 170px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}

@@ -9,6 +9,7 @@
 }
 .btn-secondary{
   @include paint(background, $brand-secondary);
+  color: black;
 }
 .btn-info{
   @include paint(background, $brand-info);
