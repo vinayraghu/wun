@@ -69,3 +69,7 @@
 @import "pages/dashboard/dashboard";
 @import "pages/user-settings/user-settings";
 @import "pages/product-detail";
+
+// Import vendor overrides
+
+@import "vendors/chosen";

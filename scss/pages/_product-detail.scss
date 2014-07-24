@@ -1,6 +1,9 @@
 %no-margin {
   margin: 0;
 }
+.product-detail-container {
+  font-family: $helvetica;
+}
 
 .designer-title {
   @extend %no-margin;
@@ -34,6 +37,45 @@
 .fixed-170 {
   float: left;
   width: 170px;
-  margin-right: 1em;
+  margin-top: 1em;
   margin-bottom: 1em;
+  padding-left: 0.9375rem;
+  &::selection {
+    background: none;
+  }
+}
+
+.product-color-swatch, .product-size-swatch {
+  display: inline-block;
+  position: relative;
+  margin-right: .5em;
+  margin-bottom: .5em;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 2px solid #eee;
+  text-align: center;
+  padding-top: .4em;
+  > .tick {
+      display: none;
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      color: #666;
+  }
+  &.selected {
+    border: 2px solid #666;
+    > .tick {
+      display: block;
+    }
+  }
+  &::selection {
+    background: none;
+  }
+}
+
+.color-swatch-add, .size-swatch-add {
+  position: absolute;
+  left: 0.8em;
+  top: 0.6em;
 }

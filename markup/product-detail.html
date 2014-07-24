@@ -7,7 +7,7 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../vendors/jquery.loadingbar/loadingbar.css">
     <link rel="stylesheet" href="../vendors/jquery.growl/stylesheets/jquery.growl.css">
-    <link rel="stylesheet" href="../vendors/chosen/public/docsupport/style.css">
+    <link rel="stylesheet" href="../vendors/chosen/public/chosen.min.css">
   </head>
   <body>
     <header class="section-title">
@@ -110,11 +110,6 @@
           <li><a href="#"><i class="fa fa-home"></i> <span>Dashboard</span> </a></li>
           <li><a href="#"><i class="fa fa-users"></i> <span>Designers</span> </a></li>
           <li class="active"><a href="#"><i class="fa fa-barcode"></i> <span>Products</span> </a></li>
-          <ul class="sidenav-submenu">
-            <li class="active"><a href="#">Products</a></li>
-            <li><a href="#">Product Images</a></li>
-            <li><a href="#">Inventory</a></li>
-          </ul>
           <li><a href="#"><i class="fa fa-credit-card"></i> <span>Orders</span> </a></li>
           <li><a href="#"><i class="fa fa-thumbs-o-up"></i> <span>Marketing</span> </a></li>
           <li id="collapse-sidebar"><a href="#"><i class="fa fa-chevron-left button-collapse-sidebar"></i> <span> Collapse</span> </a></li>
@@ -144,7 +139,7 @@
               <div class="large-6 columns">
                 <img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/6_640x960_2.jpg" alt="">
               </div>
-              <div class="large-8 columns editable-container">
+              <div class="large-8 columns editable-container product-detail-container">
                 <p contenteditable="true" class="designer-title editable">BURCE BEKREK</p>
                 <p contenteditable="true" class="designer-subtitle editable">Two Tone Silk Tank</p>
                 <p contenteditable="true" class="shipped editable">Shipped from Istanbul, Turkey</p>
@@ -154,35 +149,50 @@
                 </p>
                 <p>(Import duties inclusive)</p>
                 <!-- {{#if isAdmin}} -->
-                <div class="row">
-                  <a href="#">Select sizes</a>
-                  <a href="#">Add colors</a>
-                  <a href="#"></a>
-                  <a href="#"></a>
-                </div>
                 <!-- {{/if}} -->
                 <div class="row">
-                  <div class="fixed-170">
-                    <label for="product-color">Select color</label>
-                    <select name="" id="product-color">
-                      <option value="">Black</option>
-                      <option value="">Blue</option>
-                      <option value="">Red</option>
-                      <option value="">Yellow</option>
-                    </select>
-                  </div>
-                  <div class="fixed-170">
-                    <label for="product-size">Select size</label>
-                    <select name="" id="product-size">
-                      <option value="">XS</option>
-                      <option value="">S</option>
-                      <option value="">M</option>
-                      <option value="">L</option>
-                    </select>
+                  <div class="large-16 columns">
+                    <label for="product-color">Choose color</label>
+                    <div class="product-color-swatch selectable" style="background-color: #000">
+                      <i class="fa fa-check tick"></i>
+                    </div>
+                    <div class="product-color-swatch selectable" style="background-color: #FFF">
+                      <i class="fa fa-check tick"></i>
+                    </div>
+                    <div class="product-color-swatch selectable" style="background-color: #00F"> <!-- background color or image to be set from database  -->
+                      <i class="fa fa-check tick"></i>
+                    </div>
+                    <!-- {{#if isAdmin}} -->
+                    <div class="product-color-swatch"> <!-- background color or image to be set from database  -->
+                      <i class="fa fa-plus color-swatch-add"></i>
+                    </div>
+                    <!-- {{/if}} -->
                   </div>
                 </div>
                 <div class="row">
-                  <div class="fixed-170">
+                  <div class="large-16 columns">
+                    <label for="product-size">Choose size</label>
+                      <div class="product-size-swatch selectable">
+                        XS <i class="fa fa-check tick"></i>
+                      </div>
+                      <div class="product-size-swatch selectable">
+                        S <i class="fa fa-check tick"></i>
+                      </div>
+                      <div class="product-size-swatch selectable">
+                        M <i class="fa fa-check tick"></i>
+                      </div>
+                      <div class="product-size-swatch selectable">
+                        L <i class="fa fa-check tick"></i>
+                      </div>
+                      <!-- {{#if isAdmin}} -->
+                      <div class="product-size-swatch"> <!-- background color or image to be set from database  -->
+                        <i class="fa fa-plus color-size-add"></i>
+                      </div>
+                    <!-- {{/if}} -->
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="fixed-170 columns">
                     <a href="#" class="btn btn-secondary btn-expand">Add to wishlist</a>
                   </div>
                   <div class="fixed-170">
@@ -279,6 +289,24 @@
           $(".edit-toolbar").velocity("transition.slideDownIn");
           }
         });
+      </script>
+      <script src="../vendors/chosen/public/chosen.jquery.min.js"></script>
+      <script type="text/javascript">
+      var config = {
+        '.my_select_box'           : {},
+        '.my_select_box-deselect'  : {allow_single_deselect:true},
+        '.my_select_box-no-single' : {disable_search_threshold:10},
+        '.my_select_box-no-results': {no_results_text:'Oops, nothing found!'},
+        '.my_select_box-width'     : {width:"100%"}
+      }
+      for (var selector in config) {
+        $(selector).chosen(config[selector]);
+      }
+      </script>
+      <script>
+        $(".selectable").on("click", function () {
+          $(this).toggleClass("selected");
+        })
       </script>
 
   </body>
