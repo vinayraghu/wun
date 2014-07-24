@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>runway2street Admin</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../vendors/jquery.loadingbar/loadingbar.css">
+    <link rel="stylesheet" href="../vendors/jquery.growl/stylesheets/jquery.growl.css">
+    <link rel="stylesheet" href="../vendors/chosen/public/docsupport/style.css">
+  </head>
+  <body>
+    <header class="section-title">
+      <div class="row block">
+        <div class="large-6 small-10 columns">
+          <a href="#"><h1 class="logo-small">runway2street</h1></a>
+          <div class="title-holder">
+            <h3><i class="fa fa-barcode"></i> Products</h3>
+            <ul class="breadcrumbs hide-for-small">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Burce Bekrek</a></li>
+              <li><a href="#">SS14</a></li>
+              <li class="active"><a href="#">Two Tone Silk Tank</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="large-4 columns show-for-large-up text-center">
+          <input type="text" placeholder="Search all data" class="search-all">
+          <button class="btn btn-primary">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <div class="large-6 small-6 columns text-right end">
+          <div class="dropdown top-nav-icons">
+            <i class="fa fa-search show-for-large-down"></i>
+          </div>
+          <div class="dropdown top-nav-icons">
+            <a data-toggle="dropdown" href="#"><i class="fa fa-bell-o"></i></a>
+            <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+              <div class="notifications">
+                <header>4 Notifications (1 new) </header>
+                <div class="messages">
+                  <li class="unread">
+                     <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/designer/55/38/products/1773/193/210f0799f20a4a348c0383ccf09efa45_320x296_4.jpg" alt="...">
+                      </a>
+                      <div class="media-body text-left">
+                        <span>New designer onboarded - Xin </span>
+                        <p class="text-secondary">3 hours ago</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/designer/71/icouserdefault-2.jpg" alt="...">
+                      </a>
+                      <div class="media-body text-left">
+                        <span>New collection SS14 uploaded by Ayaka Nishi</span>
+                        <p class="text-secondary">4 hours ago</p>
+                      </div>
+                   </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com//marketing%20banners/Owl_Flat_Blue_Rose4-194.jpg" alt="...">
+                      </a>
+                      <div class="media-body text-left">
+                        <span>New marketing view - Celebrate in style</span>
+                        <p class="text-secondary">5 hours ago</p>
+                      </div>
+                   </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object img-circle" src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com//marketing%20banners/Owl_Flat_Blue_Rose4-194.jpg" alt="...">
+                      </a>
+                      <div class="media-body text-left">
+                        <span>New marketing view - Celebrate in style</span>
+                        <p class="text-secondary">5 hours ago</p>
+                      </div>
+                   </div>
+                  </li>
+
+                </div>
+                <footer><a href="#">See All</a></footer>
+              </div>
+            </ul>
+          </div>
+          <div class="dropdown avatar">
+            <a data-toggle="dropdown" href="#"><img src="http://s3.amazonaws.com/insightly.userfiles/325608/1452VJ/560dd118-e2d1-4922-9884-2e0888ccfa91.jpg" alt="" class="img-circle"></a>
+            <ul class="dropdown-menu pull-right text-left" role="menu" aria-labelledby="dLabel">
+              <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+              <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="fa fa-power-off"></i> Sign out</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+      <div class="sidebar-primary">
+        <ul class="sidenav">
+          <li><a href="#"><i class="fa fa-home"></i> <span>Dashboard</span> </a></li>
+          <li><a href="#"><i class="fa fa-users"></i> <span>Designers</span> </a></li>
+          <li class="active"><a href="#"><i class="fa fa-barcode"></i> <span>Products</span> </a></li>
+          <ul class="sidenav-submenu">
+            <li class="active"><a href="#">Products</a></li>
+            <li><a href="#">Product Images</a></li>
+            <li><a href="#">Inventory</a></li>
+          </ul>
+          <li><a href="#"><i class="fa fa-credit-card"></i> <span>Orders</span> </a></li>
+          <li><a href="#"><i class="fa fa-thumbs-o-up"></i> <span>Marketing</span> </a></li>
+          <li id="collapse-sidebar"><a href="#"><i class="fa fa-chevron-left button-collapse-sidebar"></i> <span> Collapse</span> </a></li>
+        </ul>
+      </div>
+      <section class="content-main">
+        <section class="section-content">
+          <div class="row block products-title-container">
+            <div class="large-4 columns">
+              <h4 class="products-title">Edit Product</h4>
+            </div>
+          </div>
+          <!-- {{begin product-detail-partion}} -->
+          <div class="row block">
+            <div class="large-16 columns">
+              <div class="large-2 columns">
+                <ul class="no-bullet">
+                  <li>
+                    <a href="#"><img src="http://placehold.it/80x120" data-toggle="modal" data-target="#image-upload-modal"></a>
+                    <br><b>Add new Image</b>
+                  </li>
+                  <li><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/6_80x120_2.jpg" alt=""></li>
+                  <li><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/183558099FB00010_Burce_Bekr_80x120_1.JPG" alt=""></li>
+                  <li><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/183558099FB00033_Burce_Bekr_80x120_1.JPG" alt=""></li>
+                </ul>
+              </div>
+              <div class="large-6 columns">
+                <img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/6_640x960_2.jpg" alt="">
+              </div>
+              <div class="large-8 columns editable-container">
+                <p contenteditable="true" class="designer-title editable">BURCE BEKREK</p>
+                <p contenteditable="true" class="designer-subtitle editable">Two Tone Silk Tank</p>
+                <p contenteditable="true" class="shipped editable">Shipped from Istanbul, Turkey</p>
+                <p contenteditable="true" class="product-price editable">$202</p>
+                <p class="highlight">
+                  Limited quantity
+                </p>
+                <p>(Import duties inclusive)</p>
+                <!-- {{#if isAdmin}} -->
+                <div class="row">
+                  <a href="#">Select sizes</a>
+                  <a href="#">Add colors</a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+                <!-- {{/if}} -->
+                <div class="row">
+                  <div class="fixed-170">
+                    <label for="product-color">Select color</label>
+                    <select name="" id="product-color">
+                      <option value="">Black</option>
+                      <option value="">Blue</option>
+                      <option value="">Red</option>
+                      <option value="">Yellow</option>
+                    </select>
+                  </div>
+                  <div class="fixed-170">
+                    <label for="product-size">Select size</label>
+                    <select name="" id="product-size">
+                      <option value="">XS</option>
+                      <option value="">S</option>
+                      <option value="">M</option>
+                      <option value="">L</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="fixed-170">
+                    <a href="#" class="btn btn-secondary btn-expand">Add to wishlist</a>
+                  </div>
+                  <div class="fixed-170">
+                    <a href="#" class="btn btn-primary btn-expand">Add to bag</a>
+                  </div>
+                </div>
+  <br>  <br>
+<section class="accordions">
+ <div class="accordion">
+    <input type="checkbox" id="accordion-4" checked />
+    <label class="accordion-secondary" for="accordion-4">Editor's Notes</label>
+    <div class="accordion-content small">
+      <p>An articulated ring with intricately carved honey comb with a contrasting honeybee.</p>
+      <p>We're obsessed with these statement rings and they are adjustable to fit most finger sizes. One size.</p>
+      <p>All Bernard Delettrez jewelry is hand carved at his atelier in Rome. Bronze 1.0 gm and silver 9.0 gm.</p>
+    </div>
+ </div>
+ <div class="accordion">
+    <input type="checkbox" id="accordion-5" checked />
+    <label class="accordion-secondary" for="accordion-5">Additional Info</label>
+    <div class="accordion-content small">
+      <p><b>Material:</b> silver</p><p><b>Country of manufacture:</b> Italy</p>
+    </div>
+ </div>
+
+ <div class="accordion">
+    <input type="checkbox" id="accordion-7" />
+    <label class="accordion-secondary" for="accordion-7">Size and Fit</label>
+    <div class="accordion-content small">
+      <p>one size<br>Fits Italian sizes 9 to 15 (US sizes 4.5 to 7).
+        </p>
+    </div>
+ </div>
+</section>
+
+              </div>
+            </div>
+          </div>
+          <!-- {{end product-detail-partion}} -->
+        </section>
+      </section>
+    </div>
+    <div class="modal fade" id="image-upload-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close large" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+     </div>
+    </div>
+
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.1/jquery.slimscroll.min.js"></script>
+      <script>
+        $(function(){
+            $('.messages').slimScroll({
+                height: '250px'
+            });
+        });
+      </script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script>
+        $('.dropdown-toggle').dropdown()
+      </script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js"></script>
+      <script>
+          $(document).foundation();
+      </script>
+      <script src="../scripts/animations.js"></script>
+      <script>
+        $(".has-tooltip").tooltip();
+      </script>
+      <script src="../vendors/velocity/jquery.velocity.min.js"></script>
+      <script src="../vendors/velocity/velocity.ui.min.js"></script>
+      <script src="../vendors/jquery.growl/javascripts/jquery.growl.js"></script>
+      <script src="../vendors/contenteditable-1.0.0/jquery.contenteditable.js"></script>
+      <script>
+        $(".editable").contentEditable({
+          "onBlur" : function(element){
+            var edited_content = element.content;
+            // $.post("url_to_submit",{ "content" : edited_content }, function (response){
+            //   // do something with response
+            // });
+          console.log(edited_content);
+          $(".edit-toolbar").velocity("transition.slideDownIn");
+          }
+        });
+      </script>
+
+  </body>
+</html>
