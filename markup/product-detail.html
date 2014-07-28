@@ -133,13 +133,23 @@
                     <a href="#"><img src="http://placehold.it/80x120" data-toggle="modal" data-target="#image-upload-modal"></a>
                     <br><b>Add new Image</b>
                   </li>
-                  <li><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/6_80x120_2.jpg" alt=""></li>
-                  <li><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/183558099FB00010_Burce_Bekr_80x120_1.JPG" alt=""></li>
-                  <li><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/183558099FB00033_Burce_Bekr_80x120_1.JPG" alt=""></li>
+                  <li>
+                    <a data-orbit-link="slide-1"><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/6_80x120_2.jpg" alt=""></a>
+                  </li>
+                  <li>
+                    <a data-orbit-link="slide-2"><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/183558099FB00010_Burce_Bekr_80x120_1.JPG" alt=""></a>
+                  </li>
+                  <li>
+                    <a data-orbit-link="slide-3"><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/183558099FB00033_Burce_Bekr_80x120_1.JPG" alt=""></a>
+                  </li>
                 </ul>
               </div>
               <div class="large-6 columns">
-                <img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/6_640x960_2.jpg" alt="">
+                <ul data-orbit data-options="animation: fade; timer: false; bullets: false;">
+                  <li data-orbit-slide="slide-1"><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/6_640x960_2.jpg" alt="Slide 1"></li>
+                  <li data-orbit-slide="slide-2" class="active"><img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/designer/79/75/products/1584/70/183558099FB00010_Burce_Bekr_640x960_1.JPG" alt="slide 2" /></li>
+                  <li data-orbit-slide="slide-3"><img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/designer/79/75/products/1584/70/183558099FB00033_Burce_Bekr_640x960_1.JPG" alt="slide 3" /></li>
+                </ul>
               </div>
               <div class="large-8 columns editable-container product-detail-container">
                 <p contenteditable="true" class="designer-title editable">BURCE BEKREK</p>
@@ -155,18 +165,21 @@
                 <div class="row">
                   <div class="large-16 columns">
                     <label for="product-color">Choose color</label>
-                    <div class="product-color-swatch selectable" style="background-color: #000">
+                    <div class="product-color-swatch selectable">
+                      Black
                       <i class="fa fa-check tick"></i>
                     </div>
-                    <div class="product-color-swatch selectable" style="background-color: #FFF">
+                    <div class="product-color-swatch selectable">
+                      Blue
                       <i class="fa fa-check tick"></i>
                     </div>
-                    <div class="product-color-swatch selectable" style="background-color: #00F"> <!-- background color or image to be set from database  -->
+                    <div class="product-color-swatch selectable"> <!-- background color or image to be set from database  -->
+                      Leopard Print
                       <i class="fa fa-check tick"></i>
                     </div>
                     <!-- {{#if isAdmin}} -->
                     <div class="product-color-swatch"> <!-- background color or image to be set from database  -->
-                      <i class="fa fa-plus color-swatch-add"></i>
+                      <i class="fa fa-plus color-swatch-add"></i> Add New
                     </div>
                     <!-- {{/if}} -->
                   </div>
@@ -187,10 +200,15 @@
                         L <i class="fa fa-check tick"></i>
                       </div>
                       <!-- {{#if isAdmin}} -->
-                      <div class="product-size-swatch"> <!-- background color or image to be set from database  -->
-                        <i class="fa fa-plus color-size-add"></i>
+                      <div class="product-size-swatch size-swatch-add"> <!-- background color or image to be set from database  -->
+                        <i class="fa fa-plus color-size-add"></i> Add New
                       </div>
                     <!-- {{/if}} -->
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-16 columns">
+                    <img src="../img/social-share.png" alt="">
                   </div>
                 </div>
                 <div class="row">
@@ -268,6 +286,8 @@
       <script>
         $('.dropdown-toggle').dropdown()
       </script>
+      <script src="../vendors/foundation/js/vendor/modernizr.js"></script>
+      <script src="../vendors/foundation/js/vendor/fastclick.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js"></script>
       <script>
           $(document).foundation();

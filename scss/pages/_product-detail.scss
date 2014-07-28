@@ -74,8 +74,12 @@
   }
 }
 
-.color-swatch-add, .size-swatch-add {
-  position: absolute;
-  left: 0.8em;
-  top: 0.6em;
+.product-color-swatch {
+  width: auto;
+  padding: 0.5em 1em 2em;
+}
+
+.size-swatch-add {
+  width: auto;
+  padding: 0.5em 1em 2em;
 }
