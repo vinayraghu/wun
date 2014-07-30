@@ -74,3 +74,34 @@
   width: auto;
   padding: 0.5em 1em 2em;
 }
+
+
+// Selectable
+.product-collection-size {
+  float: left;
+  width: 9.375em;
+  padding: 1em;
+  margin: 0 1.25em 0.625em 0;
+  background: #cfcfcf;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  &::selection {
+    background: transparent;
+  }
+}
+
+.product-collection-size.selected {
+  background: $black;
+  color: $white;
+}
+
+.product-collection-size-category {
+  margin-top: 1em;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+  &:first-child {
+    margin-top: 0;
+  }
+}

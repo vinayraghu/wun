@@ -165,6 +165,11 @@
                 <div class="row">
                   <div class="large-16 columns">
                     <label for="product-color">Choose color</label>
+                    <!-- {{#if(isClient)}}
+                      <div class="product-color-swatch selectable">
+                        Black
+                      </div>
+                    {{/if}} -->
                     <div class="product-color-swatch selectable">
                       Black
                     </div>
@@ -198,8 +203,9 @@
                       </div>
                       <!-- {{#if isAdmin}} -->
                       <div class="product-size-swatch size-swatch-add"> <!-- background color or image to be set from database  -->
-                        <i class="fa fa-plus color-size-add"></i> Add New
+                        <a href="#" data-target="#select-size-modal" data-toggle="modal"><i class="fa fa-plus color-size-add"></i> Add New</a>
                       </div>
+                      <a href="#" data-target="#edit-inventory-modal" data-toggle="modal"><i class="fa fa-pencil"></i> Edit</a>
                     <!-- {{/if}} -->
                   </div>
                 </div>
@@ -209,7 +215,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="fixed-170 columns">
+                  <div class="fixed-170">
                     <a href="#" class="btn btn-secondary btn-expand">Add to wishlist</a>
                   </div>
                   <div class="fixed-170">
@@ -252,18 +258,190 @@
         </section>
       </section>
     </div>
-    <div class="modal fade" id="image-upload-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="select-size-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close large" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Add Color</h4>
+            <h4 class="modal-title" id="myModalLabel">Choose size</h4>
           </div>
           <div class="modal-body">
-            <div id="dataTable"></div>
+            <div class="row">
+              <div class="large-16 columns">
+                <h4 class="product-collection-size-category">Apparel</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-16 columns">
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">S</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">16</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">6</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXS</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">8</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XS</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">10</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">0</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXXL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">S</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">12</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">2</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">M</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">14</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">4</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-16 columns">
+                <h4 class="product-collection-size-category">Ring</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-16 columns">
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">S</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">16</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">6</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXS</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">8</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XS</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">10</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">0</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXXL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">S</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">12</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">2</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">M</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">14</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">4</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-16 columns">
+                <h4 class="product-collection-size-category">Shoe</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-16 columns">
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">S</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">16</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">6</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXS</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">8</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XS</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">10</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">0</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXXL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">S</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">12</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">2</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">M</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">14</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">4</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-16 columns">
+                <h4 class="product-collection-size-category">Apparel</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-16 columns">
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">S</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">16</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">6</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXS</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">8</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XS</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">10</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">0</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">XXXL</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">S</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">12</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">2</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">M</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">14</label>
+                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                <label for="size1" class="product-collection-size selectable">4</label>
+              </div>
+            </div>
+
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
             <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
@@ -333,6 +511,10 @@
           $(".product-size-swatch.selectable").removeClass("selected");
           $(this).addClass("selected");
         })
+        //Choose size in modal
+        $(".product-collection-size.selectable").on("click", function () {
+          $(this).toggleClass("selected");
+        })
 
       </script>
       <script src="../vendors/medium-editor/dist/js/medium-editor.min.js"></script>
@@ -343,29 +525,29 @@
 
       <script src="../vendors/handsontable/dist/jquery.handsontable.full.js"></script>
         <script>
-          var data = [
-            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
-            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
-            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+          // var data = [
+          //   ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+          //   ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+          //   ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+          //   ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+          //   ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+          //   ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+          //   ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+          //   ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+          //   ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+          //   ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+          //   ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+          //   ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+          //   ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+          //   ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+          //   ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+          //   ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
 
-          ];
-          $("#dataTable").handsontable({
-            data: data,
-            colHeaders: ["S. No", "Product Category", "Product Name", "Color", "Size", "Fit"]
-          });
+          // ];
+          // $("#dataTable").handsontable({
+          //   data: data,
+          //   colHeaders: ["S. No", "Product Category", "Product Name", "Color", "Size", "Fit"]
+          // });
         </script>
   </body>
 </html>

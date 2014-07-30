@@ -56,11 +56,11 @@ h1, h2, h3, h4 {
   line-height: 1.2;
 }
 
-.no-top {
+%no-top {
   @include no-margin(top);
 }
 
-.no-bottom {
+%no-bottom {
   @include no-margin(bottom);
 }
 
