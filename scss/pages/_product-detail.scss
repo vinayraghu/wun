@@ -56,18 +56,9 @@
   border: 2px solid #eee;
   text-align: center;
   padding-top: .4em;
-  > .tick {
-      display: none;
-      position: absolute;
-      top: -2px;
-      right: -2px;
-      color: #666;
-  }
   &.selected {
-    border: 2px solid #666;
-    > .tick {
-      display: block;
-    }
+    background: $black;
+    color: $white;
   }
   &::selection {
     background: none;

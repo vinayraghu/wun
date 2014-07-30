@@ -167,19 +167,16 @@
                     <label for="product-color">Choose color</label>
                     <div class="product-color-swatch selectable">
                       Black
-                      <i class="fa fa-check tick"></i>
                     </div>
                     <div class="product-color-swatch selectable">
                       Blue
-                      <i class="fa fa-check tick"></i>
                     </div>
                     <div class="product-color-swatch selectable"> <!-- background color or image to be set from database  -->
                       Leopard Print
-                      <i class="fa fa-check tick"></i>
                     </div>
                     <!-- {{#if isAdmin}} -->
                     <div class="product-color-swatch"> <!-- background color or image to be set from database  -->
-                      <i class="fa fa-plus color-swatch-add"></i> Add New
+                      <i class="fa fa-plus color-size-add"></i> Add New
                     </div>
                     <!-- {{/if}} -->
                   </div>
@@ -188,16 +185,16 @@
                   <div class="large-16 columns">
                     <label for="product-size">Choose size</label>
                       <div class="product-size-swatch selectable">
-                        XS <i class="fa fa-check tick"></i>
+                        XS
                       </div>
                       <div class="product-size-swatch selectable">
-                        S <i class="fa fa-check tick"></i>
+                        S
                       </div>
                       <div class="product-size-swatch selectable">
-                        M <i class="fa fa-check tick"></i>
+                        M
                       </div>
                       <div class="product-size-swatch selectable">
-                        L <i class="fa fa-check tick"></i>
+                        L
                       </div>
                       <!-- {{#if isAdmin}} -->
                       <div class="product-size-swatch size-swatch-add"> <!-- background color or image to be set from database  -->
@@ -260,10 +257,10 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close large" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            <h4 class="modal-title" id="myModalLabel">Add Color</h4>
           </div>
           <div class="modal-body">
-            ...
+            <div id="dataTable"></div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -326,14 +323,49 @@
       }
       </script>
       <script>
-        $(".selectable").on("click", function () {
-          $(this).toggleClass("selected");
+        //Choose color
+        $(".product-color-swatch.selectable").on("click", function () {
+          $(".product-color-swatch.selectable").removeClass("selected");
+          $(this).addClass("selected");
         })
+        //Choose size
+        $(".product-size-swatch.selectable").on("click", function () {
+          $(".product-size-swatch.selectable").removeClass("selected");
+          $(this).addClass("selected");
+        })
+
       </script>
       <script src="../vendors/medium-editor/dist/js/medium-editor.min.js"></script>
       <script>
         var elements = document.querySelectorAll('.wysiwyg-editable'),
         editor = new MediumEditor(elements);
       </script>
+
+      <script src="../vendors/handsontable/dist/jquery.handsontable.full.js"></script>
+        <script>
+          var data = [
+            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+            ["1", "Heels", "Apron Black Heels", "Black", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+            ["2", "Heels", "Apron Gainsboro Heels", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. High Heel"],
+            ["3", "Heels", "Hi Frequen Beaver Booties", "Beaver", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+            ["4", "Heels", "Hi Frequen Gainsboro booties", "Gainsboro", "Heel measures approx. 11 cm/ 4.3 1 cm/0.4 cowhide covered platform 1 cm/ 0.4 rubber coating platform", "True to size. Italian sizing.High Heel"],
+
+          ];
+          $("#dataTable").handsontable({
+            data: data,
+            colHeaders: ["S. No", "Product Category", "Product Name", "Color", "Size", "Fit"]
+          });
+        </script>
   </body>
 </html>
