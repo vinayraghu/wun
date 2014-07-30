@@ -5,3 +5,8 @@ node_modules/*
 css/style.css
 *.css.map
 public/*
+vendors
+!scss/vendors/
+!public/styleguide/vendors/
+!styleguide/vendors/
+vendors/jquery
