@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../vendors/medium-editor/dist/css/themes/default.css"> <!-- or any other theme -->
     <link rel="stylesheet" href="../vendors/handsontable/dist/jquery.handsontable.full.css">
     <link rel="stylesheet" type="text/css" href="../vendors/tooltipster/css/tooltipster.css" />
+    <link rel="stylesheet" href="../vendors/gridster/dist/jquery.gridster.min.css">
   </head>
   <body>
     <header class="section-title">
@@ -126,7 +127,7 @@
               <h4 class="products-title">Edit Product</h4>
             </div>
           </div>
-          <!-- {{begin product-detail-partion}} -->
+          <!-- {{begin product-detail-portion}} -->
           <div class="row block">
             <div class="large-16 columns">
               <div class="small-4 large-2 columns">
@@ -562,6 +563,16 @@
         $(document).ready(function() {
             $('.tooltip').tooltipster({
               theme: 'black-tips'
+            });
+        });
+      </script>
+      <!-- Gridster for drag drop images -->
+      <script src="../vendors/gridster/dist/jquery.gridster.min.js"></script>
+      <script>
+        $(function(){ //DOM Ready
+            $(".gridster ul").gridster({
+                widget_margins: [0, 10],
+                widget_base_dimensions: [120, 80]
             });
         });
       </script>

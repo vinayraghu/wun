@@ -28,6 +28,7 @@
     "jquery.contenteditable": "~0.2.0",
     "bootstrap-chosen": "*",
     "medium-editor": "~1.8.14",
-    "tooltipster": "~3.2.6"
+    "tooltipster": "~3.2.6",
+    "gridster": "~0.5.5"
   }
 }
