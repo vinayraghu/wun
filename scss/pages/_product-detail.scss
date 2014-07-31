@@ -125,3 +125,19 @@
   margin-bottom: 1em;
   text-align: right;
 }
+
+.product-options-section-title {
+  display: inline-block;
+  margin-top: .4em;
+  padding-top: 0.5em;
+  font-family: $futura;
+  font-size: em-calc(15px);
+}
+
+.product-option-section-holder {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+  padding-bottom: .4em;
+}

@@ -199,3 +199,8 @@ $modal-sm:                    300px !default;
 @media (min-width: 992px) {
   .modal-lg { width: $modal-lg; }
 }
+
+.modal-expand {
+  width: 90%;
+  margin-top: 75px;
+}

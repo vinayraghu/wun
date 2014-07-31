@@ -174,8 +174,17 @@
                 <!-- {{#if isAdmin}} -->
                 <!-- {{/if}} -->
                 <div class="row">
-                  <div class="large-16 columns">
-                    <label for="product-color">Choose color</label>
+                  <div class="large-16 columns ">
+                    <div class="product-option-section-holder">
+                      <span class="product-color product-options-section-title pull-left">Choose color</span>
+                      <div class="pull-right">
+                        <!-- {{#if isAdmin}} -->
+                        <div class="product-color-swatch"> <!-- background color or image to be set from database  -->
+                          <i class="fa fa-plus color-size-add"></i> Add New
+                        </div>
+                        <!-- {{/if}} -->
+                      </div>
+                    </div>
                     <!-- {{#if(isClient)}}
                       <div class="product-color-swatch selectable">
                         Black
@@ -190,16 +199,23 @@
                     <div class="product-color-swatch selectable"> <!-- background color or image to be set from database  -->
                       Leopard Print
                     </div>
-                    <!-- {{#if isAdmin}} -->
-                    <div class="product-color-swatch"> <!-- background color or image to be set from database  -->
-                      <i class="fa fa-plus color-size-add"></i> Add New
-                    </div>
-                    <!-- {{/if}} -->
                   </div>
                 </div>
                 <div class="row">
                   <div class="large-16 columns">
-                    <label for="product-size">Choose size</label>
+                    <div class="product-option-section-holder">
+                      <span class="product-size product-options-section-title">Choose size</span>
+                      <div class="pull-right">
+                        <!-- {{#if isAdmin}} -->
+                        <div class="product-size-swatch size-swatch-add right"> <!-- background color or image to be set from database  -->
+                          <a href="#" data-target="#select-size-modal" data-toggle="modal"><i class="fa fa-plus color-size-add"></i> Add New</a>
+                        </div>
+                        <div class="product-size-swatch size-swatch-add right">
+                          <a href="#" data-target="#edit-inventory-modal" data-toggle="modal"><i class="fa fa-pencil"></i> Edit</a>
+                        </div>
+                      <!-- {{/if}} -->
+                      </div>
+                    </div>
                       <div class="product-size-swatch selectable">
                         XS
                       </div>
@@ -212,14 +228,6 @@
                       <div class="product-size-swatch selectable">
                         L
                       </div>
-                      <!-- {{#if isAdmin}} -->
-                      <div class="product-size-swatch size-swatch-add"> <!-- background color or image to be set from database  -->
-                        <a href="#" data-target="#select-size-modal" data-toggle="modal"><i class="fa fa-plus color-size-add"></i> Add New</a>
-                      </div>
-                      <div class="product-size-swatch size-swatch-add">
-                        <a href="#" data-target="#edit-inventory-modal" data-toggle="modal"><i class="fa fa-pencil"></i> Edit</a>
-                      </div>
-                    <!-- {{/if}} -->
                   </div>
                 </div>
                 <div class="row">
@@ -273,9 +281,10 @@
     </div>
     <!-- edit inventory modal -->
     <div class="modal fade" id="edit-inventory-modal">
-     <div class="modal-dialog">
+     <div class="modal-dialog modal-expand">
         <div class="modal-content">
           <div class="modal-header">
+            <button type="button" class="close large" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 class="modal-title">Edit Inventory</h4>
           </div>
           <div class="modal-body">
