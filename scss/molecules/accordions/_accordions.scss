@@ -202,7 +202,9 @@ For auto heights, append the class auto. This will not be animated
 */
 
 .accordion-primary {@include paint(background, $brand-primary);}
-.accordion-secondary {@include paint(background, $brand-secondary);}
+.accordion-secondary {
+  @include paint(background, $brand-secondary);
+}
 .accordion-info {@include paint(background, $brand-info);}
 .accordion-warning {@include paint(background, $brand-warning);}
 .accordion-success {@include paint(background, $brand-success);}
@@ -212,7 +214,7 @@ For auto heights, append the class auto. This will not be animated
   &::selection {
     background: none;
   }
-  input {
+  > input {
     &[type="checkbox"], &[type="radio"] {
       display: none;
     }
@@ -238,7 +240,7 @@ For auto heights, append the class auto. This will not be animated
     }
 
   }
-  label {
+  > label {
     display: block;
     &::selection {
       background: none;
@@ -254,7 +256,7 @@ For auto heights, append the class auto. This will not be animated
 
 
 .accordion {
-  label {
+  > label {
     border-bottom: 1px solid #dddddd;
 
     @include transition-effect;
@@ -270,7 +272,7 @@ For auto heights, append the class auto. This will not be animated
 
     color: $white;
   }
-  input {
+  > input {
     &[type="checkbox"]:not(:checked) ~ label,
     &[type="radio"]:not(:checked) ~ label {
       &:after {
@@ -301,7 +303,7 @@ For auto heights, append the class auto. This will not be animated
 .accordion.r2s {
   border: 2px solid #eee;
 
-  label {
+  > label {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
@@ -316,3 +318,14 @@ For auto heights, append the class auto. This will not be animated
   }
 }
 
+label.accordion-secondary {
+  color: black;
+  border: 1px solid #ddd;
+  + .accordion-content {
+    border: 1px solid #ddd;
+  }
+}
+
+.accordion > input[type="checkbox"]:checked ~ .size-selectable-holder {
+  padding-top: 1.6em !important;
+}

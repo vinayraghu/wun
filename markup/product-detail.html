@@ -128,7 +128,7 @@
           <!-- {{begin product-detail-partion}} -->
           <div class="row block">
             <div class="large-16 columns">
-              <div class="large-2 columns">
+              <div class="small-4 large-2 columns">
                 <ul class="no-bullet">
                   <li>
                     <a href="#"><img src="http://placehold.it/80x120" data-toggle="modal" data-target="#image-upload-modal"></a>
@@ -145,7 +145,17 @@
                   </li>
                 </ul>
               </div>
-              <div class="large-6 columns">
+              <div class="small-12 large-6 columns">
+                <!-- {{#if isAdmin}} -->
+                <div class="row">
+                  <div class="large-16 columns product-image-action-container">
+                    <a href="#" class="product-image-action-icons"><i class="fa fa-trash-o"></i></a>
+                    <a href="#" class="product-image-action-icons"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="product-image-action-icons"><i class="fa fa-star-o"></i></a>
+                    <!-- When the image is default, remove "-o" from .fa-star-o above  -->
+                  </div>
+                </div>
+                <!-- {{/if}} -->
                 <ul data-orbit data-options="animation: fade; timer: false; bullets: false;">
                   <li data-orbit-slide="slide-1"><img src="http://63c73dc6f45a832bff3c-6c645f7f037343c7e349cc379f4554d8.r16.cf1.rackcdn.com/designer/79/75/products/1584/70/6_640x960_2.jpg" alt="Slide 1"></li>
                   <li data-orbit-slide="slide-2" class="active"><img src="https://5825abcc865e52b361d7-6c645f7f037343c7e349cc379f4554d8.ssl.cf1.rackcdn.com/designer/79/75/products/1584/70/183558099FB00010_Burce_Bekr_640x960_1.JPG" alt="slide 2" /></li>
@@ -266,7 +276,7 @@
      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            Edit Inventory
+            <h4 class="modal-title">Edit Inventory</h4>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -295,174 +305,131 @@
           <div class="modal-body">
             <div class="row">
               <div class="large-16 columns">
-                <h4 class="product-collection-size-category">Apparel</h4>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-16 columns">
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">S</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">16</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">6</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXS</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">8</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XS</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">10</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">0</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXXL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">S</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">12</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">2</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">M</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">14</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">4</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-16 columns">
-                <h4 class="product-collection-size-category">Ring</h4>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-16 columns">
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">S</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">16</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">6</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXS</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">8</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XS</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">10</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">0</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXXL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">S</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">12</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">2</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">M</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">14</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">4</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-16 columns">
-                <h4 class="product-collection-size-category">Shoe</h4>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-16 columns">
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">S</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">16</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">6</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXS</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">8</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XS</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">10</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">0</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXXL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">S</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">12</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">2</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">M</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">14</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">4</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-16 columns">
-                <h4 class="product-collection-size-category">Apparel</h4>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-16 columns">
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">S</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">16</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">6</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXS</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">8</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XS</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">10</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">0</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">XXXL</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">S</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">12</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">2</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">M</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">14</label>
-                <input checked="" type="checkbox" name="size" id="size1" class="hidden">
-                <label for="size1" class="product-collection-size selectable">4</label>
+                <section class="accordions">
+                  <div class="accordion">
+                    <input type="checkbox" id="accordion-10" checked="true" />
+                    <label class="accordion-secondary" for="accordion-10">Apparel</label>
+                    <div class="accordion-content large size-selectable-holder">
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">S</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">16</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">6</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XL</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XXS</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">8</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XXL</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XS</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">10</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">0</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XXXL</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">S</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">12</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">2</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">M</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">14</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">4</label>
+                    </div>
+                  </div>
+
+                  <div class="accordion">
+                    <input type="checkbox" id="accordion-11" />
+                    <label class="accordion-secondary" for="accordion-11">Ring</label>
+                    <div class="accordion-content large size-selectable-holder">
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">S</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">16</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">6</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XL</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XXS</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">8</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XXL</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XS</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">10</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">0</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XXXL</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">S</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">12</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">2</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">M</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">14</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">4</label>
+                    </div>
+                  </div>
+
+                  <div class="accordion">
+                    <input type="checkbox" id="accordion-13" />
+                    <label class="accordion-secondary" for="accordion-13">Shoe</label>
+                    <div class="accordion-content large size-selectable-holder">
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">S</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">16</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">6</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XL</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XXS</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">8</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XXL</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XS</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">10</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">0</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">XXXL</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">S</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">12</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">2</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">M</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">14</label>
+                      <input checked="" type="checkbox" name="size" id="size1" class="hidden">
+                      <label for="size1" class="product-collection-size selectable">4</label>
+                    </div>
+                  </div>
+
+                </section>
               </div>
             </div>
           </div>

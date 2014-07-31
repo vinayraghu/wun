@@ -105,3 +105,23 @@
     margin-top: 0;
   }
 }
+
+// Image action buttons
+
+.product-image-action-icons {
+  transition: all 0.1s ease-in-out;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  margin-left: .4em;
+  padding-top: .75em;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.product-image-action-container {
+  margin-bottom: 1em;
+  text-align: right;
+}
