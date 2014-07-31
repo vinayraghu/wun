@@ -212,8 +212,11 @@
                         <div class="product-size-swatch size-swatch-add right"> <!-- background color or image to be set from database  -->
                           <a href="#" data-target="#select-size-modal" data-toggle="modal"><i class="fa fa-plus color-size-add"></i> Add New</a>
                         </div>
-                        <div class="product-size-swatch size-swatch-add right">
+                        <div class="product-size-swatch size-swatch-add right hide size-swatch-hidden">
                           <a href="#" data-target="#edit-inventory-modal" data-toggle="modal"><i class="fa fa-pencil"></i> Edit</a>
+                        </div>
+                        <div class="product-size-swatch size-swatch-add right hide size-swatch-hidden">
+                          <a href="#"><i class="fa fa-trash-o"></i> Delete</a>
                         </div>
                       <!-- {{/if}} -->
                       </div>
@@ -515,6 +518,23 @@
         $(".product-size-swatch.selectable").on("click", function () {
           $(".product-size-swatch.selectable").removeClass("selected");
           $(this).addClass("selected");
+          $(".size-swatch-hidden")
+            .removeClass("hide")
+            .velocity({
+              translateY: -2
+            },
+            100,
+            {
+              stagger: 100
+            })
+            .velocity({
+              translateY: 0
+            },
+            100,
+            {
+              stagger: 200,
+              drag: true
+            });
         })
         //Choose size in modal
         $(".product-collection-size.selectable").on("click", function () {
