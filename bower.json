@@ -27,6 +27,7 @@
     "velocity": "~0.8.0",
     "jquery.contenteditable": "~0.2.0",
     "bootstrap-chosen": "*",
-    "medium-editor": "~1.8.14"
+    "medium-editor": "~1.8.14",
+    "tooltipster": "~3.2.6"
   }
 }

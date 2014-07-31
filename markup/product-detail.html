@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../vendors/medium-editor/dist/css/medium-editor.min.css"> <!-- Core -->
     <link rel="stylesheet" href="../vendors/medium-editor/dist/css/themes/default.css"> <!-- or any other theme -->
     <link rel="stylesheet" href="../vendors/handsontable/dist/jquery.handsontable.full.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/tooltipster/css/tooltipster.css" />
   </head>
   <body>
     <header class="section-title">
@@ -151,7 +152,7 @@
                   <div class="large-16 columns product-image-action-container">
                     <a href="#" class="product-image-action-icons"><i class="fa fa-trash-o"></i></a>
                     <a href="#" class="product-image-action-icons"><i class="fa fa-pencil"></i></a>
-                    <a href="#" class="product-image-action-icons"><i class="fa fa-star-o"></i></a>
+                    <a href="#" class="product-image-action-icons tooltip" title="Set as default product image"><i class="fa fa-star-o"></i></a>
                     <!-- When the image is default, remove "-o" from .fa-star-o above  -->
                   </div>
                 </div>
@@ -555,6 +556,12 @@
           });
         })
       </script>
-        <!-- Initiate handson table rendering when modal is fired  -->
+      <!-- Initiate handson table rendering when modal is fired  -->
+      <script type="text/javascript" src="../vendors/tooltipster/js/jquery.tooltipster.min.js"></script>
+      <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+      </script>
   </body>
 </html>
