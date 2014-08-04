@@ -10,3 +10,5 @@ vendors
 !public/styleguide/vendors/
 !styleguide/vendors/
 vendors/jquery
+!vendors/chosen/public/*
+vendors/jquery
