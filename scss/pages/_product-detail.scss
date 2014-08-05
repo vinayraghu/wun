@@ -147,3 +147,16 @@
   width: 24% !important;
   margin-right: 1%;
 }
+
+.save-bar {
+  background: rgba($black-2, 0.98);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: z(fixed);
+  padding: 1.4em;
+  .btn {
+    margin-right: 1em;
+  }
+}
