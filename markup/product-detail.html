@@ -201,6 +201,7 @@
                     <div class="product-color-swatch selectable"> <!-- background color or image to be set from database  -->
                       Leopard Print
                     </div>
+                      <input type="text" class="product-color-add autocomplete-color">
                   </div>
                 </div>
                 <div class="row">
@@ -596,5 +597,17 @@
             });
         });
       </script>
+      <script src="//localhost/wun/vendors/jquery-autocomplete/jquery.autocomplete.min.js"></script>
+        <script>
+          var options, a;
+          jQuery(function(){
+            options = {
+              zIndex: 1000,
+              lookup: ['Black', 'Blue', 'Leopard Print'] // example local lookup
+            };
+            a = $('.autocomplete-color').autocomplete(options);
+          });
+          autocomplete
+        </script>
   </body>
 </html>
