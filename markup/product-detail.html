@@ -181,7 +181,7 @@
                       <span class="product-color product-options-section-title pull-left">Choose color</span>
                       <div class="pull-right">
                         <!-- {{#if isAdmin}} -->
-                        <div class="product-color-swatch"> <!-- background color or image to be set from database  -->
+                        <div class="product-color-swatch" id="product-add-color"> <!-- background color or image to be set from database  -->
                           <i class="fa fa-plus color-size-add"></i> Add New
                         </div>
                         <!-- {{/if}} -->
@@ -201,7 +201,7 @@
                     <div class="product-color-swatch selectable"> <!-- background color or image to be set from database  -->
                       Leopard Print
                     </div>
-                      <input type="text" class="product-color-add autocomplete-color">
+                      <input type="text" class="product-color-add autocomplete-color hidden">
                   </div>
                 </div>
                 <div class="row">
@@ -607,7 +607,17 @@
             };
             a = $('.autocomplete-color').autocomplete(options);
           });
-          autocomplete
+        </script>
+        <script>
+          $("#product-add-color").on("click", function () {
+            $(".product-color-add").removeClass("hidden")
+            .velocity({
+              opacity: 0
+            })
+            .velocity({
+              opacity: 1
+            });
+          })
         </script>
   </body>
 </html>

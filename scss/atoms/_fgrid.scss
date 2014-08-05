@@ -348,7 +348,7 @@ $total-columns: 16 !default;
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .hide-for-small {
